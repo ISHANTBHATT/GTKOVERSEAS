@@ -781,9 +781,9 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { StarRating } from "./Starrating";
 import { Countries } from "./Countries";
 import Scroll from "./Scroll";
+import StarRating from "./StarRating";
 // Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },

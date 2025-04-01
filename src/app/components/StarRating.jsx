@@ -1,6 +1,6 @@
 "use client";
 
-export function StarRating({ rating, max = 5 }) {
+export default function StarRating({ rating, max = 5 }) {
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating % 1 !== 0;
 
