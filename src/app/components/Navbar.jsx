@@ -160,7 +160,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="/"
+            href="/courses"
             className="px-4 py-2 text-base font-medium text-gray-800 transition-colors hover:text-[#8A0206]/80"
             onClick={closeDropdowns}
           >

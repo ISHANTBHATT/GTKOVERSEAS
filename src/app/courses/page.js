@@ -126,12 +126,12 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[700px] bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <section className="relative w-full min-h-[700px] bg-gradient-to-br from-red-50 via-orange-50 to-purple-50">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=700&width=1400')] bg-cover bg-center opacity-10"></div>
         <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center relative z-10">
           <div className="max-w-4xl text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-              Find Your <span className="text-blue-600">Perfect</span> Study
+              Find Your <span className="text-[#8A0206]">Perfect</span> Study
               Destination
             </h1>
             <p className="text-xl text-slate-700 mb-8 max-w-2xl mx-auto">
@@ -161,7 +161,7 @@ export default function Home() {
                           onClick={() => handleSuggestionClick(suggestion)}
                           className="px-4 py-2 hover:bg-blue-50 cursor-pointer flex items-center"
                         >
-                          <GraduationCap className="h-4 w-4 mr-2 text-blue-500" />
+                          <GraduationCap className="h-4 w-4 mr-2 text-[#8A0206]" />
                           {suggestion}
                         </li>
                       ))}
@@ -274,7 +274,7 @@ export default function Home() {
               <div className="md:col-span-1">
                 <Button
                   onClick={handleSearch}
-                  className="w-full h-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg"
+                  className="w-full h-full bg-[#8A0206] hover:bg-red-700 text-white rounded-lg"
                 >
                   <Search className="h-5 w-5" />
                 </Button>
@@ -294,7 +294,7 @@ export default function Home() {
               <Link
                 href={`/search?course=${encodeURIComponent(term)}`}
                 key={term}
-                className="text-sm text-blue-600 bg-blue-50 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors"
+                className="text-sm text-[#8A0206] bg-red-100 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors"
               >
                 {term}
               </Link>
@@ -377,7 +377,7 @@ export default function Home() {
                 <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group-hover:translate-y-[-5px]">
                   <div className="p-6 text-center">
                     <div className="text-5xl mb-4">{destination.icon}</div>
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-red-600 transition-colors">
                       {destination.name}
                     </h3>
                     <p className="text-sm text-gray-500">
@@ -397,7 +397,7 @@ export default function Home() {
       </section>
 
       {/* Top Universities Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-red-50 to-orange-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -482,7 +482,7 @@ export default function Home() {
                     </div>
                     <Button
                       variant="outline"
-                      className="text-blue-600 border-blue-200 hover:bg-blue-50"
+                      className="text-[#8A0206] border-red-200 hover:bg-blue-50"
                     >
                       View Details
                     </Button>
@@ -493,7 +493,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-10">
-            <Button className="bg-blue-600 hover:bg-blue-700">
+            <Button className="bg-[#8A0206] hover:bg-red-700">
               Explore All Universities
             </Button>
           </div>
@@ -559,9 +559,9 @@ export default function Home() {
                 key={index}
                 className="group"
               >
-                <div className="bg-white rounded-xl border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all p-6 text-center group-hover:bg-blue-50">
+                <div className="bg-white rounded-xl border border-gray-100 hover:border-red-200 hover:shadow-md transition-all p-6 text-center group-hover:bg-red-50">
                   <div className="text-4xl mb-3">{course.icon}</div>
-                  <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600">
+                  <h3 className="text-lg font-semibold mb-2 group-hover:text-red-600">
                     {course.name}
                   </h3>
                   <div className="text-xs text-gray-500">
@@ -575,7 +575,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+      <section className="py-20 bg-gradient-to-br from-[#8A0206] to-red-700 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -642,7 +642,7 @@ export default function Home() {
                 university: "University of Toronto, Canada",
                 quote:
                   "The search tools helped me find the perfect program that matched my career goals and budget.",
-                avatar: "/placeholder.svg?height=100&width=100",
+                avatar: "/images/profile1.jpg",
               },
               {
                 name: "Michael Chen",
@@ -650,7 +650,7 @@ export default function Home() {
                 university: "University of Melbourne, Australia",
                 quote:
                   "I was able to compare universities across different countries and find scholarships I didn&#x27;t know existed.",
-                avatar: "/placeholder.svg?height=100&width=100",
+                avatar: "/images/profile2.jpg",
               },
               {
                 name: "Priya Sharma",
@@ -658,13 +658,13 @@ export default function Home() {
                 university: "University of Manchester, UK",
                 quote:
                   "The detailed course information and university profiles made my decision process so much easier.",
-                avatar: "/placeholder.svg?height=100&width=100",
+                avatar: "/images/profile3.jpg",
               },
             ].map((testimonial, index) => (
               <div key={index} className="bg-gray-50 rounded-xl p-6 relative">
                 <div className="mb-4">
                   <svg
-                    className="h-8 w-8 text-blue-400 opacity-50"
+                    className="h-8 w-8 text-red-400 opacity-50"
                     fill="currentColor"
                     viewBox="0 0 32 32"
                   >
@@ -681,7 +681,7 @@ export default function Home() {
                       alt={testimonial.name}
                       width={100}
                       height={100}
-                      className="object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
@@ -701,22 +701,22 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-indigo-50 to-blue-100">
+      <section className="py-20 bg-[#8A0206] text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 ">
             Ready to Start Your Journey?
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
             Begin your search today and discover the perfect educational
             opportunity abroad
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-6">
+            <Button className="bg-[#8A0206] hover:bg-red-700 text-lg px-8 py-6 border-white border">
               Search Programs
             </Button>
             <Button
               variant="outline"
-              className="text-blue-600 border-blue-200 hover:bg-blue-50 text-lg px-8 py-6"
+              className="text-red-600 border-red-200 hover:bg-red-50 text-lg px-8 py-6 hover:text-[#8A0206]"
             >
               Get Expert Advice
             </Button>
