@@ -79,7 +79,7 @@ function PAGE() {
             Get in Touch
           </h1>
           <p className="text-lg text-gray-600">
-            We'd love to hear from you. Please fill out this form.
+            We&#39;d love to hear from you. Please fill out this form.
           </p>
         </div>
 

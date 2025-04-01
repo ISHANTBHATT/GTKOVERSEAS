@@ -582,8 +582,8 @@ export default function Home() {
               Why Choose Us
             </h2>
             <p className="text-lg text-blue-100 max-w-3xl mx-auto">
-              We're dedicated to helping you find the perfect educational path
-              abroad
+              We&#39;re dedicated to helping you find the perfect educational
+              path abroad
             </p>
           </div>
 
@@ -672,7 +672,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <p className="text-gray-600 mb-6 italic">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full overflow-hidden mr-4">

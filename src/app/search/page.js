@@ -265,7 +265,9 @@ export default function SearchPage({ searchParams }) {
               over{" "}
               <span className="font-medium text-gray-900">{courseCount}</span>{" "}
               results for{" "}
-              <span className="font-medium text-amber-500">"{course}"</span>
+              <span className="font-medium text-amber-500">
+                &quot;{course}&quot;
+              </span>
             </p>
 
             <div className="flex items-center">
