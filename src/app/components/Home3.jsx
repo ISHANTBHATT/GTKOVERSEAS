@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import StarRating from "./Starrating";
+import StarRating from "./StarRating";
 
 export default function Home3() {
   return (
