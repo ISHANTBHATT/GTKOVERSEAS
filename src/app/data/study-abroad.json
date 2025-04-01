@@ -1,0 +1,1208 @@
+{
+  "countries": [
+    {
+      "id": "usa",
+      "name": "USA",
+      "title": "Why Study In The USA?",
+      "heroTitle": "USA: Unlock endless opportunities in the land of innovation",
+      "heroDescription": "Access world-renowned universities and a diverse educational experience in the global hub of innovation and research.",
+      "heroImage": "/images/usa-student.jpg",
+      "benefits": [
+        {
+          "title": "World-Class Education",
+          "description": "The USA is home to many of the world's top-ranked universities offering cutting-edge research facilities and academic excellence."
+        },
+        {
+          "title": "Flexible Education System",
+          "description": "American universities offer flexible course structures allowing students to explore different subjects before choosing a major."
+        },
+        {
+          "title": "Cultural Diversity",
+          "description": "Experience a melting pot of cultures with students from all over the world, creating a rich and diverse learning environment."
+        },
+        {
+          "title": "Career Opportunities",
+          "description": "Gain access to internships, OPT, and job opportunities with leading global companies and startups."
+        },
+        {
+          "title": "Research Opportunities",
+          "description": "The USA leads in research funding and innovation, providing students with opportunities to work on groundbreaking projects."
+        },
+        {
+          "title": "Campus Life",
+          "description": "American universities offer vibrant campus experiences with clubs, sports, and activities that enhance your educational journey."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In The USA",
+        "description": "The USA offers a wide range of academic programs across various disciplines. Here are the top courses preferred by international students:",
+        "courses": [
+          {
+            "title": "Computer Science & IT",
+            "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Business & MBA",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Health Sciences",
+            "image": "/images/medicine.jpg"
+          },
+          {
+            "title": "Social Sciences",
+            "image": "/images/social-sciences.jpg"
+          },
+          {
+            "title": "Arts & Design",
+            "image": "/images/arts.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In The USA",
+        "description": "The USA hosts some of the world's most prestigious educational institutions. Here are some top universities where we have placed our students:",
+        "list": [
+          {
+            "name": "Massachusetts Institute of Technology (MIT)",
+            "logo": "/images/mit-logo.png",
+            "popularFor": "Engineering & Computer Science",
+            "ranking": 1
+          },
+          {
+            "name": "Stanford University",
+            "logo": "/images/stanford-logo.png",
+            "popularFor": "Business & Technology",
+            "ranking": 2
+          },
+          {
+            "name": "Harvard University",
+            "logo": "/images/harvard-logo.png",
+            "popularFor": "Law & Medicine",
+            "ranking": 5
+          },
+          {
+            "name": "California Institute of Technology",
+            "logo": "/images/caltech-logo.png",
+            "popularFor": "Science & Engineering",
+            "ranking": 6
+          },
+          {
+            "name": "University of Chicago",
+            "logo": "/images/chicago-logo.png",
+            "popularFor": "Economics & Business",
+            "ranking": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "canada",
+      "name": "Canada",
+      "title": "Why Study In Canada?",
+      "heroTitle": "Canada: Quality education in a welcoming, multicultural environment",
+      "heroDescription": "Experience affordable education with post-study work opportunities in one of the world's safest and most livable countries.",
+      "heroImage": "/images/canada-student.jpg",
+      "benefits": [
+        {
+          "title": "Quality Education",
+          "description": "Canadian institutions are renowned for their high-quality education with degrees recognized worldwide."
+        },
+        {
+          "title": "Affordable Education",
+          "description": "Tuition fees in Canada are generally lower than in the US, UK, and Australia while maintaining high educational standards."
+        },
+        {
+          "title": "Post-Study Work Opportunities",
+          "description": "Canada offers generous post-graduation work permits allowing students to gain valuable work experience after completing their studies."
+        },
+        {
+          "title": "Pathway to Immigration",
+          "description": "Canada has favorable immigration policies for international students, offering pathways to permanent residency."
+        },
+        {
+          "title": "Safe and Welcoming Environment",
+          "description": "Canada is consistently ranked among the safest and most livable countries in the world with a welcoming attitude toward international students."
+        },
+        {
+          "title": "Bilingual Country",
+          "description": "As an officially bilingual country, Canada offers opportunities to learn and practice both English and French."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Canada",
+        "description": "Canada offers diverse academic programs across various fields. Here are the top courses preferred by international students:",
+        "courses": [
+          {
+            "title": "Business Management",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Information Technology",
+            "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Health Sciences",
+            "image": "/images/medicine.jpg"
+          },
+          {
+            "title": "Media & Communications",
+            "image": "/images/media.jpg"
+          },
+          {
+            "title": "Hospitality & Tourism",
+            "image": "/images/hospitality.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Canada",
+        "description": "Canada hosts numerous world-class educational institutions. Here are some top universities where we have placed our students:",
+        "list": [
+          {
+            "name": "University of Toronto",
+            "logo": "/images/toronto-logo.png",
+            "popularFor": "Research & Innovation",
+            "ranking": 25
+          },
+          {
+            "name": "McGill University",
+            "logo": "/images/mcgill-logo.png",
+            "popularFor": "Medicine & Law",
+            "ranking": 31
+          },
+          {
+            "name": "University of British Columbia",
+            "logo": "/images/ubc-logo.png",
+            "popularFor": "Science & Technology",
+            "ranking": 45
+          },
+          {
+            "name": "University of Alberta",
+            "logo": "/images/alberta-logo.png",
+            "popularFor": "Engineering & Business",
+            "ranking": 110
+          },
+          {
+            "name": "University of Waterloo",
+            "logo": "/images/waterloo-logo.png",
+            "popularFor": "Computer Science & Engineering",
+            "ranking": 149
+          }
+        ]
+      }
+    },
+    {
+      "id": "uk",
+      "name": "UK",
+      "title": "Why Study In The UK?",
+      "heroTitle": "UK: Join a legacy of excellence that inspires and transforms your future",
+      "heroDescription": "Experience world-class education in one of the most culturally diverse and historically rich countries.",
+      "heroImage": "/images/uk-student.jpg",
+      "benefits": [
+        {
+          "title": "Prestigious Universities",
+          "description": "The top universities in the UK are some of the world's oldest and most prestigious universities, attracting international students for centuries."
+        },
+        {
+          "title": "Sandwich Programs",
+          "description": "Sandwich programs offer a unique opportunity for students to learn in college and attain practical experience through college based placement."
+        },
+        {
+          "title": "Fifteen Of The World's Top 100 Universities",
+          "description": "The UK is home to fifteen universities that rank amongst the top 100 universities in the world according to the QS World Ranking. The prestigious universities in the UK provide students with a rich academic tradition and access to innovative research across various disciplines."
+        },
+        {
+          "title": "Gateway To Europe",
+          "description": "Many European countries are within close proximity to the UK and are easily accessible through the local transport systems."
+        },
+        {
+          "title": "Working Hours",
+          "description": "UK universities offer on-campus and off-campus job options up to 20 hours/week during study & 40 hours during vacation."
+        },
+        {
+          "title": "Shorter Degrees",
+          "description": "Courses in UK for international students are usually shorter than other countries. Bachelor's- 3 years. Master's- 1 year."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In The UK",
+        "description": "Studying in the UK gives international students great options for a global education. Here are the top courses in uk that are preferred by international students:",
+        "courses": [
+          {
+            "title": "Business Management",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Computer Science",
+            "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Law",
+            "image": "/images/law.jpg"
+          },
+          {
+            "title": "Finance",
+            "image": "/images/finance.jpg"
+          },
+          {
+            "title": "Medicine",
+            "image": "/images/medicine.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In The UK",
+        "description": "The UK is an educational hub for international students to attain a globally recognized education. Here are some of the top universities in uk for international students where we have placed our students.",
+        "list": [
+          {
+            "name": "University of Oxford",
+            "logo": "/images/oxford-logo.png",
+            "popularFor": "Humanities & Sciences",
+            "ranking": 3
+          },
+          {
+            "name": "Imperial College London",
+            "logo": "/images/imperial-logo.png",
+            "popularFor": "Engineering & Medicine",
+            "ranking": 6
+          },
+          {
+            "name": "University of Edinburgh",
+            "logo": "/images/edinburgh-logo.png",
+            "popularFor": "Arts & Humanities",
+            "ranking": 22
+          },
+          {
+            "name": "University of Manchester",
+            "logo": "/images/manchester-logo.png",
+            "popularFor": "Business & Law",
+            "ranking": 32
+          },
+          {
+            "name": "King's College London",
+            "logo": "/images/kings-logo.png",
+            "popularFor": "Medicine & Law",
+            "ranking": 37
+          }
+        ]
+      }
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "title": "Why Study In Australia?",
+      "heroTitle": "Australia: World-class education in a stunning natural environment",
+      "heroDescription": "Enjoy innovative teaching methods and a high quality of life in one of the world's most diverse and welcoming countries.",
+      "heroImage": "/images/australia-student.jpg",
+      "benefits": [
+        {
+          "title": "Global Recognition",
+          "description": "Australian qualifications are recognized worldwide, with many universities ranking in the global top 100."
+        },
+        {
+          "title": "Innovative Teaching",
+          "description": "Australia is known for its innovative teaching methods and focus on practical, hands-on learning experiences."
+        },
+        {
+          "title": "Work While Studying",
+          "description": "International students can work up to 48 hours per fortnight during term time and full-time during holidays."
+        },
+        {
+          "title": "Post-Study Work Rights",
+          "description": "Graduates can apply for post-study work visas ranging from 2-4 years depending on their qualification level."
+        },
+        {
+          "title": "Quality of Life",
+          "description": "Australia consistently ranks among the top countries for quality of life, safety, and healthcare."
+        },
+        {
+          "title": "Cultural Diversity",
+          "description": "Experience a multicultural society with students from all over the world in a friendly and inclusive environment."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Australia",
+        "description": "Australia offers a wide range of courses across various disciplines. Here are the top courses preferred by international students:",
+        "courses": [
+          {
+            "title": "Business & Management",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Information Technology",
+            "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Health Sciences",
+            "image": "/images/medicine.jpg"
+          },
+          {
+            "title": "Hospitality & Tourism",
+            "image": "/images/hospitality.jpg"
+          },
+          {
+            "title": "Education",
+            "image": "/images/education.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Australia",
+        "description": "Australia hosts several world-class universities. Here are some top institutions where we have placed our students:",
+        "list": [
+          {
+            "name": "University of Melbourne",
+            "logo": "/images/melbourne-logo.png",
+            "popularFor": "Research & Arts",
+            "ranking": 33
+          },
+          {
+            "name": "Australian National University",
+            "logo": "/images/anu-logo.png",
+            "popularFor": "Social Sciences & Humanities",
+            "ranking": 30
+          },
+          {
+            "name": "University of Sydney",
+            "logo": "/images/sydney-logo.png",
+            "popularFor": "Medicine & Engineering",
+            "ranking": 38
+          },
+          {
+            "name": "University of Queensland",
+            "logo": "/images/queensland-logo.png",
+            "popularFor": "Science & Research",
+            "ranking": 43
+          },
+          {
+            "name": "Monash University",
+            "logo": "/images/monash-logo.png",
+            "popularFor": "Business & Pharmacy",
+            "ranking": 57
+          }
+        ]
+      }
+    },
+    {
+      "id": "new-zealand",
+      "name": "New Zealand",
+      "title": "Why Study In New Zealand?",
+      "heroTitle": "New Zealand: Quality education in a breathtaking natural setting",
+      "heroDescription": "Experience a world-class education system with a focus on critical thinking in one of the world's most peaceful countries.",
+      "heroImage": "/images/newzealand-student.jpg",
+      "benefits": [
+        {
+          "title": "Quality Education",
+          "description": "New Zealand offers a British-based education system with qualifications recognized around the world."
+        },
+        {
+          "title": "Innovative Learning",
+          "description": "The education system encourages students to think critically, question, and develop practical skills."
+        },
+        {
+          "title": "Work Opportunities",
+          "description": "International students can work up to 20 hours per week during term time and full-time during scheduled holidays."
+        },
+        {
+          "title": "Post-Study Work Visa",
+          "description": "Graduates can apply for a post-study work visa for 1-3 years depending on their level of study."
+        },
+        {
+          "title": "Safe and Peaceful",
+          "description": "New Zealand is consistently ranked as one of the most peaceful and least corrupt countries in the world."
+        },
+        {
+          "title": "Natural Beauty",
+          "description": "Study surrounded by stunning landscapes, from mountains and lakes to beaches and forests."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In New Zealand",
+        "description": "New Zealand offers a range of quality courses across various disciplines. Here are the top courses preferred by international students:",
+        "courses": [
+          {
+            "title": "Business Studies",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Information Technology",
+            "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Hospitality & Tourism",
+            "image": "/images/hospitality.jpg"
+          },
+          {
+            "title": "Agriculture & Forestry",
+            "image": "/images/agriculture.jpg"
+          },
+          {
+            "title": "Health Sciences",
+            "image": "/images/medicine.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In New Zealand",
+        "description": "New Zealand has eight world-ranked universities. Here are some top institutions where we have placed our students:",
+        "list": [
+          {
+            "name": "University of Auckland",
+            "logo": "/images/auckland-logo.png",
+            "popularFor": "Engineering & Business",
+            "ranking": 85
+          },
+          {
+            "name": "University of Otago",
+            "logo": "/images/otago-logo.png",
+            "popularFor": "Medicine & Sciences",
+            "ranking": 194
+          },
+          {
+            "name": "Victoria University of Wellington",
+            "logo": "/images/victoria-logo.png",
+            "popularFor": "Law & Humanities",
+            "ranking": 236
+          },
+          {
+            "name": "University of Canterbury",
+            "logo": "/images/canterbury-logo.png",
+            "popularFor": "Engineering & Forestry",
+            "ranking": 258
+          },
+          {
+            "name": "Massey University",
+            "logo": "/images/massey-logo.png",
+            "popularFor": "Agriculture & Aviation",
+            "ranking": 284
+          }
+        ]
+      }
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "title": "Why Study In France?",
+      "heroTitle": "France: Embrace art, culture, and academic excellence",
+      "heroDescription": "Discover France’s rich heritage combined with cutting-edge education and research opportunities.",
+      "heroImage": "/images/france-student.jpg",
+      "benefits": [
+        {
+          "title": "Renowned Institutions",
+          "description": "France is home to some of the most prestigious educational institutions in the world."
+        },
+        {
+          "title": "Cultural Richness",
+          "description": "Experience a blend of history, art, and modern education in a culturally vibrant environment."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In France",
+        "description": "France offers a wide array of programs ranging from business to fine arts.",
+        "courses": [
+          {
+            "title": "Business Studies",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Art & Design",
+            "image": "/images/arts.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In France",
+        "description": "Discover the best universities in France known for their academic rigor and research.",
+        "list": [
+          {
+            "name": "Sorbonne University",
+            "logo": "/images/sorbonne-logo.png",
+            "popularFor": "Humanities & Sciences",
+            "ranking": 40
+          }
+        ]
+      }
+    },
+    {
+      "id": "germany",
+      "name": "Germany",
+      "title": "Why Study In Germany?",
+      "heroTitle": "Germany: Where innovation meets tradition in higher education",
+      "heroDescription": "Study in Germany and benefit from world-class engineering, research opportunities, and a vibrant culture.",
+      "heroImage": "/images/germany-student.jpg",
+      "benefits": [
+        {
+          "title": "Tuition-Free Education",
+          "description": "Many public universities in Germany charge little or no tuition fees for international students."
+        },
+        {
+          "title": "Innovative Research",
+          "description": "Germany is a leader in technology and research, offering excellent opportunities in STEM fields."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Germany",
+        "description": "Germany is popular for its engineering and technical programs among international students.",
+        "courses": [
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Computer Science",
+            "image": "/images/computer-science.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Germany",
+        "description": "Explore top German universities known for their innovative research and academic excellence.",
+        "list": [
+          {
+            "name": "Technical University of Munich",
+            "logo": "/images/tum-logo.png",
+            "popularFor": "Engineering & Technology",
+            "ranking": 35
+          }
+        ]
+      }
+    },
+    {
+      "id": "denmark",
+      "name": "Denmark",
+      "title": "Why Study In Denmark?",
+      "heroTitle": "Denmark: Experience a blend of innovation and Scandinavian quality education",
+      "heroDescription": "Study in Denmark for a modern education system, strong focus on sustainability, and innovative research.",
+      "heroImage": "/images/denmark-student.jpg",
+      "benefits": [
+        {
+          "title": "Modern Education System",
+          "description": "Denmark is known for its progressive teaching methods and modern curriculum."
+        },
+        {
+          "title": "Sustainable Living",
+          "description": "Experience a high quality of life with a strong focus on sustainability and green initiatives."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Denmark",
+        "description": "Denmark offers courses in technology, design, and business with an international approach.",
+        "courses": [
+          {
+            "title": "Design & Innovation",
+            "image": "/images/arts.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Denmark",
+        "description": "Find out more about Denmark's top institutions offering high quality education and research opportunities.",
+        "list": [
+          {
+            "name": "University of Copenhagen",
+            "logo": "/images/copenhagen-logo.png",
+            "popularFor": "Humanities & Sciences",
+            "ranking": 70
+          }
+        ]
+      }
+    },
+    {
+      "id": "finland",
+      "name": "Finland",
+      "title": "Why Study In Finland?",
+      "heroTitle": "Finland: A leader in education and innovation",
+      "heroDescription": "Benefit from Finland’s world-renowned education system and innovative teaching methods.",
+      "heroImage": "/images/finland-student.jpg",
+      "benefits": [
+        {
+          "title": "High-Quality Education",
+          "description": "Finland offers an education system recognized globally for its quality and innovation."
+        },
+        {
+          "title": "Innovative Learning Environment",
+          "description": "Experience modern and student-centered learning in Finland’s progressive academic institutions."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Finland",
+        "description": "Explore a range of courses from technology to design in Finland.",
+        "courses": [
+          {
+            "title": "Information Technology",
+            "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Design",
+            "image": "/images/arts.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Finland",
+        "description": "Discover top Finnish universities known for their innovative and high-quality education.",
+        "list": [
+          {
+            "name": "University of Helsinki",
+            "logo": "/images/helsinki-logo.png",
+            "popularFor": "Research & Innovation",
+            "ranking": 60
+          }
+        ]
+      }
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "title": "Why Study In Italy?",
+      "heroTitle": "Italy: Where rich history meets modern education",
+      "heroDescription": "Study in Italy and immerse yourself in a world of art, history, and high-quality education.",
+      "heroImage": "/images/italy-student.jpg",
+      "benefits": [
+        {
+          "title": "Cultural Heritage",
+          "description": "Italy offers a unique blend of historical legacy and modern academic excellence."
+        },
+        {
+          "title": "World-Renowned Programs",
+          "description": "Experience top-notch education in fields such as art, design, and culinary studies."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Italy",
+        "description": "Italy is famous for courses in art, design, and culinary arts among others.",
+        "courses": [
+          {
+            "title": "Art & Design",
+            "image": "/images/arts.jpg"
+          },
+          {
+            "title": "Culinary Arts",
+            "image": "/images/culinary.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Italy",
+        "description": "Explore Italy's prestigious universities known for their cultural and academic excellence.",
+        "list": [
+          {
+            "name": "University of Bologna",
+            "logo": "/images/bologna-logo.png",
+            "popularFor": "Humanities & Sciences",
+            "ranking": 80
+          }
+        ]
+      }
+    },
+    {
+      "id": "cyprus",
+      "name": "Cyprus",
+      "title": "Why Study In Cyprus?",
+      "heroTitle": "Cyprus: Experience a vibrant culture with quality education",
+      "heroDescription": "Discover the benefits of studying in Cyprus, where modern education meets Mediterranean charm.",
+      "heroImage": "/images/cyprus-student.jpg",
+      "benefits": [
+        {
+          "title": "Quality Education",
+          "description": "Cyprus offers reputable academic programs with an international outlook."
+        },
+        {
+          "title": "Vibrant Culture",
+          "description": "Experience a unique blend of Eastern and Western cultures in Cyprus."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Cyprus",
+        "description": "Cyprus provides a variety of courses in business, tourism, and technology.",
+        "courses": [
+          {
+            "title": "Business Studies",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Tourism & Hospitality",
+            "image": "/images/hospitality.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Cyprus",
+        "description": "Discover leading universities in Cyprus offering quality education and research opportunities.",
+        "list": [
+          {
+            "name": "University of Cyprus",
+            "logo": "/images/cyprus-university-logo.png",
+            "popularFor": "Humanities & Sciences",
+            "ranking": 100
+          }
+        ]
+      }
+    },
+    {
+      "id": "malta",
+      "name": "Malta",
+      "title": "Why Study In Malta?",
+      "heroTitle": "Malta: Discover quality education in the heart of the Mediterranean",
+      "heroDescription": "Study in Malta and enjoy a unique blend of academic excellence and a relaxed island lifestyle.",
+      "heroImage": "/images/malta-student.jpg",
+      "benefits": [
+        {
+          "title": "International Environment",
+          "description": "Malta offers a multicultural study environment with students from around the globe."
+        },
+        {
+          "title": "Affordable Education",
+          "description": "Experience quality education at competitive costs in Malta."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Malta",
+        "description": "Malta offers a variety of programs, especially in business and technology.",
+        "courses": [
+          {
+            "title": "Business Management",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Information Technology",
+            "image": "/images/computer-science.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Malta",
+        "description": "Explore Malta's higher education institutions known for their intimate learning environments.",
+        "list": [
+          {
+            "name": "University of Malta",
+            "logo": "/images/malta-university-logo.png",
+            "popularFor": "Research & Humanities",
+            "ranking": 120
+          }
+        ]
+      }
+    },
+    {
+      "id": "switzerland",
+      "name": "Switzerland",
+      "title": "Why Study In Switzerland?",
+      "heroTitle": "Switzerland: Embrace excellence in education and innovation",
+      "heroDescription": "Switzerland offers a blend of high-quality education, research excellence, and stunning natural landscapes.",
+      "heroImage": "/images/switzerland-student.jpg",
+      "benefits": [
+        {
+          "title": "World-Class Institutions",
+          "description": "Study at some of the most reputable universities known for innovation and research."
+        },
+        {
+          "title": "High Standard of Living",
+          "description": "Experience an excellent quality of life alongside academic excellence."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Switzerland",
+        "description": "Switzerland is a top destination for courses in finance, engineering, and hospitality.",
+        "courses": [
+          {
+            "title": "Finance",
+            "image": "/images/finance.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Switzerland",
+        "description": "Discover Switzerland's top educational institutions known for their rigorous academic standards.",
+        "list": [
+          {
+            "name": "ETH Zurich",
+            "logo": "/images/eth-logo.png",
+            "popularFor": "Engineering & Technology",
+            "ranking": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "sweden",
+      "name": "Sweden",
+      "title": "Why Study In Sweden?",
+      "heroTitle": "Sweden: Innovation, sustainability, and academic excellence",
+      "heroDescription": "Study in Sweden and benefit from an education system that emphasizes innovation, sustainability, and global perspective.",
+      "heroImage": "/images/sweden-student.jpg",
+      "benefits": [
+        {
+          "title": "Innovative Curriculum",
+          "description": "Swedish universities focus on creativity, innovation, and critical thinking."
+        },
+        {
+          "title": "Sustainable Living",
+          "description": "Experience a lifestyle that prioritizes environmental sustainability and quality of life."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Sweden",
+        "description": "Sweden offers diverse courses in technology, design, and business.",
+        "courses": [
+          {
+            "title": "Technology & Innovation",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Design",
+            "image": "/images/arts.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Sweden",
+        "description": "Explore Sweden’s top universities known for their innovative research and student-focused education.",
+        "list": [
+          {
+            "name": "Lund University",
+            "logo": "/images/lund-logo.png",
+            "popularFor": "Research & Humanities",
+            "ranking": 45
+          }
+        ]
+      }
+    },
+    {
+      "id": "hungary",
+      "name": "Hungary",
+      "title": "Why Study In Hungary?",
+      "heroTitle": "Hungary: A gateway to quality education and rich cultural heritage",
+      "heroDescription": "Experience Hungary’s long-standing academic traditions alongside modern research and innovation.",
+      "heroImage": "/images/hungary-student.jpg",
+      "benefits": [
+        {
+          "title": "Affordable Tuition",
+          "description": "Hungary offers competitive tuition fees along with high academic standards."
+        },
+        {
+          "title": "Rich Culture",
+          "description": "Study in an environment steeped in history and vibrant cultural traditions."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Hungary",
+        "description": "Hungary is popular for programs in engineering, medicine, and business.",
+        "courses": [
+          {
+            "title": "Medicine",
+            "image": "/images/medicine.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Hungary",
+        "description": "Discover Hungary’s top institutions known for their research and academic excellence.",
+        "list": [
+          {
+            "name": "Eötvös Loránd University",
+            "logo": "/images/el-university-logo.png",
+            "popularFor": "Humanities & Sciences",
+            "ranking": 150
+          }
+        ]
+      }
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "title": "Why Study In Netherlands?",
+      "heroTitle": "Netherlands: Embrace a vibrant education system in a dynamic environment",
+      "heroDescription": "Study in the Netherlands and benefit from a creative and innovative academic atmosphere.",
+      "heroImage": "/images/netherlands-student.jpg",
+      "benefits": [
+        {
+          "title": "Innovative Education",
+          "description": "The Netherlands offers modern teaching methods and a focus on research-driven learning."
+        },
+        {
+          "title": "International Environment",
+          "description": "Join a diverse student community and benefit from a multicultural academic experience."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Netherlands",
+        "description": "The Netherlands is renowned for its programs in business, engineering, and arts.",
+        "courses": [
+          {
+            "title": "Business & Management",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Netherlands",
+        "description": "Explore the top universities in the Netherlands known for their academic excellence.",
+        "list": [
+          {
+            "name": "Delft University of Technology",
+            "logo": "/images/delft-logo.png",
+            "popularFor": "Engineering & Technology",
+            "ranking": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "ireland",
+      "name": "Ireland",
+      "title": "Why Study In Ireland?",
+      "heroTitle": "Ireland: Discover a blend of rich culture and modern education",
+      "heroDescription": "Explore quality education in Ireland with its friendly communities, innovative research, and a vibrant cultural experience.",
+      "heroImage": "/images/ireland-student.jpg",
+      "benefits": [
+        {
+          "title": "Quality Education",
+          "description": "Ireland is known for its excellent academic standards and internationally recognized degrees."
+        },
+        {
+          "title": "Welcoming Culture",
+          "description": "Experience a warm and friendly environment that supports international students both academically and socially."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Ireland",
+        "description": "Ireland offers diverse academic programs with a strong emphasis on research and innovation.",
+        "courses": [
+          {
+            "title": "Business Studies",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Computer Science",
+            "image": "/images/computer-science.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Ireland",
+        "description": "Ireland is home to several prestigious universities offering a range of programs for international students.",
+        "list": [
+          {
+            "name": "Trinity College Dublin",
+            "logo": "/images/trinity-logo.png",
+            "popularFor": "Humanities & Sciences",
+            "ranking": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "title": "Why Study In Singapore?",
+      "heroTitle": "Singapore: A global education hub in the heart of Asia",
+      "heroDescription": "Experience high-quality education in Singapore with cutting-edge facilities and a dynamic multicultural environment.",
+      "heroImage": "/images/singapore-student.jpg",
+      "benefits": [
+        {
+          "title": "World-Class Education",
+          "description": "Singapore offers some of the best educational institutions in Asia with global recognition."
+        },
+        {
+          "title": "Strategic Location",
+          "description": "Its prime location in Asia makes Singapore a gateway for international opportunities."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Singapore",
+        "description": "Singapore offers diverse courses in business, technology, and design.",
+        "courses": [
+          {
+            "title": "Business Management",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Information Technology",
+            "image": "/images/computer-science.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Singapore",
+        "description": "Explore top universities in Singapore known for their academic rigor and research excellence.",
+        "list": [
+          {
+            "name": "National University of Singapore",
+            "logo": "/images/nus-logo.png",
+            "popularFor": "Research & Innovation",
+            "ranking": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "title": "Why Study In Dubai?",
+      "heroTitle": "Dubai: A dynamic fusion of innovation and global education",
+      "heroDescription": "Study in Dubai and experience a cosmopolitan lifestyle with access to world-class educational opportunities.",
+      "heroImage": "/images/dubai-student.jpg",
+      "benefits": [
+        {
+          "title": "Modern Infrastructure",
+          "description": "Dubai boasts state-of-the-art campuses and facilities."
+        },
+        {
+          "title": "Global Exposure",
+          "description": "Interact with a diverse student community from around the world."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Dubai",
+        "description": "Dubai offers a variety of courses focusing on business, technology, and design.",
+        "courses": [
+          {
+            "title": "Business & Management",
+            "image": "/images/business-management.jpg"
+          },
+          {
+            "title": "Information Technology",
+            "image": "/images/computer-science.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Dubai",
+        "description": "Discover Dubai’s top institutions known for their innovative programs and global outreach.",
+        "list": [
+          {
+            "name": "American University in Dubai",
+            "logo": "/images/aud-logo.png",
+            "popularFor": "Business & Technology",
+            "ranking": 75
+          }
+        ]
+      }
+    },
+    {
+      "id": "malaysia",
+      "name": "Malaysia",
+      "title": "Why Study In Malaysia?",
+      "heroTitle": "Malaysia: Experience quality education in a vibrant multicultural setting",
+      "heroDescription": "Study in Malaysia and benefit from affordable tuition fees, excellent infrastructure, and a diverse cultural experience.",
+      "heroImage": "/images/malaysia-student.jpg",
+      "benefits": [
+        {
+          "title": "Affordable Education",
+          "description": "Malaysia offers cost-effective education without compromising on quality."
+        },
+        {
+          "title": "Cultural Diversity",
+          "description": "Experience a melting pot of cultures and traditions."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Malaysia",
+        "description": "Malaysia offers a range of courses in business, engineering, and IT.",
+        "courses": [
+          {
+            "title": "Engineering",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Information Technology",
+            "image": "/images/computer-science.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Malaysia",
+        "description": "Explore top Malaysian universities known for their academic programs and international collaborations.",
+        "list": [
+          {
+            "name": "University of Malaya",
+            "logo": "/images/um-logo.png",
+            "popularFor": "Research & Innovation",
+            "ranking": 90
+          }
+        ]
+      }
+    },
+    {
+      "id": "japan",
+      "name": "Japan",
+      "title": "Why Study In Japan?",
+      "heroTitle": "Japan: Where tradition meets technology in a unique educational experience",
+      "heroDescription": "Study in Japan and explore a country known for its cutting-edge technology, rich culture, and world-class education.",
+      "heroImage": "/images/japan-student.jpg",
+      "benefits": [
+        {
+          "title": "Technological Advancement",
+          "description": "Japan is a global leader in technology and innovation."
+        },
+        {
+          "title": "Cultural Heritage",
+          "description": "Immerse yourself in Japan’s unique blend of tradition and modernity."
+        }
+      ],
+      "popularCourses": {
+        "title": "Popular Courses In Japan",
+        "description": "Japan offers a variety of programs in technology, business, and design.",
+        "courses": [
+          {
+            "title": "Technology & Innovation",
+            "image": "/images/engineering.jpg"
+          },
+          {
+            "title": "Business Studies",
+            "image": "/images/business-management.jpg"
+          }
+        ]
+      },
+      "universities": {
+        "title": "List Of Universities In Japan",
+        "description": "Discover Japan's leading institutions that provide top-tier education and innovative research opportunities.",
+        "list": [
+          {
+            "name": "University of Tokyo",
+            "logo": "/images/tokyo-logo.png",
+            "popularFor": "Research & Technology",
+            "ranking": 15
+          }
+        ]
+      }
+    }
+  ]
+}
