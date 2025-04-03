@@ -1,6 +1,6 @@
+import { Timeline } from "@/components/ui/Timeline";
 import Image from "next/image";
 import React from "react";
-import { Timeline } from "@/components/ui/timeline";
 
 export default function Page() {
   const data = [
