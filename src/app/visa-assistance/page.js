@@ -56,7 +56,7 @@ export default function Page() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-            We'll help complete your visa application accurately and
+            We&apos;ll help complete your visa application accurately and
             efficiently, ensuring timely submission of all documents required
             for student visa in compliance with visa requirements. Our aim is to
             streamline the process of getting a student visa for Indian students
@@ -105,7 +105,7 @@ export default function Page() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-4">
             Our team of abroad visa consultants will conduct mock interviews to
-            help you feel confident and prepared. We'll simulate real-life
+            help you feel confident and prepared. We&apos;ll simulate real-life
             interview scenarios and provide feedback and tips to help you ace
             your visa interview with ease.
           </p>
@@ -164,11 +164,11 @@ export default function Page() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-            Our support doesn't end once you have paid the student visa fee and
-            submitted the student visa application. We'll address any questions
-            or concerns you may have throughout the processing period, providing
-            you with peace of mind and reassurance during this critical stage of
-            your journey.
+            Our support doesn&apos;t end once you have paid the student visa fee
+            and submitted the student visa application. We&apos;ll address any
+            questions or concerns you may have throughout the processing period,
+            providing you with peace of mind and reassurance during this
+            critical stage of your journey.
           </p>
           {/* <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
             Lorem ipsum is for people who are too lazy to write copy. But we are
