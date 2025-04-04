@@ -254,7 +254,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export default function Home() {
+export default function Banner() {
   const [mounted, setMounted] = useState(false);
   const requestRef = useRef();
   const [angle, setAngle] = useState(0);

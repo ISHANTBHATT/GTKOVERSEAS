@@ -96,7 +96,7 @@ function PAGE() {
                 <div>
                   <p className="text-gray-600">Email</p>
                   <p className="text-gray-900 font-medium">
-                    contact@example.com
+                    info@gtkoverseas.com
                   </p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ function PAGE() {
                 <Phone className="w-6 h-6 text-[#8A0206]" />
                 <div>
                   <p className="text-gray-600">Phone</p>
-                  <p className="text-gray-900 font-medium">+1 (555) 000-0000</p>
+                  <p className="text-gray-900 font-medium">011 49596950</p>
                 </div>
               </div>
 
@@ -114,7 +114,7 @@ function PAGE() {
                 <div>
                   <p className="text-gray-600">Address</p>
                   <p className="text-gray-900 font-medium">
-                    123 Education Street, Learning City, ED 12345
+                    F-25, Bhagat Singh Market, Gole Market, New Delhi-110001
                   </p>
                 </div>
               </div>
