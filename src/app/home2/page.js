@@ -353,9 +353,9 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-2 text-white">Why Choose</h2>
               <div className="border-l-4 border-gray-400 pl-4 mt-4">
                 <p className="text-gray-300">
-                  In confusion, many can't decide where to get proper knowing
-                  for his or her desired aim and sometimes it can be an unwise
-                  decision.
+                  In confusion, many can&apos;t decide where to get proper
+                  knowing for his or her desired aim and sometimes it can be an
+                  unwise decision.
                 </p>
               </div>
             </div>
@@ -453,8 +453,8 @@ export default function Home() {
               What our <span className="text-[#8A0206]">Students</span> Say?
             </h2>
             <p className="text-gray-200 mb-6">
-              We've chosen a selection of student testimonials to give you a
-              better insight about us, our honesty, transparency and our
+              We&apos;ve chosen a selection of student testimonials to give you
+              a better insight about us, our honesty, transparency and our
               devotion towards our students.
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -479,8 +479,8 @@ export default function Home() {
                   </div>
                   <p className="text-xs text-gray-600 mb-2">
                     Lorem ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem ipsum has been the industry's
-                    standard dummy text ever since the 1500s.
+                    typesetting industry. Lorem ipsum has been the
+                    industry&apos;s standard dummy text ever since the 1500s.
                   </p>
                   <StarRating rating={4.5} />
                 </div>
