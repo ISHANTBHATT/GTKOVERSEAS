@@ -149,11 +149,11 @@ function page() {
         <p className="text-5xl font-bold">Forex Assistance</p>
         <p className="max-w-6xl items-center mx-auto">
           Studying abroad requires careful financial planning, including
-          managing currency exchange. Edwise's extensive Forex services aim to
-          assist you in obtaining the most advantageous currency exchange rates
-          available. Whether you're exchanging currency for tuition fees,
-          accommodation, or daily expenses, we'll help you secure the best rates
-          and minimize unnecessary fees.
+          managing currency exchange. Edwise&apos;s extensive Forex services aim
+          to assist you in obtaining the most advantageous currency exchange
+          rates available. Whether you&apos;re exchanging currency for tuition
+          fees, accommodation, or daily expenses, we&apos;ll help you secure the
+          best rates and minimize unnecessary fees.
         </p>
       </div>
       {forexAssistanceData.map((item, index) => (

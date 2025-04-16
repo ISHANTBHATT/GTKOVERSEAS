@@ -199,7 +199,7 @@ export default function Page() {
               />
             </div>
             <div className="absolute bottom-6 left-6 bg-[#3C2A2A]/80 p-6 rounded-lg max-w-[80%]">
-              <div className="text-5xl text-[#A83A28] mb-2">"</div>
+              <div className="text-5xl text-[#A83A28] mb-2">&quot;</div>
               <h3 className="text-xl font-semibold mb-1">
                 Tax Research for Financial Mastery
               </h3>
@@ -318,7 +318,7 @@ export default function Page() {
           </div>
           <div className="md:col-span-2 bg-[#FFF5F2] rounded-lg p-8 flex flex-col justify-center">
             <h2 className="text-4xl font-bold mb-4 text-[#3C2A2A]">
-              We're Here to Help You Achieve Your Goals
+              We&apos;re Here to Help You Achieve Your Goals
             </h2>
             <p className="text-gray-700 mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit

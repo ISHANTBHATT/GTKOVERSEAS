@@ -207,7 +207,7 @@ export default function CareerCounseling() {
                 Aptitude tests play a significant role in various areas,
                 including counseling for studying abroad, career development,
                 recruitment, and personal growth. They are designed to assess an
-                individual's inherent or acquired abilities, strengths, and
+                individual&apos;s inherent or acquired abilities, strengths, and
                 potential in specific areas. The importance of aptitude tests
                 can be highlighted through the following points.
               </p>
@@ -279,7 +279,7 @@ export default function CareerCounseling() {
                   </div>
                   <p className="text-slate-600 ">
                     Aptitude: valuable tool that provide insights into an
-                    individual's abilities, strengths, personal growth and
+                    individual&apos;s abilities, strengths, personal growth and
                     potential in various areas. It plays a fundamental role in
                     career choices, academic decisions, recruitment, enhancing
                     personal development, and fostering success and satisfaction
@@ -312,14 +312,15 @@ export default function CareerCounseling() {
                     </h3>
                   </div>
                   <p className="text-slate-600 ">
-                    An interest test, often referred to as an "interest
-                    inventory" or "interest assessment", is a tool used to
-                    identify an individual's preferences, likes, and dislikes
-                    related to various activities, subjects, and career fields.
-                    These tests are designed to assess an individual's
-                    interests, passions, and inclinations to guide them in
-                    making informed decisions about educational paths, career
-                    choices, and personal development opportunities.
+                    An interest test, often referred to as an &quot;interest
+                    inventory&quot; or &quot;interest assessment&quot;, is a
+                    tool used to identify an individual&apos;s preferences,
+                    likes, and dislikes related to various activities, subjects,
+                    and career fields. These tests are designed to assess an
+                    individual&apos;s interests, passions, and inclinations to
+                    guide them in making informed decisions about educational
+                    paths, career choices, and personal development
+                    opportunities.
                   </p>
                 </div>
               </div>
@@ -349,9 +350,9 @@ export default function CareerCounseling() {
                   </div>
                   <p className="text-slate-600 ">
                     A personality test is a tool designed to assess and evaluate
-                    various aspects of an individual's personality. These tests
-                    aim to uncover patterns of behavior, preferences, and traits
-                    that characterize a person.
+                    various aspects of an individual&apos;s personality. These
+                    tests aim to uncover patterns of behavior, preferences, and
+                    traits that characterize a person.
                   </p>
                 </div>
               </div>
