@@ -784,6 +784,9 @@ import { Button } from "@/components/ui/button";
 import { Countries } from "./Countries";
 import Scroll from "./Scroll";
 import StarRating from "./StarRating";
+import Banner from "./Banner";
+import { ArrowRight } from "lucide-react";
+import WorkProcess from "./WorkProcess";
 // Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -913,7 +916,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             className="relative"
           >
-            <Image
+            {/* <Image
               src="/images/2.png"
               alt="Student with laptop"
               width={600}
@@ -975,11 +978,11 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Decorative circles */}
             <div className="absolute top-20 right-0 w-20 h-20 bg-cyan-500 rounded-full opacity-70"></div>
             <div className="absolute bottom-10 right-40 w-12 h-12 bg-purple-500 rounded-full opacity-70"></div>
             <div className="absolute top-40 left-10 w-16 h-16 bg-pink-400 rounded-full opacity-70"></div>
-            <div className="absolute bottom-20 left-40 w-10 h-10 bg-yellow-400 rounded-full opacity-70"></div>
+            <div className="absolute bottom-20 left-40 w-10 h-10 bg-yellow-400 rounded-full opacity-70"></div> */}
+            <Banner />
           </motion.div>
         </div>
       </section>
@@ -1200,7 +1203,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <FeatureCard
               title="Experience"
               description="all that matters! Having more than 10+ years of experience in educational consultancy, our Education Consultants..."
@@ -1258,6 +1261,7 @@ export default function Home() {
         </motion.div>
       </section>
 
+      <WorkProcess />
       <Scroll />
       {/* Inquiry and Testimonials Section */}
       <section className="container mx-auto px-6 md:px-36 py-16">
@@ -1284,11 +1288,11 @@ export default function Home() {
               </Button>
             </form>
           </div>
-          <div className="bg-[#C91200] rounded-lg p-6 text-white">
+          <div className="bg-[#FFF5F2] rounded-lg p-6 text-black">
             <h2 className="text-2xl font-bold mb-4">
               What our <span className="text-[#8A0206]">Students</span> Say?
             </h2>
-            <p className="text-gray-200 mb-6">
+            <p className="text-gray-700 mb-6">
               We&apos;ve chosen a selection of student testimonials to give you
               a better insight about us, our honesty, transparency and our
               devotion towards our students.
@@ -1322,7 +1326,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <p className="text-gray-200 text-sm mb-6">
+            <p className="text-gray-700 text-sm mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -1452,18 +1456,34 @@ function FeatureCard({ title, description, icon }) {
     ),
   };
   return (
+    // <motion.div
+    //   whileHover={{ y: -5, scale: 1.02 }}
+    //   className="bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow z-10"
+    // >
+    //   <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+    //     {icons[icon]}
+    //   </div>
+    //   <h3 className="font-bold text-lg mb-2">{title}</h3>
+    //   <p className="text-gray-600 text-sm mb-4">{description}</p>
+    //   <div className="flex items-center text-gray-400">
+    //     <span>→</span>
+    //   </div>
+    // </motion.div>
     <motion.div
       whileHover={{ y: -5, scale: 1.02 }}
-      className="bg-white p-6 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow z-10"
+      className="bg-white rounded-lg p-8 shadow-sm z-10"
     >
-      <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+      <div className="bg-[#FFF5F0] rounded-full w-16 h-16 flex items-center justify-center mb-6 ">
         {icons[icon]}
       </div>
-      <h3 className="font-bold text-lg mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm mb-4">{description}</p>
-      <div className="flex items-center text-gray-400">
-        <span>→</span>
-      </div>
+      <h3 className="text-xl font-semibold mb-4">{title}</h3>
+      <p className="text-gray-600 mb-6">{description}</p>
+      <a
+        href="#"
+        className="text-[#B33A2F] font-medium flex items-center hover:underline"
+      >
+        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+      </a>
     </motion.div>
   );
 }

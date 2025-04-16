@@ -162,7 +162,7 @@ import React from "react";
 
 function Banner2() {
   return (
-    <div className="relative h-screen overflow-hidden bg-[#4ABEDF]">
+    <div className="relative min-h-screen overflow-hidden bg-[#4ABEDF]">
       {/* Background video (fills entire section) */}
       <video
         src="/images/4.mp4"

@@ -8,6 +8,7 @@ import {
   Handshake,
 } from "lucide-react";
 import Image from "next/image";
+import ScrollTimeline from "../components/scroll-timeline";
 
 const roadmapSteps = [
   {
@@ -64,9 +65,40 @@ const roadmapSteps = [
 
 function Page() {
   return (
-    <div className="min-h-screen bg-gray-50 py-12 ">
+    <div className="min-h-screen bg-gray-50 ">
       <div className="w-full mx-auto">
-        <div className="text-center mb-16">
+        <div className="container relative mx-auto px-4 py-12 md:py-36 bg-gradient-to-r from-red-50 to-orange-50">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-12 mx-20">
+            <div className="flex-1 space-y-6">
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                Admission
+                <span className="relative">
+                  <span className="relative z-10"> Guidance</span>
+                  {/* <span className="absolute bottom-2 left-0 w-full h-3 bg-red-200 -rotate-1 z-0"></span> */}
+                </span>
+              </h1>
+              <p className="text-lg text-gray-600 max-w-xl">
+                Expert guidance through your admission guidance process. We make
+                immigration simple, efficient, and stress-free.
+              </p>
+              <button className="bg-[#8A0206] text-white px-8 py-4 rounded-lg font-medium hover:bg-red-800 transition-colors">
+                Free Expert Consultation
+              </button>
+            </div>
+
+            {/* Right Column - Hero Image */}
+            <div className="flex-1 absolute justify-center flex bottom-0 right-0">
+              <Image
+                src="/images/v0.png"
+                alt="Professional visa consultant"
+                width={800}
+                height={800}
+                //   className="rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+        {/* <div className="text-center mb-16 py-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             ROADMAP INFOGRAPHIC
           </h1>
@@ -74,19 +106,19 @@ function Page() {
             Strategic pathway to success: A comprehensive visualization of our
             journey towards achieving organizational excellence
           </p>
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <Image
             src="/images/road.png"
-            width={500}
-            height={500}
+            width={1000}
+            height={1000}
             className="w-full h-1/2"
           />
-        </div>
+        </div> */}
 
         {/* Roadmap Path */}
-        <div className="relative mb-20">
+        {/* <div className="relative mb-20">
           <div className="hidden md:block absolute top-1/2 left-0 right-0 h-2 bg-gray-200 transform -translate-y-1/2 z-0">
             <div className="absolute top-1/2 left-0 right-0 h-full">
               <div className="h-full w-full bg-gradient-to-r from-red-500 via-green-500 to-purple-500 rounded-full" />
@@ -120,7 +152,8 @@ function Page() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
+        <ScrollTimeline />
       </div>
     </div>
   );

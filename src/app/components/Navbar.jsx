@@ -42,17 +42,17 @@ const studyAbroadLinks = studyAbroadData.countries.map((country) => ({
 }));
 const studentServicesLinks = [
   { name: "Test Preparations", href: "#" },
-  { name: "Career Counseling", href: "#" },
+  { name: "Career Counseling", href: "career-counseling" },
   { name: "Admission Guidance", href: "admission-guidance" },
-  { name: "Financial Assistance", href: "#" },
-  { name: "Travel & Forex Assistance", href: "#" },
+  { name: "Financial Assistance", href: "financial-assistance" },
+  { name: "Travel & Forex Assistance", href: "travel-forex-assistance" },
   { name: "Visa Assistance", href: "visa-assistance" },
 ];
 
 const whatWeDoLinks = [
   { name: "Our Services", href: "#" },
   { name: "Success Stories", href: "#" },
-  { name: "About Us", href: "#" },
+  { name: "About Us", href: "about" },
 ];
 
 export default function Navbar() {
@@ -116,7 +116,7 @@ export default function Navbar() {
           className="hidden items-center space-x-1 md:flex"
         >
           <Link
-            href="/"
+            href="/about"
             className="px-4 py-2 text-base font-medium text-gray-800 transition-colors hover:text-[#8A0206]/80"
             onClick={closeDropdowns}
           >
