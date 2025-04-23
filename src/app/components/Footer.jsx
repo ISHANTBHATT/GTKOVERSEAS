@@ -342,11 +342,11 @@ function Footer() {
 
         <div>
           <h3 className="text-xl font-semibold mb-4">Head Office</h3>
-          <p className="mb-2">28 Jumps St, PMM, Indonesia</p>
-          <p className="mb-4">West Coast PMJ</p>
+          <p className="mb-2">F-25, Bhagat Singh Market, Gole Market,</p>
+          <p className="mb-4"> New Delhi-110001</p>
           <h3 className="text-xl font-semibold mb-4">Contact</h3>
-          <p className="mb-2">+123 456 789</p>
-          <p>support@ritaxes.com</p>
+          <p className="mb-2">011-49596950</p>
+          <p>info@gtkoverseas.com</p>
         </div>
 
         <div>
@@ -354,27 +354,32 @@ function Footer() {
           <ul className="space-y-2">
             <li>
               <Link href="#" className="hover:text-[#A83A28]">
-                Insurance Tax
+                Test Preparation
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-[#A83A28]">
-                Strategic Planning
+                Career Counseling
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-[#A83A28]">
-                Audit & Assurancy
+                Admission Guidance
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-[#A83A28]">
-                Financial Planning
+                Financial Assistance
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-[#A83A28]">
-                Tax Management
+                Travel & Forex Assistance
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-[#A83A28]">
+                Visa Assistance
               </Link>
             </li>
           </ul>
@@ -384,28 +389,28 @@ function Footer() {
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link href="/about" className="hover:text-[#A83A28]">
                 About Us
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link href="/contact" className="hover:text-[#A83A28]">
                 Contact Us
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-[#A83A28]">
-                Career
+                Find a Course
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-[#A83A28]">
-                Help Center
+                Student Services
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-[#A83A28]">
-                Privacy Policy
+                Scholarships
               </Link>
             </li>
           </ul>
