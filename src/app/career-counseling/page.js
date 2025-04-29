@@ -112,7 +112,7 @@ export default function CareerCounseling() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 ">
-      <div className="container relative mx-auto px-4 py-12 md:py-36 bg-gradient-to-r from-red-50 to-orange-50">
+      <div className=" relative mx-auto px-4 py-12 md:py-36 bg-gradient-to-r from-red-50 to-orange-50">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 mx-20">
           <div className="flex-1 space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">

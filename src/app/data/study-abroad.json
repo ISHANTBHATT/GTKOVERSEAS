@@ -38,27 +38,27 @@
         "description": "The USA offers a wide range of academic programs across various disciplines. Here are the top courses preferred by international students:",
         "courses": [
           {
-            "title": "Computer Science & IT",
+            "title": "Aerospace Engineering",
             "image": "/images/computer-science.jpg"
           },
           {
-            "title": "Business & MBA",
+            "title": "Computer Science",
             "image": "/images/business-management.jpg"
           },
           {
-            "title": "Engineering",
+            "title": "Construction Management & Technology",
             "image": "/images/engineering.jpg"
           },
           {
-            "title": "Health Sciences",
+            "title": "Robotics & Autonomous Systems (Artificial Intelligence)",
             "image": "/images/medicine.jpg"
           },
           {
-            "title": "Social Sciences",
+            "title": "Biology",
             "image": "/images/social-sciences.jpg"
           },
           {
-            "title": "Arts & Design",
+            "title": "Business Analytics",
             "image": "/images/arts.jpg"
           }
         ]
@@ -68,31 +68,31 @@
         "description": "The USA hosts some of the world's most prestigious educational institutions. Here are some top universities where we have placed our students:",
         "list": [
           {
-            "name": "Massachusetts Institute of Technology (MIT)",
+            "name": "Arizona State University",
             "logo": "/images/mit-logo.png",
             "popularFor": "Engineering & Computer Science",
             "ranking": 1
           },
           {
-            "name": "Stanford University",
+            "name": "University of Massachusetts",
             "logo": "/images/stanford-logo.png",
             "popularFor": "Business & Technology",
             "ranking": 2
           },
           {
-            "name": "Harvard University",
+            "name": "University of Delaware",
             "logo": "/images/harvard-logo.png",
             "popularFor": "Law & Medicine",
             "ranking": 5
           },
           {
-            "name": "California Institute of Technology",
+            "name": "University of Vermont",
             "logo": "/images/caltech-logo.png",
             "popularFor": "Science & Engineering",
             "ranking": 6
           },
           {
-            "name": "University of Chicago",
+            "name": "Lehigh University",
             "logo": "/images/chicago-logo.png",
             "popularFor": "Economics & Business",
             "ranking": 10

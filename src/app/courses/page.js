@@ -1764,12 +1764,12 @@ export default function Home() {
                 universities: 150,
                 courses: "Engineering, Business, Arts",
               },
-              {
-                name: "Asia",
-                icon: "🌏",
-                universities: 100,
-                courses: "Technology, Business, Medicine",
-              },
+              // {
+              //   name: "Asia",
+              //   icon: "🌏",
+              //   universities: 100,
+              //   courses: "Technology, Business, Medicine",
+              // },
             ].map((destination) => (
               <Link
                 href={`/destinations/${destination.name
@@ -1816,18 +1816,18 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "University of Connecticut",
-                location: "Storrs, Connecticut, USA",
+                name: "University of New South Wales",
+                location: "Kensington, Sydney, Australia",
                 logo: "/placeholder.svg?height=80&width=80",
-                ranking: "#45 in National Universities",
+                ranking: "#19 in World Universities",
                 programs: ["Engineering", "Business", "Computer Science"],
                 tuition: "$13,700 - $37,900 / year",
               },
               {
-                name: "Johns Hopkins University",
-                location: "Baltimore, Maryland, USA",
+                name: "University of Massachusetts",
+                location: "Amherst, MA, United States",
                 logo: "/placeholder.svg?height=80&width=80",
-                ranking: "#7 in National Universities",
+                ranking: "#33 in National Universities",
                 programs: [
                   "Engineering",
                   "Medicine",
@@ -1839,7 +1839,7 @@ export default function Home() {
                 name: "University of Bristol",
                 location: "Bristol, United Kingdom",
                 logo: "/placeholder.svg?height=80&width=80",
-                ranking: "#62 in World Universities",
+                ranking: "#55 in World Universities",
                 programs: ["Law", "Engineering", "Arts"],
                 tuition: "£19,300 - £25,900 / year",
               },
@@ -1886,7 +1886,7 @@ export default function Home() {
                     </div>
                     <Button
                       variant="outline"
-                      className="text-[#8A0206] border-red-200 hover:bg-blue-50"
+                      className="text-[#8A0206] border-red-200 hover:bg-[#8A0206] hover:text-white transition-colors"
                     >
                       View Details
                     </Button>

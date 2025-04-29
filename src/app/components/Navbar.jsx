@@ -249,7 +249,7 @@ export default function Navbar() {
           </div> */}
 
           <Link
-            href="/"
+            href="/scholarships"
             className="px-4 py-2 text-base font-medium text-gray-800 transition-colors hover:text-[#8A0206]/80"
             onClick={closeDropdowns}
           >
@@ -312,6 +312,14 @@ export default function Navbar() {
       {activeDropdown === "mobile" && (
         <div className="border-t border-gray-200 bg-white md:hidden">
           <div className="space-y-1 px-4 py-3">
+            <Link
+              href="/about"
+              className="block py-2 text-base font-medium text-gray-800"
+              onClick={closeDropdowns}
+            >
+              About
+            </Link>
+
             <div className="py-2">
               <button
                 onClick={() => handleDropdownToggle("mobileStudyAbroad")}
@@ -377,7 +385,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <div className="py-2">
+            {/* <div className="py-2">
               <button
                 onClick={() => handleDropdownToggle("mobileWhatWeDo")}
                 className="flex w-full items-center justify-between py-2 text-base font-medium text-gray-800"
@@ -404,21 +412,21 @@ export default function Navbar() {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
             <Link
-              href="#events"
+              href="/events"
               className="block py-2 text-base font-medium text-gray-800"
               onClick={closeDropdowns}
             >
               Events
             </Link>
             <Link
-              href="#resources"
+              href="/scholarships"
               className="block py-2 text-base font-medium text-gray-800"
               onClick={closeDropdowns}
             >
-              Resources
+              Scholarships
             </Link>
             <div className="pt-4">
               <Link
