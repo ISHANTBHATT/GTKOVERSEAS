@@ -445,154 +445,432 @@
 //   );
 // }
 
+//current
+// "use client";
+
+// import { useState, useEffect, useRef } from "react";
+// import { Search } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+// import { Input } from "@/components/ui/input";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
+
+// export default function Banner() {
+//   const [mounted, setMounted] = useState(false);
+//   const requestRef = useRef();
+//   const [angle, setAngle] = useState(0);
+
+//   const animate = () => {
+//     setAngle((prevAngle) => (prevAngle + 0.004) % (2 * Math.PI));
+//     requestRef.current = requestAnimationFrame(animate);
+//   };
+
+//   useEffect(() => {
+//     setMounted(true);
+//     requestRef.current = requestAnimationFrame(animate);
+//     return () => {
+//       if (requestRef.current) {
+//         cancelAnimationFrame(requestRef.current);
+//       }
+//     };
+//   }, []);
+
+//   // Outer circle countries
+//   const outerCountries = [
+//     { name: "USA", code: "us", position: 0 },
+//     { name: "UK", code: "gb", position: 1 },
+//     { name: "Australia", code: "au", position: 2 },
+//     { name: "Canada", code: "ca", position: 3 },
+
+//     // { name: "Germany", code: "de", position: 0 },
+//     // { name: "USA", code: "us", position: 1 },
+//     // { name: "UK", code: "gb", position: 2 },
+//     // { name: "Japan", code: "jp", position: 3 },
+//     // { name: "India", code: "in", position: 4 },
+//     // { name: "Australia", code: "au", position: 5 },
+//     // { name: "Canada", code: "ca", position: 6 },
+//     // { name: "Poland", code: "pl", position: 7 },
+//   ];
+
+//   // Inner circle countries (smaller flags)
+//   const innerCountries = [
+//     { name: "Spain", code: "es", position: 0 },
+//     { name: "Germany", code: "de", position: 1 },
+
+//     // { name: "France", code: "fr", position: 0 },
+//     // { name: "Spain", code: "es", position: 1 },
+//     { name: "Italy", code: "it", position: 2 },
+//     { name: "Brazil", code: "br", position: 3 },
+//     // { name: "South Korea", code: "kr", position: 4 },
+//     // { name: "Netherlands", code: "nl", position: 5 },
+//   ];
+
+//   return (
+//     <main className="">
+//       <div className="container mx-auto px-4 ">
+//         <div className="grid grid-cols-1 gap-12 items-center">
+//           <div className="relative flex justify-center">
+//             {mounted && (
+//               <div className="relative w-[320px] h-[320px] md:w-[600px] md:h-[600px]">
+//                 {/* Outer circle - thin border */}
+//                 <div className="absolute inset-0 rounded-full border border-gray-200"></div>
+
+//                 {/* Middle circle - thin border */}
+//                 <div className="absolute inset-[60px] rounded-full border border-gray-200"></div>
+
+//                 {/* Inner circle with student image */}
+//                 <div className="absolute inset-[60px] rounded-full overflow-hidden  ">
+//                   <img
+//                     src="/images/2.png"
+//                     alt="Student with books and phone"
+//                     className="w-full h-full object-cover"
+//                   />
+//                 </div>
+
+//                 {/* Outer circle country flags */}
+//                 {outerCountries.map((country) => {
+//                   const countryAngle =
+//                     (country.position / outerCountries.length) * 2 * Math.PI +
+//                     angle;
+//                   const radius = 300; // For a 400px container
+//                   const x = Math.cos(countryAngle) * radius;
+//                   const y = Math.sin(countryAngle) * radius;
+
+//                   return (
+//                     <div
+//                       key={`outer-${country.code}`}
+//                       className="absolute w-12 h-12 transform -translate-x-1/2 -translate-y-1/2"
+//                       style={{
+//                         left: `calc(50% + ${x}px)`,
+//                         top: `calc(50% + ${y}px)`,
+//                       }}
+//                     >
+//                       <div className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-white overflow-hidden">
+//                         <img
+//                           src={`https://flagcdn.com/w80/${country.code.toLowerCase()}.png`}
+//                           alt={`${country.name} flag`}
+//                           className="w-full h-full object-cover rounded-full"
+//                         />
+//                       </div>
+//                     </div>
+//                   );
+//                 })}
+
+//                 {/* Inner circle country flags - smaller and rotating in opposite direction */}
+//                 {innerCountries.map((country) => {
+//                   const countryAngle =
+//                     (country.position / innerCountries.length) * 2 * Math.PI -
+//                     angle * 1.5;
+//                   const radius = 240; // Smaller radius for inner circle
+//                   const x = Math.cos(countryAngle) * radius;
+//                   const y = Math.sin(countryAngle) * radius;
+
+//                   return (
+//                     <div
+//                       key={`inner-${country.code}`}
+//                       className="absolute w-8 h-8 transform -translate-x-1/2 -translate-y-1/2"
+//                       style={{
+//                         left: `calc(50% + ${x}px)`,
+//                         top: `calc(50% + ${y}px)`,
+//                       }}
+//                     >
+//                       <div className="w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-white overflow-hidden">
+//                         <img
+//                           src={`https://flagcdn.com/w80/${country.code.toLowerCase()}.png`}
+//                           alt={`${country.name} flag`}
+//                           className="w-7 h-7 object-cover"
+//                         />
+//                       </div>
+//                     </div>
+//                   );
+//                 })}
+//               </div>
+//             )}
+//           </div>
+//         </div>
+//       </div>
+//     </main>
+//   );
+// }
+
+//test
+// "use client";
+
+// import { useState, useEffect, useRef } from "react";
+// import { Search } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+// import { Input } from "@/components/ui/input";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
+
+// export default function Banner() {
+//   const [mounted, setMounted] = useState(false);
+//   const requestRef = useRef();
+//   const containerRef = useRef(null);
+//   const [angle, setAngle] = useState(0);
+//   const [radiusOuter, setRadiusOuter] = useState(0);
+//   const [radiusInner, setRadiusInner] = useState(0);
+
+//   // Animation loop
+//   const animate = () => {
+//     setAngle((prev) => (prev + 0.004) % (2 * Math.PI));
+//     requestRef.current = requestAnimationFrame(animate);
+//   };
+
+//   // Measure container and start animation
+//   useEffect(() => {
+//     setMounted(true);
+//     const handleResize = () => {
+//       if (containerRef.current) {
+//         const size = containerRef.current.offsetWidth;
+//         setRadiusOuter(size / 2);
+//         setRadiusInner((size / 2) * 0.8); // inner circle at 80% of outer radius
+//       }
+//     };
+//     handleResize();
+//     window.addEventListener("resize", handleResize);
+
+//     requestRef.current = requestAnimationFrame(animate);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//       if (requestRef.current) cancelAnimationFrame(requestRef.current);
+//     };
+//   }, []);
+
+//   // Outer and inner flag data
+//   const outerCountries = [
+//     { name: "USA", code: "us", position: 0 },
+//     { name: "UK", code: "gb", position: 1 },
+//     { name: "Australia", code: "au", position: 2 },
+//     { name: "Canada", code: "ca", position: 3 },
+//   ];
+//   const innerCountries = [
+//     { name: "Spain", code: "es", position: 0 },
+//     { name: "Germany", code: "de", position: 1 },
+//     { name: "Italy", code: "it", position: 2 },
+//     { name: "Brazil", code: "br", position: 3 },
+//   ];
+
+//   return (
+//     <main>
+//       <div className="container mx-auto px-4">
+//         <div className="flex justify-center">
+//           {mounted && (
+//             <div
+//               ref={containerRef}
+//               className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg aspect-square"
+//             >
+//               {/* Outer circle */}
+//               <div className="absolute inset-0 rounded-full border border-gray-200"></div>
+
+//               {/* Middle circle border */}
+//               <div className="absolute inset-[10%] rounded-full border border-gray-200"></div>
+
+//               {/* Inner image circle */}
+//               <div className="absolute inset-[10%] rounded-full overflow-hidden">
+//                 <img
+//                   src="/images/2.png"
+//                   alt="Student with books and phone"
+//                   className="w-full h-full object-cover"
+//                 />
+//               </div>
+
+//               {/* Outer rotating flags */}
+//               {outerCountries.map((country) => {
+//                 const theta =
+//                   (country.position / outerCountries.length) * 2 * Math.PI +
+//                   angle;
+//                 const x = Math.cos(theta) * radiusOuter;
+//                 const y = Math.sin(theta) * radiusOuter;
+//                 return (
+//                   <div
+//                     key={`outer-${country.code}`}
+//                     className="absolute w-12 h-12 transform -translate-x-1/2 -translate-y-1/2"
+//                     style={{
+//                       left: `calc(50% + ${x}px)`,
+//                       top: `calc(50% + ${y}px)`,
+//                     }}
+//                   >
+//                     <div className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-white overflow-hidden">
+//                       <img
+//                         src={`https://flagcdn.com/w80/${country.code.toLowerCase()}.png`}
+//                         alt={`${country.name} flag`}
+//                         className="w-full h-full object-cover rounded-full"
+//                       />
+//                     </div>
+//                   </div>
+//                 );
+//               })}
+
+//               {/* Inner rotating flags */}
+//               {innerCountries.map((country) => {
+//                 const theta =
+//                   (country.position / innerCountries.length) * 2 * Math.PI -
+//                   angle * 1.5;
+//                 const x = Math.cos(theta) * radiusInner;
+//                 const y = Math.sin(theta) * radiusInner;
+//                 return (
+//                   <div
+//                     key={`inner-${country.code}`}
+//                     className="absolute w-8 h-8 transform -translate-x-1/2 -translate-y-1/2"
+//                     style={{
+//                       left: `calc(50% + ${x}px)`,
+//                       top: `calc(50% + ${y}px)`,
+//                     }}
+//                   >
+//                     <div className="w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-white overflow-hidden">
+//                       <img
+//                         src={`https://flagcdn.com/w80/${country.code.toLowerCase()}.png`}
+//                         alt={`${country.name} flag`}
+//                         className="w-7 h-7 object-cover rounded-full"
+//                       />
+//                     </div>
+//                   </div>
+//                 );
+//               })}
+//             </div>
+//           )}
+//         </div>
+//       </div>
+//     </main>
+//   );
+// }
+
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { useState, useEffect, useRef, useLayoutEffect } from "react";
 
 export default function Banner() {
-  const [mounted, setMounted] = useState(false);
   const requestRef = useRef();
+  const containerRef = useRef(null);
   const [angle, setAngle] = useState(0);
+  const [radiusOuter, setRadiusOuter] = useState(0);
+  const [radiusInner, setRadiusInner] = useState(0);
+  const [ready, setReady] = useState(false);
 
+  // Animation loop
   const animate = () => {
-    setAngle((prevAngle) => (prevAngle + 0.004) % (2 * Math.PI));
+    setAngle((prev) => (prev + 0.004) % (2 * Math.PI));
     requestRef.current = requestAnimationFrame(animate);
   };
 
-  useEffect(() => {
-    setMounted(true);
-    requestRef.current = requestAnimationFrame(animate);
-    return () => {
-      if (requestRef.current) {
-        cancelAnimationFrame(requestRef.current);
+  // Measure container before paint and mark ready
+  useLayoutEffect(() => {
+    const handleResize = () => {
+      if (containerRef.current) {
+        const size = containerRef.current.offsetWidth;
+        setRadiusOuter(size / 2);
+        setRadiusInner((size / 2) * 0.7);
+        setReady(true);
       }
     };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Outer circle countries
+  // Start animation once ready
+  useEffect(() => {
+    if (!ready) return;
+    requestRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(requestRef.current);
+  }, [ready]);
+
   const outerCountries = [
     { name: "USA", code: "us", position: 0 },
     { name: "UK", code: "gb", position: 1 },
     { name: "Australia", code: "au", position: 2 },
     { name: "Canada", code: "ca", position: 3 },
-
-    // { name: "Germany", code: "de", position: 0 },
-    // { name: "USA", code: "us", position: 1 },
-    // { name: "UK", code: "gb", position: 2 },
-    // { name: "Japan", code: "jp", position: 3 },
-    // { name: "India", code: "in", position: 4 },
-    // { name: "Australia", code: "au", position: 5 },
-    // { name: "Canada", code: "ca", position: 6 },
-    // { name: "Poland", code: "pl", position: 7 },
   ];
-
-  // Inner circle countries (smaller flags)
   const innerCountries = [
     { name: "Spain", code: "es", position: 0 },
     { name: "Germany", code: "de", position: 1 },
-
-    // { name: "France", code: "fr", position: 0 },
-    // { name: "Spain", code: "es", position: 1 },
     { name: "Italy", code: "it", position: 2 },
     { name: "Brazil", code: "br", position: 3 },
-    // { name: "South Korea", code: "kr", position: 4 },
-    // { name: "Netherlands", code: "nl", position: 5 },
   ];
 
   return (
-    <main className="">
-      <div className="container mx-auto px-4 ">
-        <div className="grid grid-cols-1 gap-12 items-center">
-          <div className="relative flex justify-center">
-            {mounted && (
-              <div className="relative w-[320px] h-[320px] md:w-[600px] md:h-[600px]">
-                {/* Outer circle - thin border */}
-                <div className="absolute inset-0 rounded-full border border-gray-200"></div>
-
-                {/* Middle circle - thin border */}
-                <div className="absolute inset-[60px] rounded-full border border-gray-200"></div>
-
-                {/* Inner circle with student image */}
-                <div className="absolute inset-[60px] rounded-full overflow-hidden  ">
-                  <img
-                    src="/images/2.png"
-                    alt="Student with books and phone"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Outer circle country flags */}
-                {outerCountries.map((country) => {
-                  const countryAngle =
-                    (country.position / outerCountries.length) * 2 * Math.PI +
-                    angle;
-                  const radius = 300; // For a 400px container
-                  const x = Math.cos(countryAngle) * radius;
-                  const y = Math.sin(countryAngle) * radius;
-
-                  return (
-                    <div
-                      key={`outer-${country.code}`}
-                      className="absolute w-12 h-12 transform -translate-x-1/2 -translate-y-1/2"
-                      style={{
-                        left: `calc(50% + ${x}px)`,
-                        top: `calc(50% + ${y}px)`,
-                      }}
-                    >
-                      <div className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-white overflow-hidden">
-                        <img
-                          src={`https://flagcdn.com/w80/${country.code.toLowerCase()}.png`}
-                          alt={`${country.name} flag`}
-                          className="w-full h-full object-cover rounded-full"
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
-
-                {/* Inner circle country flags - smaller and rotating in opposite direction */}
-                {innerCountries.map((country) => {
-                  const countryAngle =
-                    (country.position / innerCountries.length) * 2 * Math.PI -
-                    angle * 1.5;
-                  const radius = 240; // Smaller radius for inner circle
-                  const x = Math.cos(countryAngle) * radius;
-                  const y = Math.sin(countryAngle) * radius;
-
-                  return (
-                    <div
-                      key={`inner-${country.code}`}
-                      className="absolute w-8 h-8 transform -translate-x-1/2 -translate-y-1/2"
-                      style={{
-                        left: `calc(50% + ${x}px)`,
-                        top: `calc(50% + ${y}px)`,
-                      }}
-                    >
-                      <div className="w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-white overflow-hidden">
-                        <img
-                          src={`https://flagcdn.com/w80/${country.code.toLowerCase()}.png`}
-                          alt={`${country.name} flag`}
-                          className="w-7 h-7 object-cover"
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
+    <div className="container mx-auto px-4">
+      <div className="flex justify-center">
+        <div
+          ref={containerRef}
+          className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg aspect-square"
+        >
+          <div className="absolute inset-0 rounded-full border border-gray-200"></div>
+          <div className="absolute inset-[15%] rounded-full border border-gray-200"></div>
+          <div className="absolute inset-[15%] rounded-full overflow-hidden">
+            <img
+              src="/images/2.png"
+              alt="Student with books and phone"
+              className="w-full h-full object-cover"
+            />
           </div>
+
+          {ready &&
+            outerCountries.map((country) => {
+              const theta =
+                (country.position / outerCountries.length) * 2 * Math.PI +
+                angle;
+              const x = Math.cos(theta) * radiusOuter;
+              const y = Math.sin(theta) * radiusOuter;
+              return (
+                <div
+                  key={`outer-${country.code}`}
+                  className="absolute w-12 h-12 transform -translate-x-1/2 -translate-y-1/2"
+                  style={{
+                    left: `calc(50% + ${x}px)`,
+                    top: `calc(50% + ${y}px)`,
+                  }}
+                >
+                  <div className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-white overflow-hidden">
+                    <img
+                      src={`https://flagcdn.com/w80/${country.code.toLowerCase()}.png`}
+                      alt={`${country.name} flag`}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                </div>
+              );
+            })}
+
+          {ready &&
+            innerCountries.map((country) => {
+              const theta =
+                (country.position / innerCountries.length) * 2 * Math.PI -
+                angle * 1.5;
+              const x = Math.cos(theta) * radiusInner;
+              const y = Math.sin(theta) * radiusInner;
+              return (
+                <div
+                  key={`inner-${country.code}`}
+                  className="absolute w-8 h-8 transform -translate-x-1/2 -translate-y-1/2"
+                  style={{
+                    left: `calc(50% + ${x}px)`,
+                    top: `calc(50% + ${y}px)`,
+                  }}
+                >
+                  <div className="w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2 border-white overflow-hidden">
+                    <img
+                      src={`https://flagcdn.com/w80/${country.code.toLowerCase()}.png`}
+                      alt={`${country.name} flag`}
+                      className="w-7 h-7 object-cover rounded-full"
+                    />
+                  </div>
+                </div>
+              );
+            })}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

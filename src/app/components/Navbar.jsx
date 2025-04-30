@@ -96,7 +96,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
-      <div className="container mx-auto flex h-20 items-center justify-between px-4">
+      <div className=" flex h-20 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center" onClick={closeDropdowns}>
           <div className="relative h-12 w-36">
@@ -113,7 +113,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav
           ref={dropdownRef}
-          className="hidden items-center space-x-1 md:flex"
+          className="hidden items-center space-x-1 lg:flex"
         >
           <Link
             href="/about"
@@ -283,7 +283,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="rounded-md p-2 text-gray-800 md:hidden"
+          className="rounded-md p-2 text-gray-800 lg:hidden"
           onClick={() => handleDropdownToggle("mobile")}
           aria-label="Toggle mobile menu"
         >
@@ -310,7 +310,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {activeDropdown === "mobile" && (
-        <div className="border-t border-gray-200 bg-white md:hidden">
+        <div className="border-t border-gray-200 bg-white lg:hidden">
           <div className="space-y-1 px-4 py-3">
             <Link
               href="/about"

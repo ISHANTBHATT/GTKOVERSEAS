@@ -142,7 +142,15 @@ export default function CountryPage({ params }) {
               <div key={index} className="rounded-lg bg-white p-6 shadow-md">
                 <div className="mb-4 flex h-16 items-center justify-center">
                   {/* University logo placeholder */}
-                  <div className="h-12 w-12 rounded-full bg-gray-200"></div>
+                  <div className="h-20 w-20 rounded-full bg-gray-200 ">
+                    <Image
+                      src={university.logo}
+                      alt={university.name}
+                      width={100}
+                      height={100}
+                      className="h-full w-full object-contain p-2"
+                    />
+                  </div>
                 </div>
                 <h3 className="mb-4 text-center text-lg font-semibold text-gray-900">
                   {university.name}

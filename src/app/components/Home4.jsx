@@ -881,7 +881,7 @@ export default function Home() {
       </motion.header> */}
 
       {/* Hero Section */}
-      <section className="relative bg-[#8A0206] min-h-screen flex items-center py-16 px-6 md:px-12 overflow-hidden rounded-[50px]">
+      <section className="relative bg-[#8A0206] min-h-screen md:min-h-1/2 lg:min-h-screen flex items-center py-16 px-6 md:px-12 overflow-hidden rounded-[50px]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             variants={stagger}
