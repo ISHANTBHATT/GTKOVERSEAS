@@ -69,17 +69,18 @@ export function Countries() {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="py-20">
       <div>
         <h2 className="text-4xl font-bold text-gray-800 uppercase tracking-wide text-center py-10">
-          Let Us Help You Live Your{" "}
-          <span className="text-[#8A0206]">Dream</span>
+          Your <span className="text-[#8A0206]">Dream</span>, Our Mission –
+          <br />
+          Pick the Country, We Handle the Rest
         </h2>
         <p className="max-w-2xl mx-auto text-lg text-gray-600 font-medium text-center pb-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea.
+          At GTK Overseas, we strive to make your study abroad experience smooth
+          and hassle-free. Whether your goal is to study in the UK, USA, Canada,
+          Australia, Germany, or any other premier destination — simply choose
+          your dream country, and we’ll handle all the details for you.
         </p>
       </div>
       <FocusCards cards={cards} />

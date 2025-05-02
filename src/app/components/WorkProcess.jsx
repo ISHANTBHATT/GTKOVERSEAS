@@ -3,23 +3,51 @@ export default function WorkProcess() {
     {
       number: "01",
       title: "Initial Consultation",
-      description: "Suspendisse viverra id magna vel rhoncus. Integer ac.",
+      description:
+        "Begin with a personalized session to understand the student's academic background, career goals, and interests. This helps in determining the best countries, universities, and courses suited to their aspirations.",
     },
     {
       number: "02",
-      title: "Assessment Analysis",
-      description: "Suspendisse viverra id magna vel rhoncus. Integer ac.",
+      title: "Research and Selection",
+      description:
+        "Provide a curated list of universities and programs that align with the student's objectives. Discuss each option's pros and cons, including location, cost, curriculum, and potential career opportunities.",
     },
     {
       number: "03",
-      title: "Planning",
-      description: "Suspendisse viverra id magna vel rhoncus. Integer ac.",
+      title: "Application Process",
+      description:
+        "Guide students through the application requirements for their chosen universities. This includes assistance with filling out forms, drafting personal statements or essays, and gathering necessary documents like transcripts and letters of recommendation.",
     },
     {
       number: "04",
-      title: "Implementation",
-      description: "Suspendisse viverra id magna vel rhoncus. Integer ac.",
+      title: "Exam Preparation",
+      description:
+        "Offer resources and support for standardized tests such as the TOEFL, IELTS, GRE, or GMAT, depending on the student's destination and program requirements.",
     },
+    // {
+    //   number: "05",
+    //   title: "Financial Planning",
+    //   description:
+    //     "Help students explore scholarships, grants, and financial aid options. Assist in creating a budget that covers tuition, living expenses, and travel costs.",
+    // },
+    // {
+    //   number: "06",
+    //   title: "Visa Application",
+    //   description:
+    //     "Provide step-by-step guidance on the visa application process, ensuring students understand the documentation required and any interviews they might need to attend.",
+    // },
+    // {
+    //   number: "07",
+    //   title: "Pre-Departure Orientation",
+    //   description:
+    //     "Conduct sessions to prepare students for their international journey. Topics can include cultural differences, accommodation arrangements, healthcare, and safety tips.",
+    // },
+    // {
+    //   number: "08",
+    //   title: "Career Counseling",
+    //   description:
+    //     "Provide advice on internships, part-time work opportunities, and post-graduation employment prospects to help students make the most of their international education experience.",
+    // },
   ];
 
   return (
@@ -50,8 +78,9 @@ export default function WorkProcess() {
               How Do We Work, to Help You Fast
             </h2>
             <p className="text-gray-700 mb-8">
-              Nulla semper condimentum tellus in ultricies. Nunc tempor ipsum
-              nec fermentum consequat. Cras et felis ultricies.
+              By following these steps, study abroad consultancies can ensure a
+              smooth and successful journey for students embarking on their
+              educational adventures abroad.
             </p>
             <button className="bg-[#8A0206] hover:bg-[#9e3329] text-white rounded-full py-3 px-6 w-fit transition-all">
               Contact Us

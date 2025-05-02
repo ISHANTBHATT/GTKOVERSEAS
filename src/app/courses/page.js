@@ -1535,12 +1535,14 @@ export default function Home() {
         <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center relative z-10">
           <div className="max-w-4xl text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-              Find Your <span className="text-[#8A0206]">Perfect</span> Study
+              Discover Your <span className="text-[#8A0206]">Ideal</span> Study
               Destination
+              {/* Find Your <span className="text-[#8A0206]">Perfect</span> Study
+              Destination */}
             </h1>
             <p className="text-xl text-slate-700 mb-8 max-w-2xl mx-auto">
-              Explore top universities and courses worldwide to kickstart your
-              international education journey
+              Embark on your international education journey by exploring
+              leading universities and courses around the globe.
             </p>
           </div>
 

@@ -122,28 +122,28 @@ import Image from "next/image";
 import { GraduationCap, University, CircleDollarSign } from "lucide-react";
 import { FaUniversity } from "react-icons/fa";
 const content = [
+  // {
+  //   title: "Exam Preparation",
+  //   icon: GraduationCap,
+  //   description:
+  //     "Offer resources and support for standardized tests such as the TOEFL, IELTS, GRE, or GMAT, depending on the student's destination and program requirements.",
+  //   content: (
+  //     <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
+  //       <Image
+  //         src="/images/a1.jpg"
+  //         width={300}
+  //         height={300}
+  //         className="h-full w-full object-cover"
+  //         alt="linear board demo"
+  //       />
+  //     </div>
+  //   ),
+  // },
   {
-    title: "Academic orientation",
-    icon: GraduationCap,
+    title: "Financial Planning",
+    icon: CircleDollarSign,
     description:
-      "We will help you choose the university major that best suits your academic and professional ambitions.",
-    content: (
-      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
-        <Image
-          src="/images/a1.jpg"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "University Admission",
-    icon: FaUniversity,
-    description:
-      "Our experience in this field will be a precious help for the success of your university applications.",
+      "Help students explore scholarships, grants, and financial aid options. Assist in creating a budget that covers tuition, living expenses, and travel costs.",
     content: (
       <div className="flex h-full w-full items-center justify-center text-white">
         <Image
@@ -157,10 +157,10 @@ const content = [
     ),
   },
   {
-    title: "Sponsoring Application",
-    icon: CircleDollarSign,
+    title: "Visa Application",
+    icon: FaUniversity,
     description:
-      "We will review and help you prepare and send the sponsoring application while making sure everything is top-notch.",
+      "Provide step-by-step guidance on the visa application process, ensuring students understand the documentation required and any interviews they might need to attend.",
     content: (
       <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] text-white">
         <Image
@@ -174,10 +174,10 @@ const content = [
     ),
   },
   {
-    title: "Visa procedure",
+    title: "Pre-Departure Orientation",
     icon: CircleDollarSign,
     description:
-      "We will accompany you during all the administrative procedures to obtain your study visa.",
+      "Conduct sessions to prepare students for their international journey. Topics can include cultural differences, accommodation arrangements, healthcare, and safety tips.",
     content: (
       <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
         <Image
@@ -191,10 +191,10 @@ const content = [
     ),
   },
   {
-    title: "University accommodation",
+    title: "Career Counseling",
     icon: University,
     description:
-      "We will provide advice and support when choosing accommodation, on campus or with a host family.",
+      " Provide advice on internships, part-time work opportunities, and post-graduation employment prospects to help students make the most of their international education experience.",
     content: (
       <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
         <Image

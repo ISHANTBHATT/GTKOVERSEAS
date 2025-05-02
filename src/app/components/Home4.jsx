@@ -882,7 +882,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative bg-[#8A0206] min-h-screen md:min-h-1/2 lg:min-h-screen flex items-center py-16 px-6 md:px-12 overflow-hidden rounded-[50px]">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <div className="w-full mx-auto grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             variants={stagger}
             initial="initial"
@@ -891,15 +891,20 @@ export default function Home() {
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-4xl md:text-5xl font-bold mb-4 text-white"
+              className="text-4xl md:text-7xl font-bold mb-4 text-white"
             >
-              The Best Platform To Your Special Courses
+              {/* The Best Platform To Your Special Courses */}
+              Unlock Your Global Future with GTK Overseas
+              <br />
+              <span className="text-4xl">
+                – Your Gateway to Studying Abroad
+              </span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-gray-200 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
+              At GTK Overseas, we believe that education knows no boundaries.
+              With a passion for helping students achieve their dreams, we
+              specialize in guiding aspiring scholars through every step of
+              their study abroad journey.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
               <button className="bg-white hover:bg-gray-200 text-[#8A0206] font-medium py-3 px-6 rounded-md">
@@ -989,7 +994,7 @@ export default function Home() {
 
       <Countries />
       {/* Categories Section */}
-      <section className="container mx-auto py-12 px-4 md:px-20 flex min-h-screen items-center">
+      {/* <section className="container mx-auto py-12 px-4 md:px-20 flex min-h-screen items-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -1050,7 +1055,7 @@ export default function Home() {
             ))}
           </div>
         </motion.div>
-      </section>
+      </section> */}
 
       {/* Online Learning Section */}
       <section className="py-16 px-6 md:px-12 bg-[#8A0206] relative overflow-hidden min-h-screen flex items-center rounded-[50px] mx-10">
@@ -1062,41 +1067,45 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="z-10">
               <h2 className="text-3xl font-bold mb-4 text-white">
-                From Our Online Learning
+                Explore the World with Confidence
               </h2>
-              <p className="text-gray-300 mb-8">
+              {/* <p className="text-gray-300 mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
-              </p>
+              </p> */}
 
               <div className="space-y-6">
                 <LearningOption
-                  title="Online Degree"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+                  title="Personalized Guidance"
+                  description="Navigating the complexities of studying abroad can be challenging. Our consultancy offers tailored advice to suit your educational and career goals, ensuring a smooth transition to your dream destination."
                 />
                 <LearningOption
-                  title="Short Courses"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+                  title="Expert Knowledge"
+                  description="With years of experience, our team provides insights into top universities, visa processes, and cultural acclimation. We stay updated on the latest trends and requirements to give you informed recommendations."
                 />
                 <LearningOption
-                  title="Training From Experts"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+                  title="Comprehensive Support"
+                  description="From application assistance to pre-departure briefings, we cover every aspect of your journey. Our support ensures you feel prepared and excited as you embark on your international education experience."
                 />
                 <LearningOption
-                  title="1.5K+ Video Courses"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+                  title="Global Network"
+                  description="Join our community of students and alumni who have successfully pursued their studies abroad. Benefit from shared experiences and connections that open doors to global opportunities."
+                />
+                <LearningOption
+                  title="Start Your Adventure Today"
+                  description="Contact us to begin your journey. Our dedicated consultants are ready to help you achieve your academic aspirations abroad."
                 />
               </div>
             </div>
 
             <div className="relative">
               <Image
-                src="/images/2.png"
+                src="/images/h3.png"
                 alt="Online learning"
-                width={600}
-                height={500}
+                width={700}
+                height={700}
                 className="z-10 relative"
               />
 
@@ -1143,31 +1152,32 @@ export default function Home() {
         >
           <div>
             <h2 className="text-3xl font-bold mb-2">
-              Why we are <span className="text-[#8A0206]">different?</span>
+              Why We Are <span className="text-[#8A0206]">Different?</span>
             </h2>
             <h3 className="text-xl font-medium mb-4">
-              What makes us different makes us better.
+              Beyond Service, We Are Partners in Your Journey.
             </h3>
 
             <p className="text-gray-600 mb-12">
-              We are distinctive in the quality of our services and stand out of
-              the crowd. Unlike other consultancy firms in Bangladesh, we really
-              care for our students. We always strive to give the best possible
-              solutions that a student may require. Our experienced consultants
-              and in-house lawyer are always at hand to prepare your visa
-              application documents in a perfect way.
+              At GTK Overseas, we are dedicated partners in your educational
+              journey, committed to your success and satisfaction. Our
+              experienced advisors create personalized solutions for your goals,
+              helping many students achieve their dreams of studying abroad. We
+              offer free initial consultations to empower you with unbiased
+              advice, ensuring you navigate the complexities of studying abroad
+              without hidden fees or obligations.
             </p>
 
-            <div className="grid grid-cols-3 gap-6">
+            {/* <div className="grid grid-cols-3 gap-6">
               <StatCircle percentage={70} label="Satisfied Students" />
               <StatCircle percentage={80} label="Success Ratio" />
               <StatCircle percentage={100} label="Free Advice" />
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">
             <Image
-              src="/images/2.png"
+              src="/images/h2.png"
               alt="Professional consultant"
               width={600}
               height={500}
@@ -1192,7 +1202,9 @@ export default function Home() {
         >
           <div className="flex justify-between items-start mb-12">
             <div className="max-w-xl">
-              <h2 className="text-3xl font-bold mb-2 text-white">Why Choose</h2>
+              <h2 className="text-3xl font-bold mb-2 text-white">
+                Why Choose Us?
+              </h2>
               <div className="border-l-4 border-gray-400 pl-4 mt-4">
                 <p className="text-gray-300">
                   In confusion, many can&apos;t decide where to get proper
@@ -1205,33 +1217,33 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <FeatureCard
-              title="Experience"
-              description="all that matters! Having more than 10+ years of experience in educational consultancy, our Education Consultants..."
+              title="Expertise and Experience"
+              description="With years of experience in the education and study abroad sector, we have a deep understanding of international universities, visa processes, scholarships, and student support. Our team of professionals is committed to guiding you every step of the way, ensuring a smooth journey from application to arrival."
               icon="user"
             />
             <FeatureCard
-              title="Transparency"
-              description="Straight Talk is Good Business! Our services are our commitments to you and we deliver what we commit. We do not chase the..."
+              title="Personalized Consultation"
+              description="We believe every student is unique, and so is their study abroad experience. We provide tailored advice based on your academic interests, career goals, and personal preferences. Whether you’re looking to study in the USA, UK, Canada, Australia, or Europe, we offer customized solutions that match your ambitions."
               icon="check-circle"
             />
             <FeatureCard
-              title="Pastoral Care"
-              description="We look at the consultancy differently! We are highly unique to take care of your problems and remain focused until we can..."
+              title="Trusted University Partnerships"
+              description="Our strong relationships with top universities around the world mean that we can offer you exclusive opportunities and insights. We are proud to help you access some of the best educational institutions globally, with options that suit your budget, preferences, and academic goals."
               icon="users"
             />
             <FeatureCard
-              title="Authorized Agent"
-              description="We are authorized by the universities helps us to deliver supportive services to our students. We provide end to end..."
+              title="Comprehensive Services"
+              description="From university selection and application guidance to visa processing, accommodation assistance, and travel arrangements, we offer end-to-end services. Our aim is to make your study abroad experience as stress-free and successful as possible."
               icon="shield"
             />
             <FeatureCard
-              title="Intelligency and Skill"
-              description="Our experienced team ensure Our success rate with visa applications and university admissions is one of the highest..."
+              title="Scholarship Guidance"
+              description="We understand that financial concerns can be a barrier, which is why we actively help you find and apply for scholarships. Our extensive knowledge of scholarships and financial aid opportunities ensures you can study abroad without worrying about funding."
               icon="brain"
             />
             <FeatureCard
-              title="Long Term Relationship"
-              description="We believe in the long term relationship helps us to deliver supportive services to our students. We provide end to end..."
+              title="Success Stories"
+              description="Our proven track record speaks for itself. Over the years, we’ve helped thousands of students successfully navigate their study abroad journey. Many of our clients return to us for further guidance, and they refer their friends and family, which is a testament to the quality of our services."
               icon="link"
             />
           </div>
@@ -1269,8 +1281,8 @@ export default function Home() {
           <div>
             <h2 className="text-2xl font-bold mb-4">General Inquiry</h2>
             <p className="text-gray-600 mb-6">
-              If you wish to make a query, please complete the form below and
-              submit.
+              Contact us today to schedule your free consultation and let us
+              help turn your study abroad dreams into reality!
             </p>
             <div className="bg-[#8A0206] hover:bg-[#780105] text-white py-3 px-6 rounded-md text-center mb-6">
               Free Consultation
