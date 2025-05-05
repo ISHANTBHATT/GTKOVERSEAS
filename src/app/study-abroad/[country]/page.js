@@ -22,11 +22,11 @@ export default function CountryPage({ params }) {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-50 to-orange-50 py-16">
+      <section className="bg-gradient-to-r from-red-50 to-orange-50 pt-16">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-start gap-8 md:flex-row">
             <div className="max-w-2xl">
-              <h1 className="relative mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+              <h1 className="relative mb-6 text-3xl font-bold text-gray-900 md:text-4xl">
                 {countryData.heroTitle}
                 <span className="absolute -bottom-3 left-0 h-2 w-48 bg-[#8A0206]"></span>
               </h1>
@@ -183,11 +183,11 @@ export default function CountryPage({ params }) {
       <section className="bg-[#8A0206] py-16 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-            Ready to Start Your Journey?
+            Ready to Begin Your Journey?
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-blue-100">
-            Get personalized guidance from our expert counselors to help you
-            choose the right program and university.
+            Receive personalized guidance from our expert counselors to assist
+            you in selecting the ideal program and university.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

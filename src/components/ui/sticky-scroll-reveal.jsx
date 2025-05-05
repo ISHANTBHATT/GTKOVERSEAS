@@ -101,6 +101,7 @@
 //   );
 // };
 
+//working
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
@@ -161,8 +162,12 @@ export const StickyScroll = ({ content, contentClassName }) => {
           {content.map((item, index) => (
             <div key={item.title + index} className="min-h-[50vh] mt-28">
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: activeCard === index ? 1 : 0.3,
+                  y: activeCard === index ? 0 : 20,
+                }}
+                transition={{ duration: 0.5 }}
                 className="flex items-center gap-4"
               >
                 <item.icon className="w-10 h-10 text-slate-100" />
@@ -176,8 +181,12 @@ export const StickyScroll = ({ content, contentClassName }) => {
               </motion.div>
 
               <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: activeCard === index ? 1 : 0.3,
+                  y: activeCard === index ? 0 : 20,
+                }}
+                transition={{ duration: 0.5 }}
                 className="mt-10 max-w-sm text-slate-300"
               >
                 {item.description}
@@ -187,7 +196,11 @@ export const StickyScroll = ({ content, contentClassName }) => {
           <div className="h-40" />
         </div>
       </div>
-      <div
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         style={{ background: backgroundGradient }}
         className={cn(
           "sticky top-1/4 hidden h-80 w-96 overflow-hidden rounded-md bg-white md:block",
@@ -195,7 +208,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
         )}
       >
         {content[activeCard].content ?? null}
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

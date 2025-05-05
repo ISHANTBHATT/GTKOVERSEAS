@@ -2078,7 +2078,7 @@ export default function Home() {
             scale: [1, 1.05, 1],
           }}
           transition={{ duration: 18, repeat: Number.POSITIVE_INFINITY }}
-          className="absolute bottom-0 right-0 w-1/3 h-1/3 bg-[#780105] rounded-tl-full"
+          className="absolute -bottom-52 md:-bottom-2 right-0 w-1/3 h-1/3 bg-[#780105] rounded-tl-full"
         />
       </section>
 
