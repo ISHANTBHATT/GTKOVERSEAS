@@ -153,7 +153,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
       // Remove overflow-y-auto to eliminate inner scroll bar
-      className="relative flex h-full justify-center space-x-10 rounded-[50px] p-10 mx-10"
+      className="relative flex h-full justify-center space-x-10 rounded-[50px] p-10 md:mx-10"
       ref={ref}
     >
       <div className="relative flex items-start px-4">

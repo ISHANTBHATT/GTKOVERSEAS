@@ -1,10 +1,67 @@
+// "use client";
+// import Image from "next/image";
+// import React, { useState } from "react";
+// import { cn } from "@/lib/utils";
+
+// export const Card = React.memo(({ card, index, hovered, setHovered }) => (
+//   <div
+//     onMouseEnter={() => setHovered(index)}
+//     onMouseLeave={() => setHovered(null)}
+//     className={cn(
+//       "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
+//       hovered !== null && hovered !== index && "blur-xs scale-[0.98]"
+//     )}
+//   >
+//     <Image
+//       src={card.src}
+//       alt={card.title}
+//       fill
+//       className="object-cover absolute inset-0"
+//     />
+//     <div
+//       className={cn(
+//         "absolute inset-0 bg-black/20 flex items-end py-8 px-4 transition-opacity duration-300",
+//         hovered === index ? "opacity-100" : "opacity-0"
+//       )}
+//     >
+//       <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+//         {card.title}
+//       </div>
+//     </div>
+//   </div>
+// ));
+
+// Card.displayName = "Card";
+
+// export function FocusCards({ cards }) {
+//   const [hovered, setHovered] = useState(null);
+
+//   return (
+//     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
+//       {cards.map((card, index) => (
+//         <Card
+//           key={card.title}
+//           card={card}
+//           index={index}
+//           hovered={hovered}
+//           setHovered={setHovered}
+//         />
+//       ))}
+//     </div>
+//   );
+// }
+
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 export const Card = React.memo(({ card, index, hovered, setHovered }) => (
-  <div
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: index * 0.1 }}
     onMouseEnter={() => setHovered(index)}
     onMouseLeave={() => setHovered(null)}
     className={cn(
@@ -13,22 +70,27 @@ export const Card = React.memo(({ card, index, hovered, setHovered }) => (
     )}
   >
     <Image
-      src={card.src}
+      src={card.src || "/placeholder.svg"}
       alt={card.title}
       fill
       className="object-cover absolute inset-0"
     />
-    <div
-      className={cn(
-        "absolute inset-0 bg-black/20 flex items-end py-8 px-4 transition-opacity duration-300",
-        hovered === index ? "opacity-100" : "opacity-0"
-      )}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: hovered === index ? 1 : 0 }}
+      transition={{ duration: 0.3 }}
+      className={cn("absolute inset-0 bg-black/20 flex items-end py-8 px-4")}
     >
-      <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+      <motion.div
+        initial={{ y: 20 }}
+        animate={{ y: hovered === index ? 0 : 20 }}
+        transition={{ duration: 0.3 }}
+        className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200"
+      >
         {card.title}
-      </div>
-    </div>
-  </div>
+      </motion.div>
+    </motion.div>
+  </motion.div>
 ));
 
 Card.displayName = "Card";
