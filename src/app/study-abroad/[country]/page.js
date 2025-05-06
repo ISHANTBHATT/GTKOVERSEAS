@@ -112,7 +112,13 @@ export default function CountryPage({ params }) {
                   className="overflow-hidden rounded-lg bg-white shadow-md transition-transform hover:scale-105"
                 >
                   <div className="h-48 w-full bg-gray-200">
-                    {/* Course image placeholder */}
+                    <Image
+                      src={course.image}
+                      alt={course.title}
+                      width={500}
+                      height={500}
+                      className="h-full w-full object-cover"
+                    />
                   </div>
                   <div className="p-4">
                     <h3 className="text-center text-xl font-semibold text-gray-900">

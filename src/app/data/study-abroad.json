@@ -47,27 +47,27 @@
         "courses": [
           {
             "title": "Aerospace Engineering",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/usac1.jpg"
           },
           {
             "title": "Computer Science",
-            "image": "/images/business-management.jpg"
+            "image": "/images/usac2.jpg"
           },
           {
             "title": "Construction Management & Technology",
-            "image": "/images/engineering.jpg"
+            "image": "/images/usac3.jpg"
           },
           {
             "title": "Robotics & Autonomous Systems (Artificial Intelligence)",
-            "image": "/images/medicine.jpg"
+            "image": "/images/usac4.jpg"
           },
           {
             "title": "Biology",
-            "image": "/images/social-sciences.jpg"
+            "image": "/images/usac5.jpg"
           },
           {
             "title": "Business Analytics",
-            "image": "/images/arts.jpg"
+            "image": "/images/usac6.jpg"
           }
         ]
       },

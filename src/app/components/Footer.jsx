@@ -296,7 +296,14 @@
 
 import React from "react";
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Youtube, X } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Youtube,
+  X,
+  Instagram,
+} from "lucide-react";
 import Image from "next/image";
 
 function Footer() {
@@ -318,25 +325,25 @@ function Footer() {
             <span className="text-2xl font-bold">Ritaxes</span> */}
           </div>
           <p className="text-gray-300 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus.
+            GTK Overseas is a trusted study abroad consultancy firm dedicated to
+            empowering students with global education opportunities.
           </p>
           <div className="flex gap-2">
             <Link href="#" className="bg-[#A83A28] rounded-full p-2">
               <Facebook className="w-4 h-4" />
             </Link>
             <Link href="#" className="bg-[#A83A28] rounded-full p-2">
-              <Twitter className="w-4 h-4" />
+              <Instagram className="w-4 h-4" />
             </Link>
             <Link href="#" className="bg-[#A83A28] rounded-full p-2">
               <Linkedin className="w-4 h-4" />
             </Link>
-            <Link href="#" className="bg-[#A83A28] rounded-full p-2">
+            {/* <Link href="#" className="bg-[#A83A28] rounded-full p-2">
               <Youtube className="w-4 h-4" />
             </Link>
             <Link href="#" className="bg-[#A83A28] rounded-full p-2">
               <X className="w-4 h-4" />
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -353,32 +360,38 @@ function Footer() {
           <h3 className="text-xl font-semibold mb-4">Services</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link href="/test-preparation" className="hover:text-[#A83A28]">
                 Test Preparation
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link href="/career-counseling" className="hover:text-[#A83A28]">
                 Career Counseling
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link href="/admission-guidance" className="hover:text-[#A83A28]">
                 Admission Guidance
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link
+                href="/financial-assistance"
+                className="hover:text-[#A83A28]"
+              >
                 Financial Assistance
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link
+                href="/travel-forex-assistance"
+                className="hover:text-[#A83A28]"
+              >
                 Travel & Forex Assistance
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link href="/visa-assistance" className="hover:text-[#A83A28]">
                 Visa Assistance
               </Link>
             </li>
@@ -419,7 +432,17 @@ function Footer() {
 
       <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
         <p>© 2024 GTKOVERSEAS</p>
-        <p>Designed by Apace Digital Cargo </p>
+
+        <div className="flex gap-2">
+          <p>Designed by</p>
+          <a
+            className="underline hover:text-red-700"
+            target="_blank"
+            href="https://apacedigitalcargo.com/"
+          >
+            Apace Digital Cargo
+          </a>
+        </div>
       </div>
     </footer>
   );
