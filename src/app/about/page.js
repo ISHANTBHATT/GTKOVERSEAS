@@ -45,7 +45,7 @@ export default function Page() {
               alt="Business people"
               width={800}
               height={600}
-              className="rounded-lg w-full h-auto"
+              className="rounded-lg w-full h-full object-cover"
             />
             <div className="grid md:grid-cols-2 gap-4">
               <Image
@@ -66,53 +66,76 @@ export default function Page() {
 
           <div className="bg-[#FFF5F2] rounded-lg p-8">
             <div className="text-[#A83A28] uppercase tracking-wider mb-2">
-              ABOUT RITAXES
+              ABOUT GTK Overseas
             </div>
             <h2 className="text-3xl font-bold mb-4 text-[#3C2A2A]">
               Innovative Strategies for Tax Prosperity
             </h2>
             <p className="text-gray-700 mb-6">
-              Duis et dolor vel neque faucibus tincidunt. Nulla semper
-              condimentum tellus in ultricies. Nunc tempor ipsum nec fermentum
-              consequat. Cras et felis ultricies, molestie dolor sit amet,
-              condimentum ante.
+              GTK Overseas is a trusted study abroad consultancy firm dedicated
+              to empowering students with global education opportunities. With a
+              passion for guiding young minds, we provide personalized support
+              to help aspiring students choose the right academic path,
+              destination, and institution that aligns with their goals.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Founded in 2017 on the principles of integrity, transparency, and
+              student success, GTK Overseas has helped hundreds of students
+              realize their dream of studying abroad in countries such as the
+              USA, UK, Canada, Australia, Ireland, New Zealand and more. Our
+              experienced counselors offer expert guidance on university
+              selection, application processes, visa procedures, and
+              pre-departure preparation.
             </p>
             <ul className="space-y-3 mb-6">
               <li className="flex items-start gap-2">
                 <div className="bg-[#A83A28] rounded-full p-1 mt-1 text-white">
                   <Check className="w-3 h-3" />
                 </div>
-                <span>Curabitur gravida sem</span>
+                <span>
+                  Comprehensive services: scholarship help, accommodation,
+                  cultural orientation
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="bg-[#A83A28] rounded-full p-1 mt-1 text-white">
                   <Check className="w-3 h-3" />
                 </div>
-                <span>Mauris tempor ac erat</span>
+                <span>
+                  Focus on preparing students for academic and social
+                  environments
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="bg-[#A83A28] rounded-full p-1 mt-1 text-white">
                   <Check className="w-3 h-3" />
                 </div>
-                <span>Fusce eleifend lectus</span>
+                <span>Long-term support after education begins</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="bg-[#A83A28] rounded-full p-1 mt-1 text-white">
                   <Check className="w-3 h-3" />
                 </div>
-                <span>Fusce non sodales dui</span>
+                <span>
+                  Team stays updated on international education trends for
+                  accurate advice
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="bg-[#A83A28] rounded-full p-1 mt-1 text-white">
                   <Check className="w-3 h-3" />
                 </div>
-                <span>Class aptent taciti</span>
+                <span>
+                  Tailored approach to individual student needs with care
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="bg-[#A83A28] rounded-full p-1 mt-1 text-white">
                   <Check className="w-3 h-3" />
                 </div>
-                <span>Nam elementum semper</span>
+                <span>
+                  Commitment to broadening horizons for a successful future
+                </span>
               </li>
             </ul>
             <Button className="bg-[#A83A28] hover:bg-[#8B2A1F] text-white rounded-full px-6">
@@ -130,9 +153,8 @@ export default function Page() {
               <h2 className="text-[#A83A28] text-xl font-medium">Our Vision</h2>
             </div>
             <p className="text-gray-700">
-              Fusce sed pellentesque dui. Nunc lacinia, nibh vitae gravida
-              condimentum, turpis neque commodo mauris, id rutrum lacus nisl a
-              risus.
+              To empower students with accurate information, expert guidance,
+              and unwavering support for their international education journey.
             </p>
           </div>
 
@@ -143,13 +165,12 @@ export default function Page() {
               </h2>
             </div>
             <p className="text-gray-700">
-              Fusce sed pellentesque dui. Nunc lacinia, nibh vitae gravida
-              condimentum, turpis neque commodo mauris, id rutrum lacus nisl a
-              risus.
+              To be a globally recognized and student-centric consultancy that
+              transforms lives through access to world-class education abroad.
             </p>
           </div>
 
-          <div className="bg-[#8B2A1F] rounded-lg p-8 text-white">
+          {/* <div className="bg-[#8B2A1F] rounded-lg p-8 text-white">
             <div className="inline-block bg-white rounded-full px-6 py-2 mb-4">
               <h2 className="text-[#A83A28] text-xl font-medium">
                 Our History
@@ -160,7 +181,7 @@ export default function Page() {
               condimentum, turpis neque commodo mauris, id rutrum lacus nisl a
               risus.
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div
@@ -172,21 +193,26 @@ export default function Page() {
             backgroundPosition: "center",
           }}
         >
-          <h2 className="text-4xl font-bold mb-6 leading-tight">
-            Our Plan Makes You Feel More Comfortable in Tax Management
+          <h2 className="text-3xl font-bold mb-6 leading-tight">
+            At GTK Overseas, your dreams take flight - and we’re with you every
+            step of the way.
           </h2>
           <p className="mb-8">
-            Nulla semper condimentum tellus in ultricies. Nunc tempor ipsum nec
-            fermentum consequat. Cras et felis ultricies.
+            Join the GTK Overseas family and let us be your trusted partner in
+            transforming your educational aspirations into reality. Together, we
+            will open doors to a world of opportunities, broadening your
+            horizons and paving the way for a successful future.
           </p>
-          <Button className="bg-[#A83A28] hover:bg-[#8B2A1F] text-white rounded-full px-6">
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-[#A83A28] hover:bg-[#8B2A1F] text-white rounded-full px-6">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="bg-[#1E0E0E] p-6 md:p-10 text-white rounded-t-[50px]">
+      <section className="bg-[#1E0E0E] p-6 md:p-10 text-white rounded-[50px]">
         <div className="grid md:grid-cols-2 gap-10">
           <div className="relative">
             <div className="rounded-lg overflow-hidden">
@@ -201,75 +227,55 @@ export default function Page() {
             <div className="absolute bottom-6 left-6 bg-[#3C2A2A]/80 p-6 rounded-lg max-w-[80%]">
               <div className="text-5xl text-[#A83A28] mb-2">&quot;</div>
               <h3 className="text-xl font-semibold mb-1">
-                Tax Research for Financial Mastery
+                Join the GTK Overseas family
               </h3>
             </div>
           </div>
 
           <div className="flex flex-col justify-center">
             <div className="text-[#A83A28] uppercase tracking-wider mb-4">
-              Why Choose Us
+              Why Choose GTK Overseas?
             </div>
-            <h2 className="text-4xl font-bold mb-6">
+            {/* <h2 className="text-4xl font-bold mb-6">
               Reliable Tax Solutions Tailored to Your Needs
             </h2>
             <p className="mb-8">
               Aliquam aliquam ante tristique nulla suscipit pulvinar eget ut
               tortor. Cras scelerisque sodales viverra. Nullam auctor tincidunt
               velit at auctor.
-            </p>
+            </p> */}
 
-            <div className="space-y-4">
-              <div>
-                <div className="flex items-center justify-between mb-2">
-                  <span>Analytical Skill</span>
-                  <span>94%</span>
-                </div>
-                <div className="h-2 bg-white/20 rounded-full">
-                  <div
-                    className="h-2 bg-[#A83A28] rounded-full"
-                    style={{ width: "94%" }}
-                  ></div>
-                </div>
+            <div className="space-y-6 text-xl">
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Customized guidance for each student</span>
               </div>
 
-              <div>
-                <div className="flex items-center justify-between mb-2">
-                  <span>Tax Knowledge</span>
-                  <span>98%</span>
-                </div>
-                <div className="h-2 bg-white/20 rounded-full">
-                  <div
-                    className="h-2 bg-[#A83A28] rounded-full"
-                    style={{ width: "98%" }}
-                  ></div>
-                </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>
+                  Strategic partnerships with leading global institutions
+                </span>
               </div>
 
-              <div>
-                <div className="flex items-center justify-between mb-2">
-                  <span>Advisory & Consultation</span>
-                  <span>93%</span>
-                </div>
-                <div className="h-2 bg-white/20 rounded-full">
-                  <div
-                    className="h-2 bg-[#A83A28] rounded-full"
-                    style={{ width: "93%" }}
-                  ></div>
-                </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>
+                  High success rates in university admissions and visa approvals
+                </span>
               </div>
 
-              <div>
-                <div className="flex items-center justify-between mb-2">
-                  <span>Problem-Solving Skills</span>
-                  <span>96%</span>
-                </div>
-                <div className="h-2 bg-white/20 rounded-full">
-                  <div
-                    className="h-2 bg-[#A83A28] rounded-full"
-                    style={{ width: "96%" }}
-                  ></div>
-                </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Commitment to ethical practices and transparency</span>
+              </div>
+
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>
+                  Comprehensive support from the initial stages until you arrive
+                  at your destination – and beyond
+                </span>
               </div>
             </div>
           </div>
@@ -277,7 +283,7 @@ export default function Page() {
       </section>
 
       {/* Trusted By Section */}
-      <section className="bg-[#A83A28] p-6 md:p-10 text-white text-center rounded-b-[50px]">
+      {/* <section className="bg-[#A83A28] p-6 md:p-10 text-white text-center rounded-b-[50px]">
         <p className="mb-8">
           Trusted by 1000+ company worldwide. Lorem ipsum dolor sit amet,
           consectetur adipiscing elit luctus nec mattis.
@@ -302,11 +308,11 @@ export default function Page() {
             <span className="text-2xl font-bold">reshield</span>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Help Achieve Goals Section */}
       <section className="p-6 md:p-10">
-        <div className="grid md:grid-cols-5 gap-6 mb-6">
+        {/* <div className="grid md:grid-cols-5 gap-6 mb-6">
           <div className="md:col-span-3 rounded-lg overflow-hidden">
             <Image
               src="/images/ab1.jpg"
@@ -330,17 +336,21 @@ export default function Page() {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="grid md:grid-cols-3 gap-6 mb-6">
           <div className="bg-[#A83A28] rounded-lg p-8 text-white">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <Settings className="text-[#A83A28] w-6 h-6" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Commitment</h3>
+            <h3 className="text-2xl font-semibold mb-4">Integrity</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              At GTK Overseas, integrity is a core promise. Their services and
+              advice are based on honesty and ethical practices, ensuring
+              students receive genuine guidance focused on their best interests.
+              This commitment extends to university options, visa processes, and
+              post-arrival support, upheld with professionalism and moral
+              responsibility.
             </p>
           </div>
 
@@ -348,10 +358,14 @@ export default function Page() {
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <Scale className="text-[#A83A28] w-6 h-6" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Honesty</h3>
+            <h3 className="text-2xl font-semibold mb-4">Transparency</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Transparency is essential for building trust and action. GTK
+              Overseas prioritizes clear and honest communication during the
+              study abroad process, informing students about application fees,
+              admission requirements, timelines, and realistic outcomes. By
+              avoiding hidden costs and inflated promises, students can make
+              confident and informed decisions.
             </p>
           </div>
 
@@ -359,15 +373,19 @@ export default function Page() {
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <TrendingUp className="text-[#A83A28] w-6 h-6" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4">Growth</h3>
+            <h3 className="text-2xl font-semibold mb-4">Student Success</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              At GTK Overseas, the focus is on student success, providing
+              support beyond university admissions. They assist students in
+              achieving academic, personal, and professional goals, offering
+              tailored guidance from course selection to settling in a new
+              country. Success is measured by long-term fulfillment in the
+              global academic landscape.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-4 gap-6 bg-[#FFF5F2] rounded-lg p-8">
+        {/* <div className="grid grid-cols-4 gap-6 bg-[#FFF5F2] rounded-lg p-8">
           <div className="text-center">
             <h3 className="text-4xl font-bold text-[#A83A28]">2,800+</h3>
             <p className="text-[#3C2A2A] font-medium">Satisfied Client</p>
@@ -384,7 +402,7 @@ export default function Page() {
             <h3 className="text-4xl font-bold text-[#A83A28]">30+</h3>
             <p className="text-[#3C2A2A] font-medium">Branch Office</p>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Team Section */}
@@ -399,8 +417,9 @@ export default function Page() {
             </h2>
             <div className="max-w-md">
               <p className="text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                At GTK Overseas, our success is driven by a team of dedicated
+                professionals with a passion for helping individuals and
+                families achieve their international dreams.
               </p>
             </div>
           </div>

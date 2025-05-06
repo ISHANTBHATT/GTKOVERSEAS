@@ -54,6 +54,11 @@ import {
   Target,
   Clock,
   FileCheck,
+  Users,
+  UserCheck,
+  Trophy,
+  LifeBuoy,
+  ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -62,43 +67,72 @@ export default function CareerCounseling() {
   const slides = [
     {
       id: "01",
-      title: "Career Guidance and Counseling",
-      image: "/placeholder.svg?height=400&width=300",
+      title: "Personalized Career Assessment",
+      image: "/images/cc1.jpg",
+      description:
+        "We begin by understanding your strengths, interests, values, and long-term goals. Through psychometric testing and one-on-one sessions, we help you uncover your ideal career path.",
     },
     {
       id: "02",
-      title: "Effective Recruitment and Selection",
-      image: "/placeholder.svg?height=400&width=300",
+      title: "Country & Program Selection",
+      image: "/images/cc2.jpg",
+      description:
+        "Confused about which country or university is right for you? Our counselors match your academic profile and career ambitions with the most suitable study destinations and programs.",
     },
     {
       id: "03",
-      title: "Personal Development & Skill Enhancement",
-      image: "/placeholder.svg?height=400&width=300",
+      title: "Application Strategy & Support",
+      image: "/images/cc3.jpg",
+      description:
+        "From crafting a compelling Statement of Purpose (SOP) to selecting the right courses, we support you throughout the application process to maximize your chances of acceptance.",
     },
     {
       id: "04",
-      title: "Educational Planning & Academic Success",
-      image: "/placeholder.svg?height=400&width=300",
+      title: "Career Mapping & Job Market Insights",
+      image: "/images/cc4.jpg",
+      description:
+        "Our team provides insights into post-study work opportunities, employability trends, and visa pathways so you can make informed decisions that align with your career goals.",
     },
     {
       id: "05",
-      title: "Promotion and Career Advancement",
-      image: "/placeholder.svg?height=400&width=300",
+      title: "Skill Development & Interview Prep",
+      image: "/images/cc5.jpg",
+      description:
+        "We prepare you for global career success with résumé enhancement, soft skills training, and mock interviews tailored to international standards.",
+    },
+    // {
+    //   id: "06",
+    //   title: "Objective Assessment",
+    //   image: "/placeholder.svg?height=400&width=300",
+    // },
+    // {
+    //   id: "07",
+    //   title: "Enhanced Self-Awareness",
+    //   image: "/placeholder.svg?height=400&width=300",
+    // },
+    // {
+    //   id: "08",
+    //   title: "Adaptability & Planning",
+    //   image: "/placeholder.svg?height=400&width=300",
+    // },
+  ];
+
+  const features = [
+    {
+      Icon: UserCheck,
+      text: "Certified career counselors with global education expertise.",
     },
     {
-      id: "06",
-      title: "Objective Assessment",
-      image: "/placeholder.svg?height=400&width=300",
+      Icon: Trophy,
+      text: "Proven track record of student placements in top universities worldwide.",
     },
     {
-      id: "07",
-      title: "Enhanced Self-Awareness",
-      image: "/placeholder.svg?height=400&width=300",
+      Icon: LifeBuoy,
+      text: "Support from planning to post-arrival career strategy.",
     },
     {
-      id: "08",
-      title: "Adaptability & Planning",
-      image: "/placeholder.svg?height=400&width=300",
+      Icon: BookOpen,
+      text: "Up-to-date knowledge of industry trends and immigration policies.",
     },
   ];
 
@@ -112,32 +146,34 @@ export default function CareerCounseling() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 ">
-      <div className=" relative mx-auto px-4 py-12 md:py-36 bg-gradient-to-r from-red-50 to-orange-50">
+      <div className=" relative mx-auto px-4 py-12 md:py-36 lg:py-52 bg-gradient-to-r from-[#8A0206] to-[#6A0104] text-white">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 mx-20">
           <div className="flex-1 space-y-6">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold  leading-tight">
               Career
               <span className="relative">
                 <span className="relative z-10"> Counseling</span>
                 {/* <span className="absolute bottom-2 left-0 w-full h-3 bg-red-200 -rotate-1 z-0"></span> */}
               </span>
             </h1>
-            <p className="text-lg text-gray-600 max-w-xl">
+            <p className="text-lg text-white/80 max-w-xl">
               Expert guidance through your career counseling process. We make
               immigration simple, efficient, and stress-free.
             </p>
-            <button className="bg-[#8A0206] text-white px-8 py-4 rounded-lg font-medium hover:bg-red-800 transition-colors">
+            <button className="text-[#8A0206] bg-white px-8 py-4 rounded-lg font-medium hover:bg-red-800 hover:text-white transition-colors flex items-center gap-2">
               Free Expert Consultation
+              <ArrowRight className="w-5 h-5" />
             </button>
           </div>
           {/* Right Column - Hero Image */}
-          <div className="flex-1 absolute justify-center flex bottom-0 right-0">
+          <div className="flex-1 absolute justify-center hidden lg:flex bottom-0 right-0">
             <Image
               src="/images/v0.png"
-              alt="Professional visa consultant"
+              alt="Professional travel and forex consultant"
               width={800}
               height={800}
-              //   className="rounded-2xl shadow-2xl"
+              priority
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
@@ -145,13 +181,16 @@ export default function CareerCounseling() {
       <div className="container mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="mb-16 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900  sm:text-5xl md:text-6xl">
-            Career <span className="text-[#8A0206] ">Counseling</span>
+          <h1 className="text-3xl font-bold tracking-tight text-slate-900  sm:text-4xl md:text-5xl">
+            Start your
+            <span className="text-[#8A0206] "> journey with confidence.</span>
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg text-slate-600 ">
-            Career counseling, also known as career guidance or career coaching,
-            is a process that assists individuals in making informed decisions
-            about their career development and future employment opportunities.
+            Let us help you choose the right course, the right country, and the
+            right career.
+            <br />
+            Contact us today for a free consultation and take the first step
+            toward your global career.
           </p>
         </div>
 
@@ -160,14 +199,14 @@ export default function CareerCounseling() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-2/3">
               <h2 className="text-3xl font-bold text-slate-900  mb-4">
-                Academic Pathway Planning
+                Shape Your Global Future With Expert Guidance
               </h2>
               <p className="text-slate-600 ">
-                Academic Pathway Planning is a structured process that helps
-                students map out their educational journey to achieve career
-                goals. Our expert counselors for study abroad will then assist
-                you in setting objectives, selecting courses and create a
-                roadmap for success.
+                Choosing to study abroad is one of the most important decisions
+                in a student’s academic and professional journey. At GTK
+                Overseas, our specialized career counseling for study abroad
+                services ensure you're not just going overseas – you're moving
+                toward a meaningful and successful career.
               </p>
             </div>
             <div className="md:w-1/3 flex justify-center">
@@ -202,14 +241,12 @@ export default function CareerCounseling() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white  rounded-2xl shadow-lg p-8">
+            <div
+              className="bg-white  rounded-2xl shadow-lg p-8 transition-opacity duration-500"
+              style={{ opacity: 1 }}
+            >
               <p className="text-slate-600 ">
-                Aptitude tests play a significant role in various areas,
-                including counseling for studying abroad, career development,
-                recruitment, and personal growth. They are designed to assess an
-                individual&apos;s inherent or acquired abilities, strengths, and
-                potential in specific areas. The importance of aptitude tests
-                can be highlighted through the following points.
+                {slides[currentSlide]?.description}
               </p>
             </div>
             <div className="relative h-80 overflow-hidden rounded-2xl shadow-lg">
@@ -243,7 +280,7 @@ export default function CareerCounseling() {
         </div>
 
         {/* Types of Aptitude Tests */}
-        <div className="mb-20">
+        {/* <div className="mb-20">
           <h2 className="text-3xl font-bold text-slate-900  mb-8">
             Types <span className="text-[#8A0206] ">Of Aptitude Tests</span>
           </h2>
@@ -358,19 +395,19 @@ export default function CareerCounseling() {
               </div>
             </TabsContent>
           </Tabs>
-        </div>
+        </div> */}
 
         {/* Process of Testing */}
         <div className="rounded-3xl bg-gradient-to-r from-[#8A0206] to-[#8A0206] p-10 text-white">
           <h2 className="text-3xl font-bold mb-10 text-center">
-            Process Of{" "}
+            Why Choose{" "}
             <span className="relative inline-block">
-              Testing
+              Us?
               <span className="absolute bottom-0 left-0 w-full h-1 bg-white/60 rounded-full"></span>
             </span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <Card className="bg-white/10 backdrop-blur-sm border-none text-white hover:bg-white/20 transition-colors">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="mb-4 p-3 rounded-full bg-white/20">
@@ -378,8 +415,7 @@ export default function CareerCounseling() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Online Testing</h3>
                 <p>
-                  Take the test from the comfort of your home eliminating the
-                  need to travel anywhere for the assessment.
+                  Certified career counselors with global education expertise.
                 </p>
               </CardContent>
             </Card>
@@ -391,8 +427,8 @@ export default function CareerCounseling() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Test Duration</h3>
                 <p>
-                  The aptitude test is designed to be completed in approximately
-                  2.5 hours at a leisurely pace.
+                  Proven track record of student placements in top universities
+                  worldwide
                 </p>
               </CardContent>
             </Card>
@@ -403,12 +439,37 @@ export default function CareerCounseling() {
                   <FileCheck className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Expert Review</h3>
+                <p>Support from planning to post-arrival career strategy</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-sm border-none text-white hover:bg-white/20 transition-colors">
+              <CardContent className="p-6 flex flex-col items-center text-center">
+                <div className="mb-4 p-3 rounded-full bg-white/20">
+                  <FileCheck className="h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Expert Review</h3>
                 <p>
-                  The test report is carefully checked and then shared with the
-                  student by a clinical psychologist.
+                  Up-to-date knowledge of industry trends and immigration
+                  policies
                 </p>
               </CardContent>
             </Card>
+          </div> */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {features.map(({ Icon, text }, idx) => (
+              <Card
+                key={idx}
+                className="bg-white/10 backdrop-blur-sm border-none text-white hover:bg-white/20 transition-colors"
+              >
+                <CardContent className="p-6 flex flex-col items-center text-center">
+                  <div className="mb-4 p-3 rounded-full bg-white/20">
+                    <Icon className="h-8 w-8" />
+                  </div>
+                  <p>{text}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>

@@ -333,9 +333,9 @@ import Image from "next/image";
 const timelineData = [
   {
     id: "01",
-    title: "Free Expert Counseling",
+    title: "Personalized University Selection",
     description:
-      "Our expert counselors provide personalized guidance for students applying to universities abroad. They patiently understand each student's need and academic background and help them achieve their goals by recommending the best courses and institutions suited to their profile.",
+      "We evaluate your academic background, career goals, test scores, and preferences to recommend the best-fit universities in countries like the USA, UK, Canada, Australia, Ireland, and more.",
     card: {
       type: "signup",
       content: "Sign up",
@@ -344,9 +344,9 @@ const timelineData = [
   },
   {
     id: "02",
-    title: "Identify Course, Country And University",
+    title: "Expert Application Assistance",
     description:
-      "We help the students identify the destination country most suited for them, the institution as well as the course. For those who are undecided about the course we administer a test to determine the interests and abilities of the student.",
+      "From crafting standout Statements of Purpose (SOPs) and Letters of Recommendation (LORs) to building a strong CV and guiding you through application portals, we ensure your application is competitive and compelling.",
     card: {
       type: "submit",
       content: "submit",
@@ -355,9 +355,9 @@ const timelineData = [
   },
   {
     id: "03",
-    title: "International Test Prep",
+    title: "Application Timeline Management",
     description:
-      "We offer coaching for key standardized tests like TOEFL, PTE, IELTS, GMAT, GRE, SAT, and ACT, with personalized guidance provided by our expert faculty. Our comprehensive courseware and regular internal testing ensure that students achieve their target scores for admission to their desired institutions.",
+      "Never miss a deadline. We help you plan your application strategy, keep track of requirements, and submit everything on time.",
     card: {
       type: "votes",
       content: "42 votes",
@@ -366,9 +366,9 @@ const timelineData = [
   },
   {
     id: "04",
-    title: "Document Editing",
+    title: "Interview Preparation",
     description:
-      "We prioritize delivering optimal results by meticulously processing each student’s application to eliminate errors. We focus on essential areas, provide feedback, and ensure all documents are properly compiled and sealed. Our counselors keep students updated on their application status, and our experts analyze documents to meet university-specific requirements, enhancing success rates and speeding up responses.",
+      "Some universities require interviews—especially for graduate programs. We provide mock interview sessions and coaching to boost your confidence and presentation.",
     card: {
       type: "votes",
       content: "42 votes",
@@ -377,9 +377,9 @@ const timelineData = [
   },
   {
     id: "05",
-    title: "Application Process",
+    title: "Document Review & Verification",
     description:
-      "We give special attention to every application for admission, whether it is paper based or online. Students and counselors collaborate to thoroughly check and improve documents before submission. Additionally, we provide personalized assessments to institutions, highlighting the student's strengths and suitability for a successful match.",
+      "Our team meticulously reviews academic transcripts, financial documents, and other paperwork to ensure they meet university and visa requirements.",
     card: {
       type: "votes",
       content: "42 votes",
@@ -388,26 +388,26 @@ const timelineData = [
   },
   {
     id: "06",
-    title: "Interview Preparation",
+    title: "Ongoing Support",
     description:
-      "Interviews are needed for admission, visa eligibility and for visa grant too. We help prepare students with answers to questions that universities are likely to ask. These mock interview sessions are led by specialists who are highly familiar with the typical questions asked by universities.",
+      "Our relationship doesn't end with the application. We stay with you through offer letters, acceptance, and next steps like visa counseling and pre-departure guidance.",
     card: {
       type: "votes",
       content: "42 votes",
     },
     bgColor: "bg-purple-50",
   },
-  {
-    id: "07",
-    title: "Visa Guidance",
-    description:
-      "Visa guidance is free for all Edwise students for all countries. We maintain a 99% success rate in visa applications through updated consulate advice. Our special services includes mock visa interviews to prepare students for common questions and provide guidance on the dos and don'ts. We assist with the entire visa process, from application submission to document preparation, ensuring smooth navigation and minimizing delays.",
-    card: {
-      type: "votes",
-      content: "42 votes",
-    },
-    bgColor: "bg-pink-50",
-  },
+  // {
+  //   id: "07",
+  //   title: "Visa Guidance",
+  //   description:
+  //     "Visa guidance is free for all Edwise students for all countries. We maintain a 99% success rate in visa applications through updated consulate advice. Our special services includes mock visa interviews to prepare students for common questions and provide guidance on the dos and don'ts. We assist with the entire visa process, from application submission to document preparation, ensuring smooth navigation and minimizing delays.",
+  //   card: {
+  //     type: "votes",
+  //     content: "42 votes",
+  //   },
+  //   bgColor: "bg-pink-50",
+  // },
 ];
 
 export default function ScrollTimeline() {

@@ -6,6 +6,7 @@ import {
   Presentation,
   BarChart3,
   Handshake,
+  ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
 import ScrollTimeline from "../components/scroll-timeline";
@@ -67,33 +68,40 @@ function Page() {
   return (
     <div className="min-h-screen bg-gray-50 ">
       <div className="w-full mx-auto">
-        <div className=" relative mx-auto px-4 py-12 md:py-36 bg-gradient-to-r from-red-50 to-orange-50">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12 mx-20">
+        <div className=" relative mx-auto px-4 py-12 md:py-36 bg-gradient-to-r from-[#8A0206] to-[#6A0104] text-white">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:mx-20">
             <div className="flex-1 space-y-6">
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-5xl md:text-6xl font-bold  leading-tight">
                 Admission
                 <span className="relative">
                   <span className="relative z-10"> Guidance</span>
                   {/* <span className="absolute bottom-2 left-0 w-full h-3 bg-red-200 -rotate-1 z-0"></span> */}
                 </span>
               </h1>
-              <p className="text-lg text-gray-600 max-w-xl">
-                Expert guidance through your admission guidance process. We make
-                immigration simple, efficient, and stress-free.
+              <p className="text-lg md:text-xl font-semibold text-white/80 leading-tight">
+                Transform Your Education with Expert Admission Guidance
               </p>
-              <button className="bg-[#8A0206] text-white px-8 py-4 rounded-lg font-medium hover:bg-red-800 transition-colors">
+              <p className="text-lg text-white/80 max-w-xl">
+                Embarking on an international education journey is exciting—but
+                it can also be overwhelming. Our Admission Guidance Services are
+                designed to simplify the process, helping you gain admission to
+                top universities across the globe.
+              </p>
+              <button className="text-[#8A0206] bg-white px-8 py-4 rounded-lg font-medium hover:bg-red-800 hover:text-white transition-colors flex items-center gap-2">
                 Free Expert Consultation
+                <ArrowRight className="w-5 h-5" />
               </button>
             </div>
 
             {/* Right Column - Hero Image */}
-            <div className="flex-1 absolute justify-center flex bottom-0 right-0">
+            <div className="flex-1 absolute justify-center hidden lg:flex bottom-0 right-0">
               <Image
                 src="/images/v0.png"
-                alt="Professional visa consultant"
+                alt="Professional travel and forex consultant"
                 width={800}
                 height={800}
-                //   className="rounded-2xl shadow-2xl"
+                priority
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

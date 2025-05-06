@@ -27,25 +27,30 @@ export const Timeline = ({ data }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Visa assistance
+      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10 space-y-4">
+        <h2 className="text-lg md:text-4xl  text-black dark:text-white  font-semibold">
+          Comprehensive Support for Student Visa Applications
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base w-full">
-          Obtaining a student visa is an important part of your study abroad
-          journey, but the requirements can often seem overwhelming. Edwise’s
-          student visa consultants provides thorough Visa Assistance services to
-          help you confidently navigate every aspect of the visa application
-          process. Our team is dedicated to providing personalized support and
-          expert guidance to ensure a smooth and successful visa application
-          experience..
+          Navigating the student visa process can be overwhelming - but we’re
+          here to make it simple and stress-free. Our Visa Assistance service
+          ensures that you are fully prepared and supported throughout your
+          application journey. With expert guidance, meticulous document
+          preparation, comprehensive application support, personalized interview
+          preparation, and consistent updates, we are committed to making your
+          path to studying abroad as smooth as possible.
         </p>
+        {/* <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base w-full ">
+          Our mission is to empower you to focus on your educational goals and
+          personal growth, knowing that the intricacies of your visa application
+          are in capable hands.
+        </p> */}
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
+            className="flex justify-start pt-10 md:pt-20 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">

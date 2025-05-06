@@ -41,7 +41,7 @@ const studyAbroadLinks = studyAbroadData.countries.map((country) => ({
   id: country.id,
 }));
 const studentServicesLinks = [
-  { name: "Test Preparations", href: "#" },
+  { name: "Test Preparations", href: "test-preparations" },
   { name: "Career Counseling", href: "career-counseling" },
   { name: "Admission Guidance", href: "admission-guidance" },
   { name: "Financial Assistance", href: "financial-assistance" },
@@ -248,21 +248,22 @@ export default function Navbar() {
             )}
           </div> */}
 
-          <Link
+          {/* <Link
             href="/scholarships"
             className="px-4 py-2 text-base font-medium text-gray-800 transition-colors hover:text-[#8A0206]/80"
             onClick={closeDropdowns}
           >
             Scholarships
           </Link>
-          {/* Regular Links */}
+
           <Link
             href="/"
             className="px-4 py-2 text-base font-medium text-gray-800 transition-colors hover:text-[#8A0206]/80"
             onClick={closeDropdowns}
           >
             Events
-          </Link>
+          </Link> */}
+
           {/* <Link
             href="#resources"
             className="px-4 py-2 text-base font-medium text-gray-800 transition-colors hover:text-[#8A0206]/80"
