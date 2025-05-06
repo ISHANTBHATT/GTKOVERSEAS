@@ -205,8 +205,8 @@ export default function CareerCounseling() {
                 Choosing to study abroad is one of the most important decisions
                 in a student’s academic and professional journey. At GTK
                 Overseas, our specialized career counseling for study abroad
-                services ensure you're not just going overseas – you're moving
-                toward a meaningful and successful career.
+                services ensure you&apos;re not just going overseas –
+                you&apos;re moving toward a meaningful and successful career.
               </p>
             </div>
             <div className="md:w-1/3 flex justify-center">

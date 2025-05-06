@@ -447,10 +447,10 @@ function Page() {
               Forex Assistance
             </h2>
             <p className="max-w-3xl mx-auto text-lg text-gray-600">
-              Secure and hassle-free foreign exchange solutions. Whether you're
-              exchanging currency for tuition fees, accommodation, or daily
-              expenses, we'll help you secure the best rates and minimize
-              unnecessary fees.
+              Secure and hassle-free foreign exchange solutions. Whether
+              you&apos;re exchanging currency for tuition fees, accommodation,
+              or daily expenses, we&apos;ll help you secure the best rates and
+              minimize unnecessary fees.
             </p>
           </div>
 
@@ -524,9 +524,9 @@ function Page() {
 
           <div className="max-w-3xl mx-auto bg-red-50 p-8 rounded-xl">
             <p className="text-xl font-medium text-gray-800 italic">
-              "Let us handle the logistics while you prepare for takeoff. With
-              our Travel and Forex Assistance, you're never far from help—even
-              thousands of miles away."
+              &quot;Let us handle the logistics while you prepare for takeoff.
+              With our Travel and Forex Assistance, you&apos;re never far from
+              help - even thousands of miles away.&quot;
             </p>
           </div>
 

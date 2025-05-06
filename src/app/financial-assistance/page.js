@@ -141,8 +141,8 @@ export default function FinancialAssistancePage() {
             </p>
             <p className="text-lg text-white/80 max-w-xl">
               Financing your international education can be a major concern, but
-              it doesn't have to be a roadblock. Our dedicated team is here to
-              guide you through the various financial assistance options
+              it doesn&apos;t have to be a roadblock. Our dedicated team is here
+              to guide you through the various financial assistance options
               available, ensuring your dream of studying abroad becomes a
               reality.
             </p>

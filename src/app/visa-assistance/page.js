@@ -208,7 +208,7 @@ export default function Page() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
             We keep track of your application status and provide updates,
-            ensuring you're informed and ready for the next steps.
+            ensuring you&apos;re informed and ready for the next steps.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image

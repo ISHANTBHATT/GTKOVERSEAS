@@ -486,7 +486,7 @@ export default function TestPreparationPage() {
                     </div>
                   </div>
                   <p className="italic text-muted-foreground">
-                    "{story.testimonial}"
+                    &quot;{story.testimonial}&quot;
                   </p>
                   <div className="mt-4 flex items-center gap-2">
                     <Badge variant="outline" className="bg-purple-50">
@@ -510,8 +510,8 @@ export default function TestPreparationPage() {
             Score High. Study Anywhere.
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-white/80">
-            Whether you're aiming for Ivy League universities or global tech
-            schools, we help you build the foundation for success with
+            Whether you&apos;re aiming for Ivy League universities or global
+            tech schools, we help you build the foundation for success with
             comprehensive test prep and ongoing guidance.
           </p>
           <Button
