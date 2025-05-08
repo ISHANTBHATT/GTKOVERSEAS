@@ -360,8 +360,8 @@ function Footer() {
           <h3 className="text-xl font-semibold mb-4">Services</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/test-preparation" className="hover:text-[#A83A28]">
-                Test Preparation
+              <Link href="/test-preparations" className="hover:text-[#A83A28]">
+                Test Preparations
               </Link>
             </li>
             <li>
@@ -412,7 +412,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link href="/courses" className="hover:text-[#A83A28]">
                 Find a Course
               </Link>
             </li>
@@ -422,7 +422,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#A83A28]">
+              <Link href="/scholarships" className="hover:text-[#A83A28]">
                 Scholarships
               </Link>
             </li>

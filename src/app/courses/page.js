@@ -1726,42 +1726,49 @@ export default function Home() {
             {[
               {
                 name: "USA",
+                link: "usa",
                 icon: "🇺🇸",
                 universities: 100,
                 courses: "Engineering, Business, Computer Science",
               },
               {
                 name: "Canada",
+                link: "canada",
                 icon: "🇨🇦",
                 universities: 100,
                 courses: "Engineering, Management, IT",
               },
               {
                 name: "United Kingdom",
+                link: "uk",
                 icon: "🇬🇧",
                 universities: 100,
                 courses: "Law, Engineering, Business",
               },
               {
                 name: "Australia",
+                link: "australia",
                 icon: "🇦🇺",
                 universities: 63,
                 courses: "Engineering, Hospitality, Business",
               },
               {
                 name: "New Zealand",
+                link: "new zealand",
                 icon: "🇳🇿",
                 universities: 38,
                 courses: "IT, MBA, Healthcare",
               },
               {
                 name: "Ireland",
+                link: "ireland",
                 icon: "🇮🇪",
                 universities: 26,
                 courses: "Engineering, Management, Medicine",
               },
               {
                 name: "Europe",
+                link: "europe",
                 icon: "🇪🇺",
                 universities: 150,
                 courses: "Engineering, Business, Arts",
@@ -1774,7 +1781,7 @@ export default function Home() {
               // },
             ].map((destination) => (
               <Link
-                href={`/destinations/${destination.name
+                href={`/study-abroad/${destination.link
                   .toLowerCase()
                   .replace(/\s+/g, "-")}`}
                 key={destination.name}
@@ -1959,9 +1966,10 @@ export default function Home() {
               },
             ].map((course, index) => (
               <Link
-                href={`/courses/${course.name
-                  .toLowerCase()
-                  .replace(/\s+/g, "-")}`}
+                href={`/search?course=${encodeURIComponent(course.name)}`}
+                // href={`/courses/${course.name
+                //   .toLowerCase()
+                //   .replace(/\s+/g, "-")}`}
                 key={index}
                 className="group"
               >

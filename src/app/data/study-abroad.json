@@ -154,27 +154,27 @@
         "description": "Canada provides an extensive variety of academic programs spanning numerous disciplines. Here are the most sought-after courses among international students:",
         "courses": [
           {
-            "title": "Business Management",
+            "title": "Artificial Intelligence",
             "image": "/images/business-management.jpg"
           },
           {
-            "title": "Engineering",
+            "title": "Law",
             "image": "/images/engineering.jpg"
           },
           {
-            "title": "Information Technology",
+            "title": "Psychology",
             "image": "/images/computer-science.jpg"
           },
           {
-            "title": "Health Sciences",
+            "title": "Civil Engineering",
             "image": "/images/medicine.jpg"
           },
           {
-            "title": "Media & Communications",
+            "title": "Accountancy & Finance",
             "image": "/images/media.jpg"
           },
           {
-            "title": "Hospitality & Tourism",
+            "title": "History",
             "image": "/images/hospitality.jpg"
           }
         ]
@@ -203,7 +203,7 @@
           },
           {
             "name": "University of Alberta",
-            "logo": "/images/alberta-logo.png",
+            "logo": "/images/canada-u4.jpg",
             "popularFor": "Engineering & Business",
             "ranking": 110
           },
@@ -262,11 +262,11 @@
         "description": "The UK provides an extensive variety of academic programs spanning numerous disciplines. Here are the most sought-after courses among international students:",
         "courses": [
           {
-            "title": "Business Management",
+            "title": "Data Science",
             "image": "/images/business-management.jpg"
           },
           {
-            "title": "Engineering",
+            "title": "MBA",
             "image": "/images/engineering.jpg"
           },
           {
@@ -274,7 +274,7 @@
             "image": "/images/computer-science.jpg"
           },
           {
-            "title": "Law",
+            "title": "Psychology",
             "image": "/images/law.jpg"
           },
           {
@@ -282,7 +282,7 @@
             "image": "/images/finance.jpg"
           },
           {
-            "title": "Medicine",
+            "title": "Economics",
             "image": "/images/medicine.jpg"
           }
         ]
@@ -370,11 +370,11 @@
         "description": "Australia provides an extensive variety of academic programs spanning numerous disciplines. Here are the most sought-after courses among international students:",
         "courses": [
           {
-            "title": "Business & Management",
+            "title": "Architecture",
             "image": "/images/business-management.jpg"
           },
           {
-            "title": "Engineering",
+            "title": "Data Science",
             "image": "/images/engineering.jpg"
           },
           {
@@ -382,15 +382,15 @@
             "image": "/images/computer-science.jpg"
           },
           {
-            "title": "Health Sciences",
+            "title": "Biotechnology",
             "image": "/images/medicine.jpg"
           },
           {
-            "title": "Hospitality & Tourism",
+            "title": "Nursing",
             "image": "/images/hospitality.jpg"
           },
           {
-            "title": "Education",
+            "title": "Business Analytics",
             "image": "/images/education.jpg"
           }
         ]
@@ -482,7 +482,7 @@
             "image": "/images/business-management.jpg"
           },
           {
-            "title": "Information Technology",
+            "title": "Information Sciences",
             "image": "/images/computer-science.jpg"
           },
           {
@@ -494,11 +494,11 @@
             "image": "/images/hospitality.jpg"
           },
           {
-            "title": "Agriculture & Forestry",
+            "title": "Agricultural Science",
             "image": "/images/agriculture.jpg"
           },
           {
-            "title": "Health Sciences",
+            "title": "Food Technology",
             "image": "/images/medicine.jpg"
           }
         ]
@@ -592,6 +592,17 @@
           {
             "title": "Computer Science",
             "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Operations & Supply Chain Mgt",
+            "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Physiotherapy",
+            "image": "/images/computer-science.jpg"
+          },          {
+            "title": "Economics",
+            "image": "/images/computer-science.jpg"
           }
         ]
       },
@@ -678,11 +689,19 @@
         "description": "Europe provides an extensive variety of academic programs spanning numerous disciplines. Here are the most sought-after courses among international students:",
         "courses": [
           {
-            "title": "Business Management",
+            "title": "Hospitality Mgt",
             "image": "/images/business-management.jpg"
           },
           {
-            "title": "Information Technology",
+            "title": "BBA",
+            "image": "/images/computer-science.jpg"
+          },
+          {
+            "title": "Data Eng",
+            "image": "/images/Data-Eng.jpg"
+          },
+          {
+            "title": "Computer Science",
             "image": "/images/computer-science.jpg"
           }
         ]
