@@ -95,7 +95,7 @@ export default function InquiryFormModal({
     setError("");
 
     try {
-      const response = await fetch("/api/send-inquiry", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

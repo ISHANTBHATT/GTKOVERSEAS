@@ -406,11 +406,13 @@ export default function TestPreparationPage() {
                 key={index}
                 className="overflow-hidden transition-all hover:shadow-lg py-0"
               >
-                <CardHeader className="bg-gradient-to-r from-[#FDE8E8] to-[#FAD1D1] py-6">
+                <CardHeader className="bg-gradient-to-br from-[#8A0206] to-[#B33A2F] py-6">
                   <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#FEF4EF]">
                     <div className="text-[#8A0206]">{test.icon}</div>
                   </div>
-                  <CardTitle className="text-xl">{test.name}</CardTitle>
+                  <CardTitle className="text-xl text-white">
+                    {test.name}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pb-6">
                   <CardDescription className="text-base">
