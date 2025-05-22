@@ -7,6 +7,35 @@
       "heroTitle": "Unlock Your Future: Study in the USA - Where Academic Excellence Meets Cultural Diversity",
       "heroDescription": "Studying in the United States attracts many students for a variety of reasons, especially because of the country's robust academic reputation, rich cultural diversity, and extensive global opportunities.",
       "heroImage": "/images/usa-student.jpg",
+      "quickFacts": {
+        "title": "Quick Facts",
+        "facts": [
+          "Global Recognition: Home to numerous top-ranked universities offering diverse programs.",
+          "Cultural Diversity: A melting pot of cultures, providing a rich student experience.",
+          "Innovation Hub: Leader in research and innovation across various fields.",     
+          "Work Opportunities: Optional Practical Training (OPT) allows graduates to work up to 3 years post-study in STEM fields."    
+        ]
+      },
+      "costofStudy": {
+        "title": "Cost of Study in USA",
+        "table": 
+          {
+            "Types of Expenses": "Annual Expenses in USD",
+            "Tuition Fees for One Year": "25000",
+            "Living Accommodation": "15000",
+            "Airfare from India to USA": "1000",
+            "VISA fees (VISA & SEVIS)": "535",
+            "Total Expenses": "41535"
+          }        
+      },
+      "Careers":{
+        "title": "Careers & Industry Insights",
+        "points": [
+          "In-Demand Fields: Technology, Healthcare, Business, and Engineering.",
+          "Employment Opportunities: Robust job market with numerous opportunities for international graduates.",
+          "Permanent Residency: Pathways available through H-1B visas and employment-based green cards."
+        ]
+      },
       "benefits": [
         {
           "title": "Prestigious Universities",
@@ -115,6 +144,37 @@
       "heroTitle": "Unlock Your Potential: Diverse Education and Cultural Richness in Canada",
       "heroDescription": "Studying in Canada offers a diverse, high-quality education at top universities, along with vibrant cultural experiences and beautiful landscapes. The country's emphasis on research and innovation, combined with a safe, multicultural environment, fosters personal growth and future success.",
       "heroImage": "/images/canada-student.jpg",
+            "quickFacts": {
+        "title": "Quick Facts",
+        "facts": [  
+          "Safety: Consistently ranked among the safest countries globally.",
+          "Education Quality: Home to world-renowned universities offering hands-on learning experiences.",
+          "Work Opportunities: Paid internships and part-time work options available for students.",
+          "Post-Study Work Visa: Eligible for up to 3 years under PGWPP.",
+          "Immigration Pathways: Favorable routes to PR through Express Entry and PNPs."
+        ]
+      },
+      "costofStudy": {
+        "title": "Cost of Study in Canada",
+        "table": 
+          {
+            "Types of Expenses": "Annual Expenses in USD",
+            "Tuition Fees for One Year": "20000",
+            "Living Accommodation": "20635",
+            "Airfare from India to Canada": "2500",
+            "VISA Fees ( Including Biometric Fees)": "235",
+            "Total Expenses": "43370"
+          }        
+      },
+      "Careers":{
+        "title": "Careers & Industry Insights",
+        "points": [
+          "Economic Landscape: Strong economy in Agriculture, Energy, Tech, Manufacturing, and Services.",
+          "In-Demand Professions: Engineering, IT, Healthcare, Law, Banking, and Finance.",
+          "Job Market: Growing job opportunities for skilled professionals.",
+          "Quality of Life: High standard of living with excellent healthcare and education."
+        ]
+      },
       "benefits": [
         {
           "title": "High-Quality Education",
@@ -223,6 +283,35 @@
       "heroTitle": "Discover the UK: Prestigious Education and a Tapestry of Cultures",
       "heroDescription": "Studying in the UK provides a world-class education and cultural immersion. The country boasts prestigious universities known for academic excellence and research. Students can enjoy a vibrant life with diverse cultural experiences, historical landmarks, and global interactions, fostering personal and intellectual growth.",
       "heroImage": "/images/uk-student.jpg",
+      "quickFacts": {
+        "title": "Quick Facts",
+        "facts": [
+              "Prestigious Institutions: Oxford, Cambridge, and many more top-ranked universities.",
+              "Post-Study Work Visa: Graduate Route allows 2-3 years stay.",
+              "Cultural Heritage: Rich history and diverse student experience."
+        ]
+      },
+      "costofStudy": {
+        "title": "Cost of Study in UK",
+        "table": 
+          {
+            "Types of Expenses": "Annual Expenses in GBP",
+            "Tuition Fees for One Year": "14000",
+            "Living Accommodation": "9207",
+            "Airfare from India to Uk": "500",
+            "VISA fees": "490",
+            "Immigration Health Surcharge / National Health Sur charge": "1164",
+            "Total Expenses": "24775"
+          }        
+      },
+      "Careers":{
+        "title": "Careers & Industry Insights",
+        "points": [
+          "In-Demand Fields: Finance, Engineering, Healthcare, Creative Arts.",
+          "Employment Opportunities: Strong job market in major UK cities.",
+          "Permanent Residency: Skilled Worker visa and other routes available."
+        ]
+      },
       "benefits": [
         {
           "title": "World-Renowned Universities",
@@ -331,6 +420,34 @@
       "heroTitle": "From Classrooms to Coral Reefs: Your Australian Journey Begins",
       "heroDescription": "Studying in Australia provides high-quality education and a rich cultural experience. Its world-class universities attract international students, while stunning landscapes and vibrant cities offer personal and professional growth. Activities like exploring the Great Barrier Reef and enjoying multicultural festivals enhance the experience.",
       "heroImage": "/images/australia-student.jpg",
+            "quickFacts": {
+        "title": "Quick Facts",
+        "facts": [
+          "Top-Ranked Universities: 9 of the world's top 100.",
+          "Post-Study Work Visa: Subclass 485 visa up to 5 years.",
+          "Multicultural Society: Welcoming and diverse environment."
+        ]
+      },
+      "costofStudy": {
+        "title": "Cost of Study in Europe",
+        "table": 
+          {
+            "Types of Expenses": "Annual Expenses in AUD",
+            "Tuition Fees for One Year": "35000",
+            "Living Accommodation": "29710",
+            "Airfare from India to Australia": "2000",
+            "VISA fees": "1600",
+            "Total Expenses": "68310"
+          }        
+      },
+      "Careers":{
+        "title": "Careers & Industry Insights",
+        "points": [
+          "In-Demand Fields: Healthcare, Engineering, IT, Education.",
+          "Employment Opportunities: High demand for skilled professionals.",
+          "Permanent Residency: Various graduate migration pathways available."
+        ]
+      },
       "benefits": [
         {
           "title": "High-Quality Education",
@@ -439,6 +556,34 @@
       "heroTitle": "Pursue Your Dreams in New Zealand’s Safe and Supportive Educational Haven",
       "heroDescription": "New Zealand provides a unique educational experience with its beautiful landscapes and welcoming culture. Its institutions are recognized for high-quality programs, innovative teaching, and a focus on research. The safe and supportive environment makes it an ideal destination for students pursuing academic excellence and memorable life experiences.",
       "heroImage": "/images/newzealand-student.jpg",
+            "quickFacts": {
+        "title": "Quick Facts",
+        "facts": [
+          "Quality Education: Universities in top 3% worldwide.",
+          "Post-Study Work Visa: Up to 3 years based on course.",
+          "Safe Environment: Friendly and secure living."
+        ]
+      },
+      "costofStudy": {
+        "title": "Cost of Study in New Zealand",
+        "table": 
+          {
+            "Types of Expenses": "Annual Expenses in NZD",
+            "Tuition Fees for One Year": "25000",
+            "Living Accommodation": "20000",
+            "Airfare from India to NZ": "2000",
+            "VISA fees": "430",
+            "Total Expenses": "47430"
+          }        
+      },
+      "Careers":{
+        "title": "Careers & Industry Insights",
+        "points": [
+          "In-Demand Fields: Agriculture, IT, Healthcare, Engineering.",
+          "Employment Opportunities: Expanding job market.",
+          "Permanent Residency: Skilled migration programs available."
+        ]
+      },
       "benefits": [
         {
           "title": "High-Quality Education",
@@ -547,6 +692,34 @@
       "heroTitle": "Unlock Your Future in Ireland: A Blend of Culture, Innovation, and Learning",
       "heroDescription": "Considering further education? Studying in Ireland could be ideal. It boasts rich culture, vibrant cities, stunning landscapes, world-renowned universities, a welcoming community, and a dynamic tech industry. Ireland offers academic excellence and personal growth opportunities, making it a memorable experience for students.",
       "heroImage": "/images/ireland-student.jpg",
+            "quickFacts": {
+        "title": "Quick Facts",
+        "facts": [
+          "English-Speaking EU Country: Ideal for international students.",
+          "Post-Study Work Visa: 2-year stay-back option.",
+          "Tech Hub: Base for companies like Google, Facebook, and Apple."
+        ]
+      },
+      "costofStudy": {
+        "title": "Cost of Study in Ireland",
+        "table": 
+          {
+            "Types of Expenses": "Annual Expenses in €",
+            "Tuition Fees for One Year": "15000",
+            "Living Accommodation": "12000",
+            "Airfare from India to USA": "700",
+            "VISA fees": "195",
+            "Total Expenses": "27895"
+          }        
+      },
+      "Careers":{
+        "title": "Careers & Industry Insights",
+        "points": [
+          "Tech Hub: Base for companies like Google, Facebook, and Apple.",
+          "Employment Opportunities: Many roles in MNCs.",
+          "Permanent Residency: Available through work and long-term stay."
+        ]
+      },
       "benefits": [
         {
           "title": "World-Class Education System",
@@ -650,6 +823,34 @@
       "heroTitle": "From History to Innovation: Europe Offers More Than Education",
       "heroDescription": "Studying in Europe provides a unique experience with world-class education and cultural diversity. The region's rich history and prestigious universities foster personal and academic growth. Easy travel between countries enhances learning, while affordable tuition and scholarships attract global students interested in research, language acquisition, or adventure.",
       "heroImage": "/images/Europe-student.jpg",
+      "quickFacts": {
+        "title": "Quick Facts",
+        "facts": [
+            "Affordable Education: Lower tuition than traditional destinations.",
+            "Cultural Diversity: Experience rich cultural variety.",
+            "Growing Popularity: Cost-effective education on the rise."
+        ]
+      },
+      "costofStudy": {
+        "title": "Cost of Study in Europe",
+        "table": 
+          {
+            "Types of Expenses": "Annual Expenses in USD",
+            "Tuition Fees for One Year": "25000",
+            "Living Accommodation": "15000",
+            "Airfare from India to USA": "1000",
+            "VISA fees (VISA & SEVIS)": "535",
+            "Total Expenses": "41535"
+          }        
+      },
+      "Careers":{
+        "title": "Careers & Industry Insights",
+        "points": [
+          "In-Demand Fields: Tourism, Business, Engineering, IT.",
+          "Employment Opportunities: Local language helps in job search.",
+          "Permanent Residency: Employment and long-term residency options available."
+        ]
+      },
       "benefits": [
         {
           "title": "World-Class Education",

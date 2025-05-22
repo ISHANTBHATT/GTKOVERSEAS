@@ -1659,12 +1659,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Countries } from "./Countries";
+import Countries from "./Countries";
 import Scroll from "./Scroll";
 import StarRating from "./StarRating";
 import Banner from "./Banner";
 import { ArrowRight } from "lucide-react";
 import WorkProcess from "./WorkProcess";
+import ScrollSteps from "./ScrollSteps";
+import Partners from "./Partners";
+import CoursesSection from "./CoursesSection";
 // Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -1694,7 +1697,6 @@ const float = {
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Header/Navigation */}
       {/* <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -1759,7 +1761,7 @@ export default function Home() {
       </motion.header> */}
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#8A0206] to-[#B33A2F] min-h-screen md:min-h-1/2 lg:min-h-screen flex items-center py-16 px-6 md:px-12 overflow-hidden rounded-[50px]">
+      {/* <section className="relative bg-gradient-to-br from-[#8A0206] to-[#B33A2F] min-h-screen md:min-h-1/2 lg:min-h-screen flex items-center py-16 px-6 md:px-12 overflow-hidden rounded-[50px]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -1841,7 +1843,7 @@ export default function Home() {
             <Banner />
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -1851,6 +1853,7 @@ export default function Home() {
       >
         <Countries />
       </motion.div>
+      <Partners />
       {/* Categories Section */}
       {/* <section className="container mx-auto py-12 px-4 md:px-20 flex min-h-screen items-center">
         <motion.div
@@ -2081,6 +2084,8 @@ export default function Home() {
           className="absolute -bottom-52 md:-bottom-2 right-0 w-1/3 h-1/3 bg-[#780105] rounded-tl-full"
         />
       </section>
+
+      <CoursesSection />
 
       {/* Why Different Section */}
       <section className="py-16 px-6 md:px-12 bg-white min-h-screen flex items-center">
@@ -2321,7 +2326,8 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <Scroll />
+        {/* <Scroll /> */}
+        <ScrollSteps />
       </motion.div>
       {/* Inquiry and Testimonials Section */}
       <section className="container mx-auto px-6 md:px-36 py-16 overflow-hidden">

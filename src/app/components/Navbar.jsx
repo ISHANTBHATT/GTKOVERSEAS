@@ -56,10 +56,13 @@ const whatWeDoLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const isHomePage = pathname === "/";
   const [activeDropdown, setActiveDropdown] = useState(null);
   const dropdownRef = useRef(null);
   const router = useRouter();
-  const pathname = usePathname();
+
   //   const handleDropdownToggle = (dropdown) => {
   //     if (activeDropdown === dropdown) {
   //       setActiveDropdown(null);
@@ -67,9 +70,20 @@ export default function Navbar() {
   //       setActiveDropdown(dropdown);
   //     }
   //   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   useEffect(() => {
     setActiveDropdown(null);
   }, [pathname]);
+
   const handleDropdownToggle = (dropdown) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
@@ -95,7 +109,15 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
+    <header
+      className={` top-0 z-50 w-full  ${
+        isScrolled || !isHomePage
+          ? "bg-white shadow-md text-gray-800"
+          : "bg-transparent text-white "
+      }
+      ${isHomePage ? "fixed" : "Sticky"}
+      `}
+    >
       <div className=" flex h-20 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center" onClick={closeDropdowns}>
@@ -117,7 +139,7 @@ export default function Navbar() {
         >
           <Link
             href="/about"
-            className="px-4 py-2 text-base font-medium text-gray-800 transition-colors hover:text-[#8A0206]/80"
+            className="px-4 py-2 text-base font-medium  transition-colors hover:text-[#8A0206]/80"
             onClick={closeDropdowns}
           >
             About
@@ -131,7 +153,7 @@ export default function Navbar() {
                 "flex items-center px-4 py-2 text-base font-medium transition-colors",
                 activeDropdown === "studyAbroad"
                   ? "text-[#8A0206]"
-                  : "text-gray-800 hover:text-[#8A0206]/80"
+                  : " hover:text-[#8A0206]/80"
               )}
               aria-expanded={activeDropdown === "studyAbroad"}
             >
@@ -161,7 +183,7 @@ export default function Navbar() {
 
           <Link
             href="/courses"
-            className="px-4 py-2 text-base font-medium text-gray-800 transition-colors hover:text-[#8A0206]/80"
+            className="px-4 py-2 text-base font-medium  transition-colors hover:text-[#8A0206]/80"
             onClick={closeDropdowns}
           >
             Find a Course
@@ -175,7 +197,7 @@ export default function Navbar() {
                 "flex items-center px-4 py-2 text-base font-medium transition-colors",
                 activeDropdown === "studentServices"
                   ? "text-[#8A0206]"
-                  : "text-gray-800 hover:text-[#8A0206]/80"
+                  : "hover:text-[#8A0206]/80"
               )}
               aria-expanded={activeDropdown === "studentServices"}
             >

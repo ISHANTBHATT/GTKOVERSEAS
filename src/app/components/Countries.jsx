@@ -88,73 +88,156 @@
 //   );
 // }
 
+//currently in use
+// "use client";
+// import { motion } from "framer-motion";
+// import { FocusCards } from "@/components/ui/focus-cards";
+
+// export default function Countries() {
+//   const cards = [
+//     {
+//       title: "Study in USA",
+//       src: "/images/usa.jpg",
+//     },
+//     {
+//       title: "Study in UK",
+//       src: "/images/uk.jpg",
+//     },
+//     {
+//       title: "Study in Canada",
+//       src: "/images/canada.jpg",
+//     },
+//     {
+//       title: "Study in Australia",
+//       src: "/images/australia.jpg",
+//     },
+//     {
+//       title: "Study in New Zealand",
+//       src: "/images/new-zealand.jpg",
+//     },
+//     {
+//       title: "Study in Ireland",
+//       src: "/images/ireland.jpg",
+//     },
+//   ];
+
+//   return (
+//     <div className="py-20">
+//       <div>
+//         <motion.h2
+//           initial={{ opacity: 0, y: 20 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           transition={{ duration: 0.6 }}
+//           viewport={{ once: true }}
+//           className="text-4xl font-bold text-gray-800 uppercase tracking-wide text-center py-10"
+//         >
+//           Your <span className="text-[#8A0206]">Dream</span>, Our Mission –
+//           <br />
+//           Pick the Country, We Handle the Rest
+//         </motion.h2>
+//         <motion.p
+//           initial={{ opacity: 0, y: 20 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           transition={{ duration: 0.6, delay: 0.2 }}
+//           viewport={{ once: true }}
+//           className="max-w-2xl mx-auto text-lg text-gray-600 font-medium text-center pb-10"
+//         >
+//           At GTK Overseas, we strive to make your study abroad experience smooth
+//           and hassle-free. Whether your goal is to study in the UK, USA, Canada,
+//           Australia, Germany, or any other premier destination — simply choose
+//           your dream country, and we'll handle all the details for you.
+//         </motion.p>
+//       </div>
+//       <motion.div
+//         initial={{ opacity: 0 }}
+//         whileInView={{ opacity: 1 }}
+//         transition={{ duration: 0.8 }}
+//         viewport={{ once: true }}
+//       >
+//         <FocusCards cards={cards} />
+//       </motion.div>
+//     </div>
+//   );
+// }
+
 "use client";
-import { motion } from "framer-motion";
-import { FocusCards } from "@/components/ui/focus-cards";
+import React from "react";
+import { HeroParallax } from "@/components/ui/hero-parallax";
 
-export function Countries() {
-  const cards = [
-    {
-      title: "Study in USA",
-      src: "/images/usa.jpg",
-    },
-    {
-      title: "Study in UK",
-      src: "/images/uk.jpg",
-    },
-    {
-      title: "Study in Canada",
-      src: "/images/canada.jpg",
-    },
-    {
-      title: "Study in Australia",
-      src: "/images/australia.jpg",
-    },
-    {
-      title: "Study in New Zealand",
-      src: "/images/new-zealand.jpg",
-    },
-    {
-      title: "Study in Ireland",
-      src: "/images/ireland.jpg",
-    },
-  ];
-
-  return (
-    <div className="py-20">
-      <div>
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-4xl font-bold text-gray-800 uppercase tracking-wide text-center py-10"
-        >
-          Your <span className="text-[#8A0206]">Dream</span>, Our Mission –
-          <br />
-          Pick the Country, We Handle the Rest
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="max-w-2xl mx-auto text-lg text-gray-600 font-medium text-center pb-10"
-        >
-          At GTK Overseas, we strive to make your study abroad experience smooth
-          and hassle-free. Whether your goal is to study in the UK, USA, Canada,
-          Australia, Germany, or any other premier destination — simply choose
-          your dream country, and we'll handle all the details for you.
-        </motion.p>
-      </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <FocusCards cards={cards} />
-      </motion.div>
-    </div>
-  );
+export default function Countries() {
+  return <HeroParallax products={products} />;
 }
+export const products = [
+  {
+    title: "Moonbeam",
+    link: "",
+    thumbnail: "/images/usa1.jpg",
+  },
+  {
+    title: "Cursor",
+    link: "",
+    thumbnail: "/images/uk1.jpg",
+  },
+  {
+    title: "Rogue",
+    link: "",
+    thumbnail: "/images/canada1.jpg",
+  },
+
+  {
+    title: "Editorially",
+    link: "",
+    thumbnail: "/images/australia.jpg",
+  },
+  {
+    title: "Editrix AI",
+    link: "",
+    thumbnail: "/images/new-zealand1.jpg",
+  },
+  {
+    title: "Pixel Perfect",
+    link: "",
+    thumbnail: "/images/ireland.jpg",
+  },
+
+  {
+    title: "Algochurn",
+    link: "",
+    thumbnail: "/images/Spain.jpg",
+  },
+  {
+    title: "Algochurn",
+    link: "",
+    thumbnail: "/images/France.jpg",
+  },
+  {
+    title: "Algochurn",
+    link: "",
+    thumbnail: "/images/Germany.jpg",
+  },
+  {
+    title: "Algochurn",
+    link: "",
+    thumbnail: "/images/Netherlands.jpg",
+  },
+  {
+    title: "Algochurn",
+    link: "",
+    thumbnail: "/images/Sweden.jpg",
+  },
+  {
+    title: "Algochurn",
+    link: "",
+    thumbnail: "/images/Austria.jpg",
+  },
+  {
+    title: "Algochurn",
+    link: "",
+    thumbnail: "/images/Italy.jpg",
+  },
+  {
+    title: "Algochurn",
+    link: "",
+    thumbnail: "/images/Switzerland.jpg",
+  },
+];
