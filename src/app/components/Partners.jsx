@@ -151,42 +151,99 @@
 // }
 
 // export default Partners;
-
+"use client";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 const clients = [
   "/images/usa-u1.png",
   "/images/usa-u2.png",
-  "/images/usa-u3.png",
-  "/images/usa-u4.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
-  "/images/usa-u5.png",
+  "/images/hu3.png",
+  "/images/hu4.png",
+  "/images/hu5.png",
+  "/images/hu6.jpg",
+  "/images/hu7.png",
+  "/images/hu8.png",
+  "/images/hu9.png",
+  "/images/hu10.png",
+  "/images/hu11.png",
+  "/images/hu12.jpg",
+  "/images/hu13.png",
+  "/images/hu14.png",
+  "/images/hu15.png",
+  "/images/hu16.png",
+  "/images/hu17.jpg",
+  "/images/hu18.png",
+  "/images/hu19.png",
+  "/images/hu20.png",
+  "/images/hu21.png",
+  "/images/hu22.png",
+  "/images/hu23.png",
 ];
 
 export default function ClientList() {
   return (
+    // <section className="w-full py-10 bg-white text-center">
+    //   <div className="max-w-6xl mx-auto px-4">
+    //     <h2 className="text-4xl font-bold text-gray-900">
+    //       Our Top Ranked Partners
+    //     </h2>
+    //     <p className="text-gray-500 text-sm mt-1">
+    //       Here are the top universities according to the QS World Rankings.
+    //     </p>
+
+    //     <div className="mt-10 flex flex-wrap justify-center gap-6">
+    //       {clients.map((logo, index) => (
+    //         <div
+    //           key={index}
+    //           className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shadow-sm border border-gray-200 flex items-center justify-center bg-white"
+    //         >
+    //           <Image
+    //             src={logo}
+    //             alt={`Client logo ${index + 1}`}
+    //             width={80}
+    //             height={80}
+    //             className="object-contain"
+    //           />
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
     <section className="w-full py-10 bg-white text-center">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-gray-900">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-4xl font-bold text-gray-900"
+        >
           Our Top Ranked Partners
-        </h2>
-        <p className="text-gray-500 text-sm mt-1">
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-gray-500 text-sm mt-1"
+        >
           Here are the top universities according to the QS World Rankings.
-        </p>
+        </motion.p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-6">
           {clients.map((logo, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                delay: index * 0.05,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 100,
+              }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
               className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shadow-sm border border-gray-200 flex items-center justify-center bg-white"
             >
               <Image
@@ -196,7 +253,7 @@ export default function ClientList() {
                 height={80}
                 className="object-contain"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

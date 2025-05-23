@@ -184,7 +184,13 @@ export default function CoursesSection() {
   return (
     <section className="py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white ">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
             Discover{" "}
             <span className="relative inline-block">
@@ -201,44 +207,57 @@ export default function CoursesSection() {
             Explore top-rated courses from leading universities and industry
             experts worldwide
           </p>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col md:flex-row gap-8">
           {/* Vertical Tabs */}
           <div className="md:w-1/4">
-            <div className="sticky top-24 bg-white  rounded-xl shadow-lg p-1">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="sticky top-24 bg-white  rounded-xl shadow-lg p-1"
+            >
               <div className="flex flex-col space-y-2">
-                {regions.map((region) => (
-                  <button
+                {regions.map((region, index) => (
+                  <motion.div
                     key={region.id}
-                    onClick={() => setActiveRegion(region.id)}
-                    className={cn(
-                      "flex items-center justify-between px-4 py-3 rounded-lg text-left transition-all",
-                      activeRegion === region.id
-                        ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-md"
-                        : "hover:bg-slate-100 "
-                    )}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    viewport={{ once: true }}
                   >
-                    <div className="flex items-center">
-                      {region.icon}
-                      <span className="font-medium">{region.name}</span>
-                    </div>
-                    <Badge
-                      variant={
-                        activeRegion === region.id ? "secondary" : "outline"
-                      }
+                    <button
+                      onClick={() => setActiveRegion(region.id)}
                       className={cn(
+                        "flex items-center justify-between px-4 py-3 rounded-lg text-left transition-all w-full",
                         activeRegion === region.id
-                          ? "bg-white/20 hover:bg-white/20 text-white"
-                          : ""
+                          ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-md"
+                          : "hover:bg-slate-100 "
                       )}
                     >
-                      {region.count}
-                    </Badge>
-                  </button>
+                      <div className="flex items-center">
+                        {region.icon}
+                        <span className="font-medium">{region.name}</span>
+                      </div>
+                      <Badge
+                        variant={
+                          activeRegion === region.id ? "secondary" : "outline"
+                        }
+                        className={cn(
+                          activeRegion === region.id
+                            ? "bg-white/20 hover:bg-white/20 text-white"
+                            : ""
+                        )}
+                      >
+                        {region.count}
+                      </Badge>
+                    </button>
+                  </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Course Cards */}
@@ -246,17 +265,18 @@ export default function CoursesSection() {
             <motion.div
               key={activeRegion}
               initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3 }}
+              viewport={{ once: true }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             >
               {activeCategories.map((category) => (
                 <motion.div
                   key={category.id}
                   initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
+                  viewport={{ once: true, margin: "0px 0px -100px 0px" }}
                   whileHover={{ y: -8 }}
                   onMouseEnter={() => setHoveredCard(category.id)}
                   onMouseLeave={() => setHoveredCard(null)}
