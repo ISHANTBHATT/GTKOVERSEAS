@@ -169,75 +169,75 @@ export default function Countries() {
 }
 export const products = [
   {
-    title: "Moonbeam",
-    link: "",
+    title: "USA",
+    link: "/study-abroad/usa",
     thumbnail: "/images/usa1.jpg",
   },
   {
-    title: "Cursor",
-    link: "",
+    title: "UK",
+    link: "/study-abroad/uk",
     thumbnail: "/images/uk1.jpg",
   },
   {
-    title: "Rogue",
-    link: "",
+    title: "CANADA",
+    link: "/study-abroad/canada",
     thumbnail: "/images/canada1.jpg",
   },
 
   {
-    title: "Editorially",
-    link: "",
+    title: "AUSTRALIA",
+    link: "/study-abroad/australia",
     thumbnail: "/images/australia.jpg",
   },
   {
-    title: "Editrix AI",
-    link: "",
+    title: "NEW ZEALAND",
+    link: "/study-abroad/new-zealand",
     thumbnail: "/images/new-zealand1.jpg",
   },
   {
-    title: "Pixel Perfect",
-    link: "",
+    title: "IRELAND",
+    link: "/study-abroad/ireland",
     thumbnail: "/images/ireland.jpg",
   },
 
   {
-    title: "Algochurn",
-    link: "",
+    title: "SPAIN",
+    link: "/study-abroad/europe",
     thumbnail: "/images/Spain.jpg",
   },
   {
-    title: "Algochurn",
-    link: "",
+    title: "FRANCE",
+    link: "/study-abroad/europe",
     thumbnail: "/images/France.jpg",
   },
   {
-    title: "Algochurn",
-    link: "",
+    title: "GERMANY",
+    link: "/study-abroad/europe",
     thumbnail: "/images/Germany.jpg",
   },
   {
-    title: "Algochurn",
-    link: "",
+    title: "NETHERLANDS",
+    link: "/study-abroad/europe",
     thumbnail: "/images/Netherlands.jpg",
   },
   {
-    title: "Algochurn",
-    link: "",
+    title: "SWEDEN",
+    link: "/study-abroad/europe",
     thumbnail: "/images/Sweden.jpg",
   },
   {
-    title: "Algochurn",
-    link: "",
+    title: "AUSTRIA",
+    link: "/study-abroad/europe",
     thumbnail: "/images/Austria.jpg",
   },
   {
-    title: "Algochurn",
-    link: "",
+    title: "ITALY",
+    link: "/study-abroad/europe",
     thumbnail: "/images/Italy.jpg",
   },
   {
-    title: "Algochurn",
-    link: "",
+    title: "SWITZERLAND",
+    link: "/study-abroad/europe",
     thumbnail: "/images/Switzerland.jpg",
   },
 ];

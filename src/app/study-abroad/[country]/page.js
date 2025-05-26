@@ -237,9 +237,16 @@ import {
   Lightbulb,
   Building,
   CheckCircle,
+  Star,
+  ChevronRight,
 } from "lucide-react";
 import studyAbroadData from "@/app/data/study-abroad.json";
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import QuickFacts from "@/app/components/QuickFacts";
 
 export async function generateStaticParams() {
   return studyAbroadData.countries.map((country) => ({
@@ -255,6 +262,21 @@ export default function CountryPage({ params }) {
   if (!countryData) {
     notFound();
   }
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 },
+  };
 
   return (
     <main className="min-h-screen">
@@ -300,8 +322,9 @@ export default function CountryPage({ params }) {
         </div>
       </section>
 
+      {countryData.quickFacts && <QuickFacts countryData={countryData} />}
       {/* Quick Facts Section */}
-      {countryData.quickFacts && (
+      {/* {countryData.quickFacts && (
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="relative mb-12 text-center text-3xl font-bold text-gray-900 md:text-4xl">
@@ -329,7 +352,7 @@ export default function CountryPage({ params }) {
             </div>
           </div>
         </section>
-      )}
+      )} */}
 
       {/* Cost of Study Section */}
       {countryData.costofStudy && (

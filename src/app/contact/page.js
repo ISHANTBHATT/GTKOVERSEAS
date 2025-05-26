@@ -672,6 +672,7 @@ const initialFormData = {
   studyDate: "",
   preferredYear: "",
   university: "",
+  location: "",
   consent: false,
 };
 
@@ -978,6 +979,24 @@ function PAGE() {
                       <option key={i} value={u} />
                     ))}
                   </datalist>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Our Office
+                  </label>
+                  <select
+                    name="location"
+                    value={formData.location}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 p-3 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  >
+                    <option value="">Select Destination</option>
+                    <option value="new delhi">New Delhi</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="rajasthan">Rajasthan</option>
+                  </select>
                 </div>
               </div>
 
