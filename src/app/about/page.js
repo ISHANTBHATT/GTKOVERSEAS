@@ -38,8 +38,8 @@ export default function Page() {
 
       {/* About Content */}
       <section className="p-6 md:p-10">
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="md:col-span-2 grid gap-4">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="lg:col-span-2 grid gap-4">
             <Image
               src="/images/ab4.jpg"
               alt="Business people"
@@ -221,7 +221,7 @@ export default function Page() {
                 alt="Tax consultant"
                 width={600}
                 height={700}
-                className="w-full h-full object-cover"
+                className="w-full h-[500px] object-cover"
               />
             </div>
             <div className="absolute bottom-6 left-6 bg-[#3C2A2A]/80 p-6 rounded-lg max-w-[80%]">
@@ -338,7 +338,7 @@ export default function Page() {
           </div>
         </div> */}
 
-        <div className="grid md:grid-cols-3 gap-6 mb-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           <div className="bg-[#A83A28] rounded-lg p-8 text-white">
             <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
               <Settings className="text-[#A83A28] w-6 h-6" />

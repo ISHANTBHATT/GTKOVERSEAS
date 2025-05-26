@@ -169,7 +169,7 @@ const clients = [
   "/images/hu12.jpg",
   "/images/hu13.png",
   "/images/hu14.png",
-  "/images/hu15.png",
+  "/images/new-zealand-u2.jpg",
   "/images/hu16.png",
   "/images/hu17.jpg",
   "/images/hu18.png",
@@ -218,7 +218,8 @@ export default function ClientList() {
           viewport={{ once: true }}
           className="text-4xl font-bold text-gray-900"
         >
-          Our Top Ranked Partners
+          Our Top Ranked
+          <span className="text-[#8A0206]"> Partners</span>
         </motion.h2>
 
         <motion.p

@@ -2786,7 +2786,7 @@ export default function SearchPage() {
         universities.push({
           name: uniName,
           country: country.country,
-          logo: `/placeholder.svg?height=64&width=64`,
+          logo: country.universities[uniName].logo,
           location: country.country,
         });
       });
@@ -2927,7 +2927,7 @@ export default function SearchPage() {
   );
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50 pt-20">
       <header className="bg-white border-b border-gray-200 sticky top-0 z-20">
         <div className="container mx-auto px-4 py-3">
           <div className="flex  items-center justify-center">

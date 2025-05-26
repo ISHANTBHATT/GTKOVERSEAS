@@ -55,13 +55,21 @@ export default function QuickFacts({ countryData }) {
               <Badge className="mb-4 bg-rose-500 hover:bg-rose-600">
                 Discover
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-purple-600 dark:from-rose-400 dark:to-purple-400">
-                Why Study in USA?
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight pb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-purple-600">
+                Why Study in {countryData.name}?
               </h2>
 
               <div className="relative">
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-rose-500 to-purple-500 rounded-full"></div>
-                <div className="pl-6 space-y-4 text-gray-700 dark:text-gray-300">
+                {countryData.about.map((a, index) => (
+                  <div
+                    key={index}
+                    className="pl-6 space-y-4 text-gray-700 dark:text-gray-200"
+                  >
+                    <p className="mb-4 text-sm">{a}</p>
+                  </div>
+                ))}
+                {/* <div className="pl-6 space-y-4 text-gray-700 dark:text-gray-300">
                   <p>
                     Study in one of the most prestigious higher education
                     systems globally and access some high-end technology and
@@ -79,7 +87,7 @@ export default function QuickFacts({ countryData }) {
                     career goals. Graduate with a truly global outlook and
                     real-world skills for the future.
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -115,7 +123,7 @@ export default function QuickFacts({ countryData }) {
             initial="hidden"
             animate="show"
           >
-            <h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+            <h3 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-purple-600">
               Quick Facts
             </h3>
 
@@ -123,12 +131,12 @@ export default function QuickFacts({ countryData }) {
               <motion.div key={index} variants={item}>
                 <Card className="overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1">
                   <CardContent className="p-0">
-                    <div className="flex items-start p-4">
+                    <div className="flex items-center px-4">
                       <div className="flex-shrink-0 p-2 bg-amber-100 dark:bg-amber-900/30 rounded-lg mr-4">
                         <Star className="h-6 w-6 text-amber-500" />
                       </div>
                       <div>
-                        <p className="text-gray-600 dark:text-gray-300">
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">
                           {fact}
                         </p>
                       </div>

@@ -6,7 +6,14 @@
       "title": "Reasons to Study in the USA",
       "heroTitle": "Unlock Your Future: Study in the USA - Where Academic Excellence Meets Cultural Diversity",
       "heroDescription": "Studying in the United States attracts many students for a variety of reasons, especially because of the country's robust academic reputation, rich cultural diversity, and extensive global opportunities.",
-      "heroImage": "/images/usa-student.jpg",
+      "heroImage": "/images/usa1.jpg",
+      "about": [
+        "The United States of America remains one of the most sought-after destinations for international students—and for good reason. As a global leader in higher education, the USA is home to the highest number of top-ranked universities across all major global rankings. From the Ivy League to renowned public institutions, the U.S. education system offers unmatched academic diversity, world-class faculty—including numerous Nobel laureates—and state-of-the-art research facilities.",
+        "Students in the U.S. benefit from a flexible and interdisciplinary curriculum, allowing them to tailor their programs to suit both their academic interests and career goals. Whether in STEM, business, humanities, or the arts, the range of undergraduate and graduate programs is vast and continually evolving to meet global demands.",
+        "Beyond academics, the U.S. offers an enriching campus life with access to internships, research opportunities, global networking, and cultural diversity. Institutions emphasize not just knowledge, but also critical thinking, innovation, and leadership—skills that are highly valued in the global job market.",
+        "Moreover, studying in the U.S. can open doors to Optional Practical Training (OPT) and other post-study work pathways, offering students real-world experience in one of the world's most dynamic economies.",
+        "Choosing to study in the USA isn’t just about earning a degree—it’s about becoming part of a global community of thinkers, creators, and leaders."
+      ],
       "quickFacts": {
         "title": "Quick Facts",
         "facts": [
@@ -80,7 +87,7 @@
           },
           {
             "title": "Computer Science",
-            "image": "/images/usac2.jpg"
+            "image": "/images/course-ComputerScience.jpg"
           },
           {
             "title": "Construction Management & Technology",
@@ -96,7 +103,7 @@
           },
           {
             "title": "Business Analytics",
-            "image": "/images/usac6.jpg"
+            "image": "/images/course-BusinessAnalytics.jpg"
           }
         ]
       },
@@ -143,8 +150,14 @@
       "title": "Reasons to Study in Canada",
       "heroTitle": "Unlock Your Potential: Diverse Education and Cultural Richness in Canada",
       "heroDescription": "Studying in Canada offers a diverse, high-quality education at top universities, along with vibrant cultural experiences and beautiful landscapes. The country's emphasis on research and innovation, combined with a safe, multicultural environment, fosters personal growth and future success.",
-      "heroImage": "/images/canada-student.jpg",
-            "quickFacts": {
+      "heroImage": "/images/canada1.jpg",
+      "about": [
+        "Canada has emerged as a global education hotspot, known for its high academic standards, welcoming immigration policies, and exceptional quality of life. Home to top-tier institutions like the University of Toronto, McGill University, and University of British Columbia, Canada offers a wide range of programs in fields such as technology, healthcare, engineering, business, and environmental sciences.",
+        "Canadian institutions are celebrated for their research output, innovative teaching, and student-centric approach. The country places a strong emphasis on practical learning through co-op programs and internships, giving students valuable real-world experience alongside their degrees.",
+        "One of Canada’s greatest strengths lies in its inclusive and multicultural society. With a transparent and well-regulated immigration system, students often choose Canada for its post-study work options and clear pathway to permanent residency. Graduates can apply for a Post-Graduation Work Permit (PGWP) of up to three years.",
+        "Safe, affordable, and consistently ranked among the best countries to live in, Canada offers not just world-class education but a holistic lifestyle for students from across the globe."
+      ],
+      "quickFacts": {
         "title": "Quick Facts",
         "facts": [  
           "Safety: Consistently ranked among the safest countries globally.",
@@ -215,27 +228,27 @@
         "courses": [
           {
             "title": "Artificial Intelligence",
-            "image": "/images/business-management.jpg"
+            "image": "/images/course-AI.jpg"
           },
           {
             "title": "Law",
-            "image": "/images/engineering.jpg"
+            "image": "/images/course-Law.jpg"
           },
           {
             "title": "Psychology",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-Psychology.jpg"
           },
           {
             "title": "Civil Engineering",
-            "image": "/images/medicine.jpg"
+            "image": "/images/course-CivilEngineering.jpg"
           },
           {
             "title": "Accountancy & Finance",
-            "image": "/images/media.jpg"
+            "image": "/images/course-Accountancy.jpg"
           },
           {
             "title": "History",
-            "image": "/images/hospitality.jpg"
+            "image": "/images/course-History.jpg"
           }
         ]
       },
@@ -245,31 +258,31 @@
         "list": [
           {
             "name": "University Of Waterloo",
-            "logo": "/images/waterloo-logo.png",
+            "logo": "/images/hu6.jpg",
             "popularFor": "Research & Innovation",
             "ranking": 25
           },
           {
             "name": "Dalhousie University",
-            "logo": "/images/mcgill-logo.png",
+            "logo": "/images/canada-u2.png",
             "popularFor": "Medicine & Law",
             "ranking": 31
           },
           {
             "name": "University of Victoria",
-            "logo": "/images/ubc-logo.png",
+            "logo": "/images/canada-u3.png",
             "popularFor": "Science & Technology",
             "ranking": 45
           },
           {
             "name": "University of Alberta",
-            "logo": "/images/canada-u4.jpg",
+            "logo": "/images/hu4.png",
             "popularFor": "Engineering & Business",
             "ranking": 110
           },
           {
             "name": "University of Guelph",
-            "logo": "/images/waterloo-logo.png",
+            "logo": "/images/canada-u5.png",
             "popularFor": "Computer Science & Engineering",
             "ranking": 149
           }
@@ -282,7 +295,13 @@
       "title": "Reasons to Study in the UK",
       "heroTitle": "Discover the UK: Prestigious Education and a Tapestry of Cultures",
       "heroDescription": "Studying in the UK provides a world-class education and cultural immersion. The country boasts prestigious universities known for academic excellence and research. Students can enjoy a vibrant life with diverse cultural experiences, historical landmarks, and global interactions, fostering personal and intellectual growth.",
-      "heroImage": "/images/uk-student.jpg",
+      "heroImage": "/images/uk1.jpg",
+      "about": [
+        "The United Kingdom has long been a beacon of academic excellence, offering a rich blend of historical prestige and modern innovation. Home to world-renowned institutions like the University of Oxford, Cambridge, Imperial College London, and the London School of Economics, the UK consistently ranks among the top global education destinations.",
+        "With shorter course durations—typically three years for undergraduate and one year for postgraduate programs—the UK provides high-quality education in a time- and cost-efficient format. British universities emphasize a research-driven approach, critical thinking, and independent learning, preparing students for global success.",
+        "The UK is also known for its multicultural environment, offering international students access to a diverse society, rich cultural experiences, and strong support services. The Graduate Route visa allows students to stay and work in the UK for up to two years after completing their degree (three for doctoral graduates), enhancing their career prospects.",
+        "Whether you're pursuing science, business, arts, law, or engineering, the UK’s globally recognized degrees open doors worldwide. With its blend of academic rigor, global recognition, and career-ready education, the UK remains a top choice for ambitious students."
+      ],
       "quickFacts": {
         "title": "Quick Facts",
         "facts": [
@@ -352,27 +371,27 @@
         "courses": [
           {
             "title": "Data Science",
-            "image": "/images/business-management.jpg"
+            "image": "/images/course-DataScience.jpg"
           },
           {
             "title": "MBA",
-            "image": "/images/engineering.jpg"
+            "image": "/images/course-MBA.jpg"
           },
           {
             "title": "Computer Science",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-ComputerScience.jpg"
           },
           {
             "title": "Psychology",
-            "image": "/images/law.jpg"
+            "image": "/images/course-Psychology.jpg"
           },
           {
             "title": "Finance",
-            "image": "/images/finance.jpg"
+            "image": "/images/course-Accountancy.jpg"
           },
           {
             "title": "Economics",
-            "image": "/images/medicine.jpg"
+            "image": "/images/course-Economics.jpg"
           }
         ]
       },
@@ -382,31 +401,31 @@
         "list": [
           {
             "name": "University of Bristol",
-            "logo": "/images/oxford-logo.png",
+            "logo": "/images/uk-u1.png",
             "popularFor": "Humanities & Sciences",
             "ranking": 3
           },
           {
             "name": "University of Glasgow",
-            "logo": "/images/imperial-logo.png",
+            "logo": "/images/uk-u2.png",
             "popularFor": "Engineering & Medicine",
             "ranking": 6
           },
           {
             "name": "University of Southampton",
-            "logo": "/images/edinburgh-logo.png",
+            "logo": "/images/uk-u3.png",
             "popularFor": "Arts & Humanities",
             "ranking": 22
           },
           {
             "name": "University of Birmingham",
-            "logo": "/images/manchester-logo.png",
+            "logo": "/images/uk-u4.png",
             "popularFor": "Business & Law",
             "ranking": 32
           },
           {
             "name": "Durham College",
-            "logo": "/images/kings-logo.png",
+            "logo": "/images/uk-u5.png",
             "popularFor": "Medicine & Law",
             "ranking": 37
           }
@@ -419,8 +438,14 @@
       "title": "Reasons to Study in Australia",
       "heroTitle": "From Classrooms to Coral Reefs: Your Australian Journey Begins",
       "heroDescription": "Studying in Australia provides high-quality education and a rich cultural experience. Its world-class universities attract international students, while stunning landscapes and vibrant cities offer personal and professional growth. Activities like exploring the Great Barrier Reef and enjoying multicultural festivals enhance the experience.",
-      "heroImage": "/images/australia-student.jpg",
-            "quickFacts": {
+      "heroImage": "/images/australia1.jpg",
+      "about": [
+        "Australia is one of the most dynamic and desirable destinations for international students, offering globally recognized degrees, a vibrant lifestyle, and strong career outcomes. Institutions such as the University of Melbourne, University of Sydney, and Australian National University are ranked among the world’s best, known for their academic excellence and focus on innovation.",
+        "With over 1,000+ institutions and 22,000+ courses, Australia provides wide-ranging study options in fields like business, IT, engineering, medicine, agriculture, and creative arts. Many programs integrate industry placements, helping students gain practical exposure and build networks within Australia’s strong job market.",
+        "Australia is also praised for its multicultural campuses, student support systems, and post-study work opportunities. The Temporary Graduate Visa (subclass 485) allows students to work in Australia for 2–4 years after graduation, depending on their qualification and location.",
+        "With its world-class research facilities, globally recognized qualifications, and safe, sunny environment, studying in Australia is a smart investment in your future."
+      ],
+      "quickFacts": {
         "title": "Quick Facts",
         "facts": [
           "Top-Ranked Universities: 9 of the world's top 100.",
@@ -488,27 +513,27 @@
         "courses": [
           {
             "title": "Architecture",
-            "image": "/images/business-management.jpg"
+            "image": "/images/course-CivilEngineering.jpg"
           },
           {
             "title": "Data Science",
-            "image": "/images/engineering.jpg"
+            "image": "/images/course-DataScience.jpg"
           },
           {
             "title": "Information Technology",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-InformationTechnology.jpg"
           },
           {
             "title": "Biotechnology",
-            "image": "/images/medicine.jpg"
+            "image": "/images/course-Biotechnology.jpg"
           },
           {
             "title": "Nursing",
-            "image": "/images/hospitality.jpg"
+            "image": "/images/course-Nursing.jpg"
           },
           {
             "title": "Business Analytics",
-            "image": "/images/education.jpg"
+            "image": "/images/course-BusinessAnalytics.jpg"
           }
         ]
       },
@@ -518,31 +543,31 @@
         "list": [
           {
             "name": "University of New South Wales",
-            "logo": "/images/melbourne-logo.png",
+            "logo": "/images/australia-u1.jpg",
             "popularFor": "Research & Arts",
             "ranking": 33
           },
           {
             "name": "University of Queensland",
-            "logo": "/images/anu-logo.png",
+            "logo": "/images/australia-u2.png",
             "popularFor": "Social Sciences & Humanities",
             "ranking": 30
           },
           {
             "name": "University of Western Australia",
-            "logo": "/images/sydney-logo.png",
+            "logo": "/images/australia-u3.png",
             "popularFor": "Medicine & Engineering",
             "ranking": 38
           },
           {
             "name": "University of Adelaide",
-            "logo": "/images/queensland-logo.png",
+            "logo": "/images/australia-u4.png",
             "popularFor": "Science & Research",
             "ranking": 43
           },
           {
             "name": "University of Technology Sydney",
-            "logo": "/images/monash-logo.png",
+            "logo": "/images/australia-u5.png",
             "popularFor": "Business & Pharmacy",
             "ranking": 57
           }
@@ -555,8 +580,14 @@
       "title": "Reasons to Study in New Zealand",
       "heroTitle": "Pursue Your Dreams in New Zealand’s Safe and Supportive Educational Haven",
       "heroDescription": "New Zealand provides a unique educational experience with its beautiful landscapes and welcoming culture. Its institutions are recognized for high-quality programs, innovative teaching, and a focus on research. The safe and supportive environment makes it an ideal destination for students pursuing academic excellence and memorable life experiences.",
-      "heroImage": "/images/newzealand-student.jpg",
-            "quickFacts": {
+      "heroImage": "/images/new-zealand2.jpg",
+       "about": [
+        "New Zealand offers a unique blend of academic quality, natural beauty, and a student-friendly lifestyle. Its eight public universities, including the University of Auckland and University of Otago, are globally ranked and government-regulated to maintain high education standards.",
+        "New Zealand’s education system emphasizes critical thinking, practical skills, and research-based learning, ensuring that students graduate work-ready and adaptable to global careers. The country is known for offering personalized learning in smaller class sizes and welcoming campuses that support international students at every step.",
+        "Programs in engineering, agriculture, IT, business, and environmental science are particularly popular, with strong links to industry and opportunities for hands-on experience. International graduates are eligible for a Post-Study Work Visa of up to 3 years, and New Zealand’s friendly immigration policies make it an attractive choice for long-term settlement.",
+        "Safe, inclusive, and ranked among the world’s most peaceful countries, New Zealand combines academic excellence with a truly enriching life experience."
+      ],
+      "quickFacts": {
         "title": "Quick Facts",
         "facts": [
           "Quality Education: Universities in top 3% worldwide.",
@@ -624,27 +655,27 @@
         "courses": [
           {
             "title": "Business Studies",
-            "image": "/images/business-management.jpg"
+            "image": "/images/course-BusinessStudies.jpg"
           },
           {
             "title": "Information Sciences",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-InformationTechnology.jpg"
           },
           {
             "title": "Engineering",
-            "image": "/images/engineering.jpg"
+            "image": "/images/course-CivilEngineering.jpg"
           },
           {
             "title": "Hospitality & Tourism",
-            "image": "/images/hospitality.jpg"
+            "image": "/images/course-Hospitality.jpg"
           },
           {
             "title": "Agricultural Science",
-            "image": "/images/agriculture.jpg"
+            "image": "/images/course-AgriculturalScience.jpg"
           },
           {
             "title": "Food Technology",
-            "image": "/images/medicine.jpg"
+            "image": "/images/course-FoodTechnology.jpg"
           }
         ]
       },
@@ -654,31 +685,31 @@
         "list": [
           {
             "name": "Massey University",
-            "logo": "/images/auckland-logo.png",
+            "logo": "/images/new-zealand-u1.png",
             "popularFor": "Engineering & Business",
             "ranking": 85
           },
           {
             "name": "Victoria University",
-            "logo": "/images/otago-logo.png",
+            "logo": "/images/new-zealand-u2.jpg",
             "popularFor": "Medicine & Sciences",
             "ranking": 194
           },
           {
             "name": "University of Waikato",
-            "logo": "/images/victoria-logo.png",
+            "logo": "/images/new-zealand-u3.png",
             "popularFor": "Law & Humanities",
             "ranking": 236
           },
           {
             "name": "Lincoln University",
-            "logo": "/images/canterbury-logo.png",
+            "logo": "/images/new-zealand-u4.png",
             "popularFor": "Engineering & Forestry",
             "ranking": 258
           },
           {
             "name": "Auckland University of Technology",
-            "logo": "/images/massey-logo.png",
+            "logo": "/images/hu16.png",
             "popularFor": "Agriculture & Aviation",
             "ranking": 284
           }
@@ -691,8 +722,14 @@
       "title": "Reasons to Study in Ireland",
       "heroTitle": "Unlock Your Future in Ireland: A Blend of Culture, Innovation, and Learning",
       "heroDescription": "Considering further education? Studying in Ireland could be ideal. It boasts rich culture, vibrant cities, stunning landscapes, world-renowned universities, a welcoming community, and a dynamic tech industry. Ireland offers academic excellence and personal growth opportunities, making it a memorable experience for students.",
-      "heroImage": "/images/ireland-student.jpg",
-            "quickFacts": {
+      "heroImage": "/images/ireland.jpg",
+      "about": [
+        "Ireland is rapidly becoming a preferred study destination, especially for students interested in technology, business, and science. With globally respected universities like Trinity College Dublin, University College Dublin, and University of Galway, Ireland offers world-class education rooted in research and innovation.",
+        "Known as Europe’s “Silicon Valley”, Ireland is home to the European headquarters of top global tech companies like Google, Facebook, Apple, and Intel—making it a hub for internships and employment post-graduation. Degrees from Irish institutions are globally recognized and highly valued in international job markets.",
+        "International students can stay and work for up to two years after completing their degree under the Third Level Graduate Scheme, making Ireland an attractive destination for career growth. With a strong focus on entrepreneurship, sustainability, and digital transformation, Ireland is ideal for future-ready learners.",
+        "The country’s friendly culture, rich heritage, and proximity to mainland Europe further enhance its appeal as a holistic education destination."
+      ],
+      "quickFacts": {
         "title": "Quick Facts",
         "facts": [
           "English-Speaking EU Country: Ideal for international students.",
@@ -760,22 +797,22 @@
         "courses": [
           {
             "title": "Business Studies",
-            "image": "/images/business-management.jpg"
+            "image": "/images/course-BusinessStudies.jpg"
           },
           {
             "title": "Computer Science",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-ComputerScience.jpg"
           },
           {
             "title": "Operations & Supply Chain Mgt",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-Operations.jpg"
           },
           {
             "title": "Physiotherapy",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-Physiotherapy.jpg"
           },          {
             "title": "Economics",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-Economics.jpg"
           }
         ]
       },
@@ -785,31 +822,31 @@
         "list": [
           {
             "name": "Trinity College Dublin",
-            "logo": "/images/trinity-logo.png",
+            "logo": "/images/ireland-u1.jpg",
             "popularFor": "Humanities & Sciences",
             "ranking": 50
           },
           {
             "name": "University College Dublin",
-            "logo": "/images/trinity-logo.png",
+            "logo": "/images/ireland-u2.png",
             "popularFor": "Humanities & Sciences",
             "ranking": 50
           },
           {
             "name": "University of Galway",
-            "logo": "/images/trinity-logo.png",
+            "logo": "/images/ireland-u3.png",
             "popularFor": "Humanities & Sciences",
             "ranking": 50
           },
           {
             "name": "University College Cork",
-            "logo": "/images/trinity-logo.png",
+            "logo": "/images/ireland-u4.png",
             "popularFor": "Humanities & Sciences",
             "ranking": 50
           },
           {
             "name": "Dublin City University",
-            "logo": "/images/trinity-logo.png",
+            "logo": "/images/ireland-u5.png",
             "popularFor": "Humanities & Sciences",
             "ranking": 50
           }
@@ -822,7 +859,13 @@
       "title": "Reasons to Study in Europe",
       "heroTitle": "From History to Innovation: Europe Offers More Than Education",
       "heroDescription": "Studying in Europe provides a unique experience with world-class education and cultural diversity. The region's rich history and prestigious universities foster personal and academic growth. Easy travel between countries enhances learning, while affordable tuition and scholarships attract global students interested in research, language acquisition, or adventure.",
-      "heroImage": "/images/Europe-student.jpg",
+      "heroImage": "/images/europe1.jpg",
+      "about": [
+        "Europe offers a wide spectrum of world-class education options across countries like Germany, France, Netherlands, Sweden, Italy, and Spain. With centuries-old universities like Heidelberg, Sorbonne, and University of Amsterdam, Europe is a melting pot of tradition and modernity.",
+        "Students benefit from diverse cultures, multilingual environments, and a broad array of programs taught in English, especially at the master’s level. Public universities in countries like Germany and Norway offer low or no tuition fees, making Europe a cost-effective option without compromising on quality.",
+        "European institutions are renowned for excellence in engineering, design, arts, business, international relations, and sustainability studies. Many programs emphasize interdisciplinary learning, practical exposure, and strong industry-academic linkages.",
+        "In addition, the Schengen Visa allows students to travel freely across 26 countries, enriching their global exposure. With generous post-study work options and pathways to residence in many countries, Europe presents an attractive package of education, culture, and opportunity."
+      ],
       "quickFacts": {
         "title": "Quick Facts",
         "facts": [
@@ -835,12 +878,12 @@
         "title": "Cost of Study in Europe",
         "table": 
           {
-            "Types of Expenses": "Annual Expenses in USD",
-            "Tuition Fees for One Year": "25000",
-            "Living Accommodation": "15000",
-            "Airfare from India to USA": "1000",
-            "VISA fees (VISA & SEVIS)": "535",
-            "Total Expenses": "41535"
+            "Types of Expenses": "Annual Expenses in €",
+            "Tuition Fees for One Year": "1,000 – 10,000",
+            "Living Accommodation": "6,000 – 12,000 ",
+            "Airfare from India to USA": "100 – 500",
+            "VISA fees (VISA & SEVIS)": "20 – 400",
+            "Total Expenses": "7200 – 23000"
           }        
       },
       "Careers":{
@@ -891,19 +934,19 @@
         "courses": [
           {
             "title": "Hospitality Mgt",
-            "image": "/images/business-management.jpg"
+            "image": "/images/course-Hospitality.jpg"
           },
           {
             "title": "BBA",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-BBA.jpg"
           },
           {
             "title": "Data Eng",
-            "image": "/images/Data-Eng.jpg"
+            "image": "/images/course-DataScience.jpg"
           },
           {
             "title": "Computer Science",
-            "image": "/images/computer-science.jpg"
+            "image": "/images/course-ComputerScience.jpg"
           }
         ]
       },
@@ -913,13 +956,13 @@
         "list": [
           {
             "name": "KEDGE Business School",
-            "logo": "/images/nus-logo.png",
+            "logo": "/images/europe-u1.png",
             "popularFor": "Research & Innovation",
             "ranking": 20
           },
           {
             "name": "Constructor University",
-            "logo": "/images/nus-logo.png",
+            "logo": "/images/hu17.jpg",
             "popularFor": "Research & Innovation",
             "ranking": 20
           }

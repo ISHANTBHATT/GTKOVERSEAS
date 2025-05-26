@@ -239,6 +239,7 @@ import {
   CheckCircle,
   Star,
   ChevronRight,
+  HandHeart,
 } from "lucide-react";
 import studyAbroadData from "@/app/data/study-abroad.json";
 import Image from "next/image";
@@ -279,17 +280,17 @@ export default function CountryPage({ params }) {
   };
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-50 to-orange-50 pt-16 pb-12">
+      <section className="bg-gradient-to-r from-red-50 to-orange-50 pt-16 pb-12 relative">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-start gap-8 md:flex-row">
-            <div className="max-w-2xl">
-              <h1 className="relative mb-6 text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl">
+            <div className="max-w-2xl z-1">
+              <h1 className="relative mb-6 text-3xl font-bold text-gray-100 md:text-4xl lg:text-5xl">
                 {countryData.heroTitle}
                 <span className="absolute -bottom-3 left-0 h-2 w-48 bg-[#8A0206]"></span>
               </h1>
-              <p className="mb-8 text-lg text-gray-700">
+              <p className="mb-8 text-lg text-gray-200">
                 {countryData.heroDescription}
               </p>
               <div className="flex flex-wrap gap-4">
@@ -307,17 +308,18 @@ export default function CountryPage({ params }) {
                 </Link>
               </div>
             </div>
-            <div className="relative h-80 w-full overflow-hidden rounded-2xl md:h-96 lg:h-[500px] shadow-xl">
-              <div className="absolute inset-0 rounded-2xl">
-                <Image
-                  src="/images/Sample-1.png"
-                  width={1000}
-                  height={800}
-                  className="w-full h-full object-contain"
-                  alt="Study in USA"
-                />
-              </div>
+            {/* <div className="relative h-80 w-full overflow-hidden rounded-2xl md:h-96 lg:h-[500px] shadow-xl"> */}
+            <div className="absolute inset-0 rounded-2xl">
+              <Image
+                src={countryData.heroImage || "/images/Sample-1.png"}
+                width={1000}
+                height={800}
+                className="w-full h-full object-cover z-0"
+                alt="Study in USA"
+              />
             </div>
+            <div className="absolute inset-0 bg-[rgba(33,33,33,0.7)] z-0"></div>
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -367,12 +369,27 @@ export default function CountryPage({ params }) {
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="bg-[#8A0206] text-white">
+                    {/* <tr className="bg-[#8A0206] text-white">
                       <th className="px-6 py-4 text-left">Expense Type</th>
                       <th className="px-6 py-4 text-right">
                         Annual Cost (USD)
                       </th>
-                    </tr>
+                    </tr> */}
+                    {Object.entries(countryData.costofStudy.table).map(
+                      ([key, value], index) => {
+                        if (key === "Types of Expenses")
+                          return (
+                            <tr key={index} className="bg-[#8A0206] text-white">
+                              <td className="px-6 py-4 text-left font-medium">
+                                {key}
+                              </td>
+                              <td className="px-6 py-4 text-right">
+                                <span className="font-bold ">{value}</span>
+                              </td>
+                            </tr>
+                          );
+                      }
+                    )}
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white">
                     {Object.entries(countryData.costofStudy.table).map(
@@ -391,10 +408,10 @@ export default function CountryPage({ params }) {
                             <td className="px-6 py-4 text-right">
                               {key === "Total Expenses" ? (
                                 <span className="font-bold text-[#8A0206]">
-                                  ${value}
+                                  {value}
                                 </span>
                               ) : (
-                                <span>${value}</span>
+                                <span>{value}</span>
                               )}
                             </td>
                           </tr>
@@ -406,7 +423,7 @@ export default function CountryPage({ params }) {
               </div>
             </div>
 
-            <div className="mt-8 text-center">
+            {/* <div className="mt-8 text-center">
               <Link
                 href="/financial-aid"
                 className="inline-flex items-center rounded-md bg-[#8A0206] px-6 py-3 text-base font-medium text-white transition-colors hover:bg-red-800 shadow-md"
@@ -414,7 +431,7 @@ export default function CountryPage({ params }) {
                 <DollarSign className="mr-2 h-5 w-5" />
                 Explore Financial Aid Options
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
       )}
@@ -441,6 +458,7 @@ export default function CountryPage({ params }) {
                         {index === 0 && <Building className="h-6 w-6" />}
                         {index === 1 && <Briefcase className="h-6 w-6" />}
                         {index === 2 && <CheckCircle className="h-6 w-6" />}
+                        {index === 3 && <HandHeart className="h-6 w-6" />}
                       </div>
                       <p className="text-gray-800">{point}</p>
                     </div>
@@ -525,7 +543,7 @@ export default function CountryPage({ params }) {
                     <h3 className="text-center text-xl font-semibold text-gray-900 group-hover:text-[#8A0206] transition-colors">
                       {course.title}
                     </h3>
-                    <div className="mt-4 flex justify-center">
+                    {/* <div className="mt-4 flex justify-center">
                       <Link
                         href={`/courses/${course.title
                           .toLowerCase()
@@ -534,7 +552,7 @@ export default function CountryPage({ params }) {
                       >
                         Learn More →
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}

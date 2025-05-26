@@ -100,7 +100,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function FinancialAssistancePage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col pt-20">
       {/* Hero Section */}
       {/* <section className="relative bg-gradient-to-r from-[#8A0206] to-[#6A0104] py-20 text-white">
         <div className="absolute inset-0 overflow-hidden">

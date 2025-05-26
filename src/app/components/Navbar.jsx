@@ -110,12 +110,12 @@ export default function Navbar() {
 
   return (
     <header
-      className={` top-0 z-50 w-full  ${
+      className={`fixed top-0 z-50 w-full  ${
         isScrolled || !isHomePage
           ? "bg-white shadow-md text-gray-800"
           : "bg-transparent text-white "
       }
-      ${isHomePage ? "fixed" : "Sticky"}
+
       `}
     >
       <div className=" flex h-20 items-center justify-between px-4">
@@ -166,7 +166,7 @@ export default function Navbar() {
               />
             </button>
             {activeDropdown === "studyAbroad" && (
-              <div className="absolute left-0 z-10 mt-1 w-48 rounded-md border border-gray-200 bg-white py-2 shadow-lg max-h-96 overflow-y-auto">
+              <div className="absolute left-0 z-50 mt-1 w-48 rounded-md border border-gray-200 bg-white py-2 shadow-lg max-h-96 overflow-y-auto">
                 {studyAbroadLinks.map((link) => (
                   <Link
                     key={link.name}
@@ -210,7 +210,7 @@ export default function Navbar() {
               />
             </button>
             {activeDropdown === "studentServices" && (
-              <div className="absolute left-0 z-10 mt-1 w-64 rounded-md border border-gray-200 bg-white py-2 shadow-lg">
+              <div className="absolute left-0 z-50 mt-1 w-64 rounded-md border border-gray-200 bg-white py-2 shadow-lg">
                 {studentServicesLinks.map((link) => (
                   <Link
                     key={link.name}
@@ -296,13 +296,29 @@ export default function Navbar() {
         </nav>
 
         {/* Contact Us Button */}
-        <Link
-          href="/contact"
-          className="rounded-md bg-[#8A0206] px-6 py-2 text-base font-medium text-white transition-colors hover:bg-[#8A0206]/80"
-          onClick={closeDropdowns}
-        >
-          Contact Us
-        </Link>
+        <div className="flex gap-2">
+          <Link
+            href="https://wa.me/1234567890" // Replace with your actual number
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" rounded-md flex items-center text-base font-medium text-[#8A0206] transition-colors mr-2"
+          >
+            <Image
+              src="/images/whatsapp-icon.png" // Place your image in public folder with this name
+              alt="WhatsApp"
+              width={40}
+              height={50}
+              className="mr-2"
+            />
+          </Link>
+          <Link
+            href="/contact"
+            className="rounded-md bg-[#8A0206] px-6 py-2 text-base font-medium text-white transition-colors hover:bg-[#8A0206]/80"
+            onClick={closeDropdowns}
+          >
+            Contact Us
+          </Link>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -450,6 +466,22 @@ export default function Navbar() {
               onClick={closeDropdowns}
             >
               Scholarships
+            </Link>
+
+            <Link
+              href="https://wa.me/1234567890" // Replace with your actual number
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center rounded-md border border-[#8A0206] px-4 py-2 text-base font-medium text-[#8A0206] transition-colors hover:bg-[#8A0206]/10 mr-2"
+            >
+              <Image
+                src="/images/whatsapp-icon.png" // Place your image in public folder with this name
+                alt="WhatsApp"
+                width={200}
+                height={200}
+                className="mr-2"
+              />
+              Whatsapp
             </Link>
             <div className="pt-4">
               <Link

@@ -225,7 +225,7 @@ export default function Page() {
   ];
   return (
     <>
-      <div className=" relative mx-auto px-4 py-12 md:py-36 lg:py-52 bg-gradient-to-r from-[#8A0206] to-[#6A0104] text-white">
+      <div className=" relative mx-auto px-4 py-12 md:py-36 lg:py-52 bg-gradient-to-r from-[#8A0206] to-[#6A0104] text-white mt-20">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:mx-20">
           <div className="flex-1 space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold  leading-tight">

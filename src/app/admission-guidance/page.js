@@ -66,7 +66,7 @@ const roadmapSteps = [
 
 function Page() {
   return (
-    <div className="min-h-screen bg-gray-50 ">
+    <div className="min-h-screen bg-gray-50 pt-20">
       <div className="w-full mx-auto">
         <div className=" relative mx-auto px-4 py-12 md:py-36 bg-gradient-to-r from-[#8A0206] to-[#6A0104] text-white">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:mx-20">

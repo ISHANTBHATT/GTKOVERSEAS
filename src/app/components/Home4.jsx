@@ -1668,6 +1668,7 @@ import WorkProcess from "./WorkProcess";
 import ScrollSteps from "./ScrollSteps";
 import Partners from "./Partners";
 import CoursesSection from "./CoursesSection";
+import CounselingProcess from "./CounselingProcess";
 // Animation variants
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -2084,6 +2085,8 @@ export default function Home() {
           className="absolute -bottom-52 md:-bottom-2 right-0 w-1/3 h-1/3 bg-[#780105] rounded-tl-full"
         />
       </section>
+
+      <CounselingProcess />
 
       <CoursesSection />
 

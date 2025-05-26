@@ -1529,10 +1529,10 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col pt-20">
       <section className="relative w-full min-h-[700px] bg-gradient-to-br from-red-50 via-orange-50 to-purple-50">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=700&width=1400')] bg-cover bg-center opacity-10"></div>
-        <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center relative z-10">
+        <div className="container mx-auto px-4 py-16 flex flex-col items-center justify-center relative z-1">
           <div className="max-w-4xl text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
               Discover Your <span className="text-[#8A0206]">Ideal</span> Study
@@ -1827,7 +1827,7 @@ export default function Home() {
               {
                 name: "University of New South Wales",
                 location: "Kensington, Sydney, Australia",
-                logo: "/placeholder.svg?height=80&width=80",
+                logo: "/images/australia-u1.jpg",
                 ranking: "#19 in World Universities",
                 programs: ["Engineering", "Business", "Computer Science"],
                 tuition: "$13,700 - $37,900 / year",
@@ -1835,7 +1835,7 @@ export default function Home() {
               {
                 name: "University of Massachusetts",
                 location: "Amherst, MA, United States",
-                logo: "/placeholder.svg?height=80&width=80",
+                logo: "/images/usa-u2.png",
                 ranking: "#33 in National Universities",
                 programs: [
                   "Engineering",
@@ -1847,7 +1847,7 @@ export default function Home() {
               {
                 name: "University of Bristol",
                 location: "Bristol, United Kingdom",
-                logo: "/placeholder.svg?height=80&width=80",
+                logo: "/images/uk-u1.png",
                 ranking: "#55 in World Universities",
                 programs: ["Law", "Engineering", "Arts"],
                 tuition: "£19,300 - £25,900 / year",

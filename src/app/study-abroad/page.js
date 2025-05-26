@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function StudyAbroadPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20">
       <section className="bg-gradient-to-r from-red-50 to-orange-50 py-16">
         <div className="container mx-auto px-4">
           <h1 className="relative mb-12 text-center text-4xl font-bold text-gray-900 md:text-5xl">

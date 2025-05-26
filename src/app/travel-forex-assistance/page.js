@@ -334,7 +334,7 @@ const benefits = [
 
 function Page() {
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-20">
       {/* Hero Section */}
       <div className="relative mx-auto px-4 py-12 md:py-36 bg-gradient-to-r from-[#8A0206] to-[#6A0104] text-white">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 mx-auto max-w-7xl px-4">

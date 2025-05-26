@@ -218,7 +218,7 @@ const Carousel = () => {
       name: "Lake",
       description:
         "A calm and serene lake surrounded by towering trees and mountains. A perfect escape.",
-      image: "images/europe1.jpg",
+      image: "/images/europe1.jpg",
     },
     // {
     //   id: 6,

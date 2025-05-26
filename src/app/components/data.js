@@ -2857,6 +2857,7 @@ const uniData = [
     country: "UK",
     universities: {
       "University of Bristol": {
+        logo: "/images/uk-u1.png",
         master: {
           "MA English Literature": "12 Months",
           "MSc Computer Science (Conversion)": "12 Months",
@@ -2887,6 +2888,7 @@ const uniData = [
         },
       },
       "University of Glasgow": {
+        logo: "/images/uk-u2.png",
         master: {
           "Finance & Management": "12 Months",
           "MSc Management": "12 Months",
