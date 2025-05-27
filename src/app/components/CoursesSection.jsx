@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import Link from "next/link";
 
 const regions = [
   {
@@ -21,7 +22,7 @@ const regions = [
         title: "Business Management",
         description:
           "Master strategic planning, leadership, and organizational growth",
-        image: "/images/usac6.jpg",
+        image: "/images/course-BusinessAnalytics.jpg",
         courses: 78,
         popular: true,
         color: "from-amber-500 to-orange-600",
@@ -32,7 +33,7 @@ const regions = [
         title: "Engineering",
         description:
           "Build the future with practical and theoretical engineering skills",
-        image: "/images/usac2.jpg",
+        image: "/images/usac4.jpg",
         courses: 64,
         popular: false,
         color: "from-emerald-500 to-teal-600",
@@ -43,7 +44,7 @@ const regions = [
         title: "Computer Science",
         description:
           "Develop cutting-edge software and explore AI technologies",
-        image: "/images/usac4.jpg",
+        image: "/images/course-ComputerScience.jpg",
         courses: 92,
         popular: true,
         color: "from-sky-500 to-indigo-600",
@@ -61,7 +62,7 @@ const regions = [
         id: "business-usa",
         title: "Marketing",
         description: "Learn digital marketing strategies and brand development",
-        image: "/images/usac3.jpg",
+        image: "/images/course-BusinessStudies.jpg",
         courses: 95,
         popular: true,
         color: "from-pink-500 to-rose-600",
@@ -72,7 +73,7 @@ const regions = [
         title: "Data Science",
         description:
           "Master data analysis, machine learning, and statistical modeling",
-        image: "/images/usac4.jpg",
+        image: "/images/course-DataScience.jpg",
         courses: 87,
         popular: true,
         color: "from-blue-500 to-indigo-600",
@@ -82,7 +83,7 @@ const regions = [
         id: "healthcare-usa",
         title: "Healthcare",
         description: "Explore medical sciences and healthcare management",
-        image: "/images/usac5.jpg",
+        image: "/images/course-Nursing.jpg",
         courses: 62,
         popular: false,
         color: "from-teal-500 to-cyan-600",
@@ -97,11 +98,11 @@ const regions = [
     icon: <MapPin className="h-4 w-4 mr-2" />,
     categories: [
       {
-        id: "environmental-canada",
-        title: "Environmental Science",
+        id: "agricultural-canada",
+        title: "Agricultural Science",
         description:
           "Study sustainability, conservation, and environmental policy",
-        image: "/images/usac1.jpg",
+        image: "/images/course-AgriculturalScience.jpg",
         courses: 54,
         popular: true,
         color: "from-green-500 to-emerald-600",
@@ -123,7 +124,7 @@ const regions = [
         title: "Finance",
         description:
           "Learn investment strategies, financial planning, and economics",
-        image: "/images/usac3.jpg",
+        image: "/images/course-Accountancy.jpg",
         courses: 65,
         popular: true,
         color: "from-slate-500 to-gray-600",
@@ -138,11 +139,11 @@ const regions = [
     icon: <MapPin className="h-4 w-4 mr-2" />,
     categories: [
       {
-        id: "agriculture-australia",
-        title: "Agriculture",
+        id: "architecture-australia",
+        title: "Architecture",
         description:
           "Study sustainable farming, crop science, and agricultural business",
-        image: "/images/usac4.jpg",
+        image: "/images/course-CivilEngineering.jpg",
         courses: 42,
         popular: false,
         color: "from-yellow-500 to-amber-600",
@@ -153,18 +154,18 @@ const regions = [
         title: "Tourism & Hospitality",
         description:
           "Develop skills in tourism management and hospitality services",
-        image: "/images/usac5.jpg",
+        image: "/images/course-history.jpg",
         courses: 56,
         popular: true,
         color: "from-orange-500 to-red-600",
         icon: <BookOpen className="h-5 w-5" />,
       },
       {
-        id: "marine-australia",
-        title: "Marine Biology",
+        id: "biotechnology-australia",
+        title: "Biotechnology",
         description:
           "Explore ocean ecosystems, marine conservation, and aquatic life",
-        image: "/images/usac6.jpg",
+        image: "/images/course-Biotechnology.jpg",
         courses: 34,
         popular: true,
         color: "from-cyan-500 to-blue-600",
@@ -309,7 +310,7 @@ export default function CoursesSection() {
                         </h3>
                       </div>
                     </div>
-                    <CardContent className="p-6">
+                    {/* <CardContent className="p-6">
                       <p className="text-slate-600  mb-4">
                         {category.description}
                       </p>
@@ -319,19 +320,21 @@ export default function CoursesSection() {
                           {category.courses} courses available
                         </span>
                       </div>
-                    </CardContent>
+                    </CardContent> */}
                     <CardFooter className="p-6 pt-0">
-                      <Button
-                        className={cn(
-                          "w-full group",
-                          hoveredCard === category.id
-                            ? "bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700"
-                            : "bg-[#8A0206]"
-                        )}
-                      >
-                        Explore Courses
-                        <ChevronRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
-                      </Button>
+                      <Link href={`/search`}>
+                        <Button
+                          className={cn(
+                            "w-full group",
+                            hoveredCard === category.id
+                              ? "bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700"
+                              : "bg-[#8A0206]"
+                          )}
+                        >
+                          Explore Courses
+                          <ChevronRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
+                        </Button>
+                      </Link>
                     </CardFooter>
                   </Card>
                 </motion.div>
