@@ -3128,7 +3128,7 @@ export default function SearchPage() {
                               className="bg-[#8A0206] hover:bg-red-800"
                               onClick={() => handleViewDetails(course)}
                             >
-                              View Details
+                              Find your counsellor
                             </Button>
                           </div>
                         </div>
@@ -3207,9 +3207,9 @@ export default function SearchPage() {
                                   </span>
                                 </div>
                               </div>
-                              <button className="bg-[#8A0206] text-white px-8 py-4 rounded-lg font-medium hover:bg-red-800 transition-colors mt-4 md:mt-0">
+                              {/* <button className="bg-[#8A0206] text-white px-8 py-4 rounded-lg font-medium hover:bg-red-800 transition-colors mt-4 md:mt-0">
                                 Find your counsellor
-                              </button>
+                              </button> */}
                             </div>
                             {/* Related Courses Section */}
                             <div className="mt-4">

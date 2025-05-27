@@ -176,48 +176,53 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-
+import { motion } from "framer-motion";
+import Link from "next/link";
+import InquiryFormModal from "./InquiryFormModal";
+import uniData from "../components/data.js";
 const Carousel = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const TIME_AUTO_NEXT = 3500;
   const initialItems = [
     {
       id: 1,
-      title: "SUNRISE ON PEAKS",
-      name: "Sunrise",
+      title: "Australia",
+      name: "Australia Advantage",
       description:
-        "Witness the serene beauty of the sunrise over majestic mountain peaks. A moment of pure tranquility.",
+        "Discover world-class education and vibrant student life in Australia, a top destination for international students.",
       image: "/images/australia.jpg",
     },
     {
       id: 2,
-      title: "RUGGED ROCKS",
-      name: "Rocky",
+      title: "UK",
+      name: "British Excellence",
       description:
-        "Explore the rugged beauty of barren rocky mountains. A testament to nature's raw power.",
+        "Experience academic excellence and rich cultural heritage in the UK, home to some of the world’s oldest and most prestigious universities.",
       image: "/images/uk1.jpg",
     },
     {
       id: 3,
-      title: "FOREST PATHWAY",
-      name: "Forest",
+      title: "Canada",
+      name: "Canadian Opportunity",
       description:
-        "A peaceful trail through dense green forests. Perfect for reconnecting with nature.",
+        "Enjoy high-quality education in a safe, welcoming, and multicultural environment across Canada’s top-ranked institutions.",
       image: "/images/canada1.jpg",
     },
     {
       id: 4,
-      title: "COLORFUL MEADOW",
-      name: "Meadow",
+      title: "USA",
+      name: "American Dream",
       description:
-        "A colorful meadow filled with butterflies and blooming flowers. Nature at its best.",
-      image: "/images/new-zealand1.jpg",
+        "Unlock endless possibilities with innovative programs and global exposure at leading universities in the United States.",
+      image: "/images/usa1.jpg",
     },
     {
       id: 5,
-      title: "SERENE LAKE",
-      name: "Lake",
+      title: "Europe",
+      name: "Europe Gateway",
       description:
-        "A calm and serene lake surrounded by towering trees and mountains. A perfect escape.",
+        "Explore diverse cultures and academic traditions with affordable, high-quality education across Europe.",
       image: "/images/europe1.jpg",
     },
     // {
@@ -239,7 +244,10 @@ const Carousel = () => {
     //     "https://images.pexels.com/photos/7616134/pexels-photo-7616134.jpeg",
     // },
   ];
-
+  const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+  };
   const [items, setItems] = useState(initialItems);
   const timeRunningRef = useRef(null);
   const progressBarRef = useRef(null);
@@ -273,129 +281,165 @@ const Carousel = () => {
     }
   }, [items]);
 
+  const handleViewDetails = () => {
+    setIsModalOpen(true);
+  };
   return (
-    <div className="w-full h-screen relative overflow-hidden bg-[#111111]">
-      <div className="w-full h-full relative">
-        {items.map((item, index) => (
-          <div
-            key={item.id}
-            className={`absolute ${
-              index < 2
-                ? "bottom-0 left-0 w-full h-full rounded-none"
-                : "bottom-[150px] left-[55%] w-[180px] h-[250px]"
-            } rounded-[20px] overflow-hidden shadow-[0_25px_50px_rgba(0,0,0,0.7)] bg-cover bg-center transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]`}
-            style={{
-              backgroundImage: `url(${item.image})`,
-              zIndex: index < 2 ? 1 : 10 - index,
-              left:
-                index === 2
-                  ? "55%"
-                  : index === 3
-                  ? "calc(55% + 200px)"
-                  : index === 4
-                  ? "calc(55% + 400px)"
-                  : index === 5
-                  ? "calc(55% + 600px)"
-                  : index >= 6
-                  ? "calc(55% + 800px)"
-                  : "",
-              transitionDelay:
-                index === 3
-                  ? "100ms"
-                  : index === 4
-                  ? "200ms"
-                  : index === 5
-                  ? "300ms"
-                  : index >= 6
-                  ? "400ms"
-                  : "0ms",
-            }}
-          >
-            <div className="absolute inset-0 bg-[rgba(33,33,33,0.5)] z-10"></div>
+    <>
+      <div className="w-full h-screen relative overflow-hidden bg-[#111111]">
+        <div className="w-full h-full relative">
+          {items.map((item, index) => (
             <div
-              className={`absolute z-30 text-white ${
+              key={item.id}
+              className={`absolute ${
                 index < 2
-                  ? "left-[100px] top-1/2 -translate-y-1/2 w-[600px]"
-                  : "left-0 top-full -translate-y-full w-full p-2.5"
-              } transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]`}
+                  ? "bottom-0 left-0 w-full h-full rounded-none"
+                  : "bottom-[150px] left-[55%] w-[180px] h-[250px]"
+              } rounded-[20px] overflow-hidden shadow-[0_25px_50px_rgba(0,0,0,0.7)] bg-cover bg-center transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]`}
+              style={{
+                backgroundImage: `url(${item.image})`,
+                zIndex: index < 2 ? 1 : 10 - index,
+                left:
+                  index === 2
+                    ? "55%"
+                    : index === 3
+                    ? "calc(55% + 200px)"
+                    : index === 4
+                    ? "calc(55% + 400px)"
+                    : index === 5
+                    ? "calc(55% + 600px)"
+                    : index >= 6
+                    ? "calc(55% + 800px)"
+                    : "",
+                transitionDelay:
+                  index === 3
+                    ? "100ms"
+                    : index === 4
+                    ? "200ms"
+                    : index === 5
+                    ? "300ms"
+                    : index >= 6
+                    ? "400ms"
+                    : "0ms",
+              }}
             >
+              <div className="absolute inset-0 bg-[rgba(33,33,33,0.5)] z-10"></div>
               <div
-                className={`${
+                className={`absolute z-30 text-white ${
                   index < 2
-                    ? "w-[50px] h-[3px] mb-5"
-                    : "w-[20px] h-[1px] mb-2.5"
-                } bg-white`}
-              ></div>
-              <div
-                className={`${
-                  index < 2 ? "text-3xl mb-5" : "text-xs"
-                } font-bold uppercase`}
+                    ? "left-[100px] top-1/2 -translate-y-1/2 w-[600px]"
+                    : "left-0 top-full -translate-y-full w-full p-2.5"
+                } transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]`}
               >
-                {item.title}
-                <span
+                <div
                   className={`${
                     index < 2
-                      ? "text-xl top-[-40px] left-[15px]"
-                      : "text-xs top-[-20px] left-3"
-                  } absolute font-normal`}
+                      ? "w-[50px] h-[3px] mb-5"
+                      : "w-[20px] h-[1px] mb-2.5"
+                  } bg-white`}
+                ></div>
+                <div
+                  className={`${
+                    index < 2 ? "text-3xl mb-5" : "text-xs"
+                  } font-bold uppercase`}
                 >
-                  {item.id}
-                </span>
-              </div>
-              <div
-                className={`${
-                  index < 2 ? "text-xl mb-5" : "text-xs"
-                } uppercase text-[#d36e10] font-medium`}
-              >
-                {item.name}
-              </div>
-              <div
-                className={`${
-                  index < 2
-                    ? "text-base w-[400px] opacity-100"
-                    : "hidden opacity-0"
-                }`}
-              >
-                {item.description}
+                  {item.title}
+                  <span
+                    className={`${
+                      index < 2
+                        ? "text-xl top-[-40px] left-[15px]"
+                        : "text-xs top-[-20px] left-3"
+                    } absolute font-normal`}
+                  >
+                    {item.id}
+                  </span>
+                </div>
+                <div
+                  className={`${
+                    index < 2 ? "text-xl mb-5" : "text-xs"
+                  } uppercase text-[#d36e10] font-medium`}
+                >
+                  {item.name}
+                </div>
+                <div
+                  className={`${
+                    index < 2
+                      ? "text-base w-[400px] opacity-100"
+                      : "hidden opacity-0"
+                  }`}
+                >
+                  {item.description}
+                </div>
+                {index < 2 && (
+                  <motion.div
+                    variants={fadeInUp}
+                    className="flex flex-wrap gap-4 py-10"
+                  >
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => handleViewDetails()}
+                      className="bg-[#8A0206] hover:bg-[#8A0206]/80 text-white font-medium py-3 px-6 rounded-md"
+                    >
+                      Free Counselling
+                    </motion.button>
+                    <Link href="/contact">
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="border-2 border-white text-white font-medium py-3 px-6 rounded-md"
+                      >
+                        Learn more
+                      </motion.button>
+                    </Link>
+                  </motion.div>
+                )}
               </div>
             </div>
+          ))}
+        </div>
+
+        <div className="absolute bottom-[50px] left-[55%] w-[calc(100%-55%-2%)] z-10 flex gap-[5%] items-center">
+          <button
+            onClick={handlePrev}
+            className="w-10 h-10 min-w-10 min-h-10 rounded-full border-2 border-white text-white bg-transparent flex items-center justify-center transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] hover:border-white hover:text-white"
+          >
+            <ArrowLeft size={25} />
+          </button>
+          <button
+            onClick={handleNext}
+            className="w-10 h-10 min-w-10 min-h-10 rounded-full border-2 border-white text-white bg-transparent flex items-center justify-center transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] hover:border-white hover:text-white"
+          >
+            <ArrowRight size={25} />
+          </button>
+
+          <div className="text-2xl text-white font-normal ml-auto tracking-[5px]">
+            {items[1].id.toString().padStart(2, "0")}/{initialItems.length}
           </div>
-        ))}
-      </div>
 
-      <div className="absolute bottom-[50px] left-[55%] w-[calc(100%-55%-2%)] z-100 flex gap-[5%] items-center">
-        <button
-          onClick={handlePrev}
-          className="w-10 h-10 min-w-10 min-h-10 rounded-full border-2 border-white text-white bg-transparent flex items-center justify-center transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] hover:border-white hover:text-white"
-        >
-          <ArrowLeft size={25} />
-        </button>
-        <button
-          onClick={handleNext}
-          className="w-10 h-10 min-w-10 min-h-10 rounded-full border-2 border-white text-white bg-transparent flex items-center justify-center transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] hover:border-white hover:text-white"
-        >
-          <ArrowRight size={25} />
-        </button>
-
-        <div className="text-2xl text-white font-normal ml-auto tracking-[5px]">
-          {items[1].id.toString().padStart(2, "0")}/{initialItems.length}
+          <div className="w-[60%] h-[3px] bg-[rgba(255,255,255,0.5)] rounded-xl overflow-hidden">
+            <div
+              ref={progressBarRef}
+              className="h-full bg-[#d36e10] transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
+              style={{ width: "0%" }}
+            />
+          </div>
         </div>
 
-        <div className="w-[60%] h-[3px] bg-[rgba(255,255,255,0.5)] rounded-xl overflow-hidden">
-          <div
-            ref={progressBarRef}
-            className="h-full bg-[#d36e10] transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
-            style={{ width: "0%" }}
-          />
-        </div>
+        <div
+          ref={timeRunningRef}
+          className="fixed z-1000 h-[4px] bg-white top-0 left-0"
+          style={{ width: "0%" }}
+        />
       </div>
-
-      <div
-        ref={timeRunningRef}
-        className="fixed z-1000 h-[4px] bg-white top-0 left-0"
-        style={{ width: "0%" }}
+      <InquiryFormModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        // courseData={selectedCourse}
+        // degreeType={selectedDegree}
+        destinations={uniData}
       />
-    </div>
+    </>
   );
 };
 

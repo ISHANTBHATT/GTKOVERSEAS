@@ -292,10 +292,9 @@ export default function InquiryFormModal({
                     <SelectValue placeholder="Please Select" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="immediate">Immediately</SelectItem>
-                    <SelectItem value="3months">Within 3 months</SelectItem>
-                    <SelectItem value="6months">Within 6 months</SelectItem>
-                    <SelectItem value="1year">Within 1 year</SelectItem>
+                    <SelectItem value="immediate">January</SelectItem>
+                    <SelectItem value="3months">April</SelectItem>
+                    <SelectItem value="6months">September</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

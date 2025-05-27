@@ -733,7 +733,7 @@ function PAGE() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -937,30 +937,11 @@ function PAGE() {
                     className="mt-1 p-3 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   >
                     <option value="">Please Select</option>
-                    <option value="immediate">Immediately</option>
-                    <option value="3months">Within 3 months</option>
-                    <option value="6months">Within 6 months</option>
-                    <option value="1year">Within 1 year</option>
+                    <option value="immediate">January</option>
+                    <option value="3months">April</option>
+                    <option value="6months">September</option>
                   </select>
                 </div>
-
-                {/* <div>
-                  <label className="block text-sm font-medium text-gray-700">
-                    Preferred Year
-                  </label>
-                  <select
-                    name="preferredYear"
-                    value={formData.preferredYear}
-                    onChange={handleChange}
-                    required
-                    className="mt-1 p-3 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                  >
-                    <option value="">Select Year</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                  </select>
-                </div> */}
                 {/* Add this after the Course input */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700">
@@ -1035,6 +1016,126 @@ function PAGE() {
           </div>
         </div>
       </div>
+
+      <div className="mt-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Our Office Locations
+          </h2>
+          <p className="text-lg text-gray-600">
+            Visit us at any of our convenient locations
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* New Delhi Office */}
+          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div className="flex items-center mb-4">
+              <MapPin className="w-6 h-6 text-[#8A0206] mr-2" />
+              <h3 className="text-xl font-semibold text-gray-900">New Delhi</h3>
+            </div>
+            <div className="space-y-3">
+              <p className="text-gray-600">
+                F-25, Bhagat Singh Market, Gole Market, New Delhi-110001
+              </p>
+              <div className="flex items-center">
+                <Phone className="w-4 h-4 text-[#8A0206] mr-2" />
+                <span className="text-gray-700">011 49596950</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="w-4 h-4 text-[#8A0206] mr-2" />
+                <span className="text-gray-700">delhi@gtkoverseas.com</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Punjab Office */}
+          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div className="flex items-center mb-4">
+              <MapPin className="w-6 h-6 text-[#8A0206] mr-2" />
+              <h3 className="text-xl font-semibold text-gray-900">Punjab</h3>
+            </div>
+            <div className="space-y-3">
+              <p className="text-gray-600">
+                SCO 45-46, Second Floor, Sector 34-A, Chandigarh-160022
+              </p>
+              <div className="flex items-center">
+                <Phone className="w-4 h-4 text-[#8A0206] mr-2" />
+                <span className="text-gray-700">0172 4646464</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="w-4 h-4 text-[#8A0206] mr-2" />
+                <span className="text-gray-700">punjab@gtkoverseas.com</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Rajasthan Office */}
+          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div className="flex items-center mb-4">
+              <MapPin className="w-6 h-6 text-[#8A0206] mr-2" />
+              <h3 className="text-xl font-semibold text-gray-900">Rajasthan</h3>
+            </div>
+            <div className="space-y-3">
+              <p className="text-gray-600">
+                301, Third Floor, Apex Tower, Lal Kothi, Jaipur-302015
+              </p>
+              <div className="flex items-center">
+                <Phone className="w-4 h-4 text-[#8A0206] mr-2" />
+                <span className="text-gray-700">0141 4040404</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="w-4 h-4 text-[#8A0206] mr-2" />
+                <span className="text-gray-700">rajasthan@gtkoverseas.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Head Office Map */}
+      <div className="mt-16">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Find Our Head Office
+          </h2>
+          <p className="text-lg text-gray-600">
+            Located in the heart of New Delhi
+          </p>
+        </div>
+
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div className="h-96 w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.2351422273291!2d77.20754403890655!3d28.6330060182386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02338c6aab47%3A0xb95bdf13d1b9912!2sGTK%20Group%20INC!5e0!3m2!1sen!2sin!4v1748334243033!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="GTK Overseas Head Office Location"
+            ></iframe>
+          </div>
+          <div className="p-6 bg-gray-50">
+            <div className="flex items-center justify-between">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Head Office
+                </h3>
+                <p className="text-gray-600">
+                  F-25, Bhagat Singh Market, Gole Market, New Delhi-110001
+                </p>
+              </div>
+              <div className="text-right">
+                <p className="text-sm text-gray-500">Business Hours</p>
+                <p className="text-gray-700">Mon - Sat: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* </div> */}
       {/* <Toaster position="top-right" /> */}
     </div>
   );

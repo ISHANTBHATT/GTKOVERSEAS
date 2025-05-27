@@ -62,6 +62,8 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const dropdownRef = useRef(null);
   const router = useRouter();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState(null);
 
   //   const handleDropdownToggle = (dropdown) => {
   //     if (activeDropdown === dropdown) {
@@ -322,8 +324,13 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="rounded-md p-2 text-gray-800 lg:hidden"
-          onClick={() => handleDropdownToggle("mobile")}
+          className={`rounded-md p-2 lg:hidden ${
+            isScrolled || !isHomePage ? "text-gray-800" : "text-white "
+          }`}
+          onClick={() => {
+            setMobileMenuOpen(!mobileMenuOpen);
+            setMobileSubmenuOpen(null);
+          }}
           aria-label="Toggle mobile menu"
         >
           <svg
@@ -338,7 +345,7 @@ export default function Navbar() {
               strokeLinejoin="round"
               strokeWidth={2}
               d={
-                activeDropdown === "mobile"
+                mobileMenuOpen
                   ? "M6 18L18 6M6 6l12 12"
                   : "M4 6h16M4 12h16M4 18h16"
               }
@@ -347,39 +354,39 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {activeDropdown === "mobile" && (
-        <div className="border-t border-gray-200 bg-white lg:hidden">
-          <div className="space-y-1 px-4 py-3">
-            <Link
-              href="/about"
-              className="block py-2 text-base font-medium text-gray-800"
-              onClick={closeDropdowns}
-            >
+      {/* {mobileMenuOpen && (
+        <div className="lg:hidden bg-white shadow-md text-neutral-800">
+          <div className="flex flex-col px-4 py-2 space-y-2">
+            <Link href="/about" onClick={() => setMobileMenuOpen(false)}>
               About
             </Link>
 
-            <div className="py-2">
+
+            <div>
               <button
-                onClick={() => handleDropdownToggle("mobileStudyAbroad")}
-                className="flex w-full items-center justify-between py-2 text-base font-medium text-gray-800"
+                onClick={() =>
+                  setMobileSubmenuOpen(
+                    mobileSubmenuOpen === "studyAbroad" ? null : "studyAbroad"
+                  )
+                }
+                className="flex justify-between w-full"
               >
                 Study Abroad
                 <ChevronDown
                   className={cn(
-                    "h-4 w-4 transition-transform",
-                    activeDropdown === "mobileStudyAbroad" ? "rotate-180" : ""
+                    "ml-2 h-4 w-4 transition-transform",
+                    mobileSubmenuOpen === "studyAbroad" ? "rotate-180" : ""
                   )}
                 />
               </button>
-              {activeDropdown === "mobileStudyAbroad" && (
-                <div className="mt-2 space-y-1 pl-4">
+              {mobileSubmenuOpen === "studyAbroad" && (
+                <div className="ml-4 mt-1 space-y-1">
                   {studyAbroadLinks.map((link) => (
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="block py-2 text-sm text-gray-700"
-                      onClick={closeDropdowns}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block text-sm text-gray-700"
                     >
                       {link.name}
                     </Link>
@@ -388,34 +395,34 @@ export default function Navbar() {
               )}
             </div>
 
-            <div className="py-2">
+      
+            <div>
               <button
-                onClick={() => handleDropdownToggle("mobileStudentServices")}
-                className="flex w-full items-center justify-between py-2 text-base font-medium text-gray-800"
+                onClick={() =>
+                  setMobileSubmenuOpen(
+                    mobileSubmenuOpen === "studentServices"
+                      ? null
+                      : "studentServices"
+                  )
+                }
+                className="flex justify-between w-full"
               >
                 Student Services
                 <ChevronDown
                   className={cn(
-                    "h-4 w-4 transition-transform",
-                    activeDropdown === "mobileStudentServices"
-                      ? "rotate-180"
-                      : ""
+                    "ml-2 h-4 w-4 transition-transform",
+                    mobileSubmenuOpen === "studentServices" ? "rotate-180" : ""
                   )}
                 />
               </button>
-              {activeDropdown === "mobileStudentServices" && (
-                <div className="mt-2 space-y-1 pl-4">
+              {mobileSubmenuOpen === "studentServices" && (
+                <div className="ml-4 mt-1 space-y-1">
                   {studentServicesLinks.map((link) => (
                     <Link
                       key={link.name}
-                      href={link.href}
-                      className={cn(
-                        "block py-2 text-sm",
-                        link.isHeader
-                          ? "font-semibold text-gray-900"
-                          : "text-gray-700"
-                      )}
-                      onClick={closeDropdowns}
+                      href={`/${link.href}`}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block text-sm text-gray-700"
                     >
                       {link.name}
                     </Link>
@@ -424,77 +431,175 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* <div className="py-2">
-              <button
-                onClick={() => handleDropdownToggle("mobileWhatWeDo")}
-                className="flex w-full items-center justify-between py-2 text-base font-medium text-gray-800"
+            <Link href="/courses" onClick={() => setMobileMenuOpen(false)}>
+              Find a Course
+            </Link>
+
+            <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      )} */}
+      <div
+        className={`fixed inset-0 z-50 lg:hidden bg-white transform transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-[#8A0206]/10 to-white/50 backdrop-blur-sm" />
+        <div className="relative h-full w-full  bg-white/95 shadow-2xl overflow-y-auto">
+          <div className="flex flex-col h-full">
+            {/* Close Button */}
+            <button
+              className="self-end p-6 hover:scale-110 transition-transform"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-[#8A0206]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                What We Do
-                <ChevronDown
-                  className={cn(
-                    "h-4 w-4 transition-transform",
-                    activeDropdown === "mobileWhatWeDo" ? "rotate-180" : ""
-                  )}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
                 />
-              </button>
-              {activeDropdown === "mobileWhatWeDo" && (
-                <div className="mt-2 space-y-1 pl-4">
-                  {whatWeDoLinks.map((link) => (
+              </svg>
+            </button>
+
+            {/* Menu Items */}
+            <div className="px-8 py-4 space-y-6">
+              <Link
+                href="/about"
+                className="block text-2xl font-semibold text-[#8A0206] hover:pl-4 transition-all"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About
+              </Link>
+
+              {/* Study Abroad Submenu */}
+              <div className="group">
+                <button
+                  onClick={() =>
+                    setMobileSubmenuOpen(
+                      mobileSubmenuOpen === "studyAbroad" ? null : "studyAbroad"
+                    )
+                  }
+                  className="flex justify-between items-center w-full text-2xl font-semibold text-gray-800"
+                >
+                  Study Abroad
+                  <ChevronDown
+                    className={cn(
+                      "ml-2 h-6 w-6 transition-transform text-[#8A0206]",
+                      mobileSubmenuOpen === "studyAbroad" ? "rotate-180" : ""
+                    )}
+                  />
+                </button>
+                <div
+                  className={cn(
+                    "ml-4 space-y-2 overflow-hidden transition-all duration-500",
+                    mobileSubmenuOpen === "studyAbroad"
+                      ? "max-h-[1000px] opacity-100"
+                      : "max-h-0 opacity-0"
+                  )}
+                >
+                  {studyAbroadLinks.map((link) => (
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="block py-2 text-sm text-gray-700"
-                      onClick={closeDropdowns}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block py-2 text-xl text-gray-700 hover:text-[#8A0206] hover:pl-4 transition-all"
                     >
                       {link.name}
                     </Link>
                   ))}
                 </div>
-              )}
-            </div> */}
+              </div>
 
-            <Link
-              href="/events"
-              className="block py-2 text-base font-medium text-gray-800"
-              onClick={closeDropdowns}
-            >
-              Events
-            </Link>
-            <Link
-              href="/scholarships"
-              className="block py-2 text-base font-medium text-gray-800"
-              onClick={closeDropdowns}
-            >
-              Scholarships
-            </Link>
+              {/* Student Services Submenu */}
+              <div className="group">
+                <button
+                  onClick={() =>
+                    setMobileSubmenuOpen(
+                      mobileSubmenuOpen === "studentServices"
+                        ? null
+                        : "studentServices"
+                    )
+                  }
+                  className="flex justify-between items-center w-full text-2xl font-semibold text-gray-800"
+                >
+                  Student Services
+                  <ChevronDown
+                    className={cn(
+                      "ml-2 h-6 w-6 transition-transform text-[#8A0206]",
+                      mobileSubmenuOpen === "studentServices"
+                        ? "rotate-180"
+                        : ""
+                    )}
+                  />
+                </button>
+                <div
+                  className={cn(
+                    "ml-4 space-y-2 overflow-hidden transition-all duration-500",
+                    mobileSubmenuOpen === "studentServices"
+                      ? "max-h-[1000px] opacity-100"
+                      : "max-h-0 opacity-0"
+                  )}
+                >
+                  {studentServicesLinks.map((link) => (
+                    <Link
+                      key={link.name}
+                      href={`../${link.href}`}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block py-2 text-xl text-gray-700 hover:text-[#8A0206] hover:pl-4 transition-all"
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
 
-            <Link
-              href="https://wa.me/1234567890" // Replace with your actual number
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center rounded-md border border-[#8A0206] px-4 py-2 text-base font-medium text-[#8A0206] transition-colors hover:bg-[#8A0206]/10 mr-2"
-            >
-              <Image
-                src="/images/whatsapp-icon.png" // Place your image in public folder with this name
-                alt="WhatsApp"
-                width={200}
-                height={200}
-                className="mr-2"
-              />
-              Whatsapp
-            </Link>
-            <div className="pt-4">
+              <Link
+                href="/courses"
+                className="block text-2xl font-semibold text-gray-800 hover:text-[#8A0206] hover:pl-4 transition-all"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Find a Course
+              </Link>
+
               <Link
                 href="/contact"
-                className="block w-full rounded-md bg-[#1e3a8a] px-4 py-2 text-center text-base font-medium text-white"
-                onClick={closeDropdowns}
+                className="block text-2xl font-semibold text-gray-800 hover:text-[#8A0206] hover:pl-4 transition-all"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Contact Us
               </Link>
             </div>
+
+            {/* WhatsApp Button */}
+            <div className="mt-auto p-8">
+              <Link
+                href="https://wa.me/1234567890"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-full bg-[#25D366] text-white py-4 rounded-xl shadow-lg hover:scale-105 transition-transform"
+              >
+                <Image
+                  src="/images/whatsapp-icon.png"
+                  alt="WhatsApp"
+                  width={32}
+                  height={32}
+                  className="mr-3"
+                />
+                Chat on WhatsApp
+              </Link>
+            </div>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
